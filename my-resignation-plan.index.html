@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自由倒數中 · 我的離職集點計畫</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,400;1,9..144,200;1,9..144,500&family=Noto+Sans+TC:wght@300;400;500;700&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════ */
+:root {
+  --bg:          #F8F4EE;
+  --surface:     rgba(255,252,247,.80);
+  --surface-2:   rgba(255,252,247,.52);
+  --border:      rgba(208,192,172,.42);
+  --border-2:    rgba(208,192,172,.22);
+
+  --latte:       #C4A882;
+  --latte-l:     #E0CFBA;
+  --latte-xl:    #EFE6D8;
+  --fog:         #BECFE0;
+  --fog-l:       #D8E7F2;
+  --fog-xl:      #EDF4FA;
+  --sage:        #A8BBAA;
+  --sage-l:      #CDDACC;
+  --sage-xl:     #E7EFE6;
+  --blush:       #CFA098;
+  --blush-l:     #E8CCC8;
+  --blush-xl:    #F5ECEA;
+  --butter:      #CCAF60;
+  --butter-l:    #E8D8A0;
+  --butter-xl:   #F5EDD8;
+
+  --ink:         #28201A;
+  --ink-2:       #50423A;
+  --ink-3:       #837260;
+  --ink-4:       #AE9E90;
+  --ink-5:       #CEBFB2;
+
+  --f-d:  'Fraunces', serif;
+  --f-b:  'Noto Sans TC', sans-serif;
+  --f-h:  'Klee One', 'Noto Sans TC', serif;
+
+  --r-xs:  8px;  --r-sm:  14px; --r-md:  20px;
+  --r-lg:  28px; --r-xl:  40px; --r-f:   9999px;
+
+  --sh-xs: 0 1px 5px rgba(50,35,20,.05);
+  --sh-sm: 0 3px 18px rgba(50,35,20,.08);
+  --sh-md: 0 8px 38px rgba(50,35,20,.10);
+  --sh-lg: 0 18px 64px rgba(50,35,20,.13);
+
+  /* unified icon system */
+  --ic: #8C7B6C;
+  --ic-w: 1.35;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--f-b);
+  background:var(--bg);
+  color:var(--ink);
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ambient */
+.bg-a{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 68% 52% at 7%   4%,  rgba(190,207,224,.38) 0%,transparent 58%),
+    radial-gradient(ellipse 52% 44% at 95%  96%,  rgba(207,160,152,.22) 0%,transparent 58%),
+    radial-gradient(ellipse 44% 38% at 90%  8%,  rgba(204,175, 96,.20) 0%,transparent 58%),
+    radial-gradient(ellipse 38% 32% at 10%  94%,  rgba(168,187,170,.22) 0%,transparent 58%);
+}
+.bg-g{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.45;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.030'/%3E%3C/svg%3E");
+}
+
+/* layout */
+.page{position:relative;z-index:1;max-width:700px;margin:0 auto;padding:0 20px 120px;}
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero{
+  padding:68px 0 46px;
+  text-align:center;position:relative;
+  animation:rUp .95s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-orb{
+  position:absolute;border-radius:50%;pointer-events:none;
+  filter:blur(52px);opacity:.26;
+  animation:oDrift 9s ease-in-out infinite alternate;
+}
+.o1{width:200px;height:200px;background:var(--fog);  top:-44px;left:-64px; animation-delay:0s;}
+.o2{width:160px;height:160px;background:var(--blush);top:-20px;right:-54px;animation-delay:2.2s;}
+.o3{width:130px;height:130px;background:var(--butter);bottom:-18px;left:33%;animation-delay:4.5s;}
+@keyframes oDrift{0%{transform:translate(0,0) scale(1)}100%{transform:translate(10px,14px) scale(1.07)}}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-3);padding:6px 18px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-f);backdrop-filter:blur(10px);margin-bottom:24px;
+}
+.badge-dot{
+  width:5px;height:5px;border-radius:50%;background:var(--sage);
+  animation:blink 2.6s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+.hero-title{
+  font-family:var(--f-d);
+  font-size:clamp(38px,9.5vw,64px);
+  font-weight:200;font-style:italic;
+  line-height:1.05;letter-spacing:-.026em;
+  color:var(--ink);margin-bottom:18px;
+}
+.hero-title .ac{
+  font-weight:500;font-style:italic;color:var(--latte);
+  position:relative;
+}
+.hero-title .ac::after{
+  content:'';position:absolute;
+  bottom:3px;left:0;right:0;height:1.5px;
+  background:linear-gradient(90deg,var(--latte),transparent);
+  border-radius:2px;
+}
+.hero-sub{
+  font-size:14px;font-weight:300;line-height:1.8;
+  color:var(--ink-3);letter-spacing:.04em;margin-bottom:38px;
+}
+
+/* scene */
+.scene{
+  display:flex;align-items:flex-end;justify-content:center;
+  gap:18px;margin-top:6px;
+}
+.si{display:flex;flex-direction:column;align-items:center;animation:flt 5.2s ease-in-out infinite;}
+.si:nth-child(1){animation-delay:0s;}
+.si:nth-child(2){animation-delay:.9s;}
+.si:nth-child(3){animation-delay:1.7s;}
+.si:nth-child(4){animation-delay:.45s;}
+.si:nth-child(5){animation-delay:1.25s;}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ═══════════════════════════════════════════
+   STATUS PILL
+═══════════════════════════════════════════ */
+.spill{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;
+  padding:12px 22px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-f);backdrop-filter:blur(12px);
+  margin-bottom:26px;box-shadow:var(--sh-xs);
+  animation:rUp .8s cubic-bezier(.16,1,.3,1) .08s both;
+}
+.spill-l{display:flex;align-items:center;gap:8px;}
+.pulse-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--sage);
+  box-shadow:0 0 0 0 rgba(168,187,170,.5);
+  animation:pring 2.4s ease-in-out infinite;
+}
+@keyframes pring{
+  0%{box-shadow:0 0 0 0 rgba(168,187,170,.5)}
+  70%{box-shadow:0 0 0 6px rgba(168,187,170,0)}
+  100%{box-shadow:0 0 0 0 rgba(168,187,170,0)}
+}
+.spill-text{font-size:12.5px;font-weight:500;color:var(--ink-3);letter-spacing:.03em;}
+.spill-chip{
+  font-size:11px;font-weight:700;letter-spacing:.06em;
+  color:var(--latte);background:var(--butter-xl);
+  border:1px solid var(--butter-l);
+  padding:4px 13px;border-radius:var(--r-f);white-space:nowrap;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION LABEL — unified icon boxes
+═══════════════════════════════════════════ */
+.sl{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.sl-ic{
+  width:28px;height:28px;border-radius:var(--r-sm);
+  background:var(--surface);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:var(--sh-xs);
+}
+.sl-ic svg{display:block;}
+.sl-tx{
+  font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-5);
+}
+.sl::after{content:'';flex:2;height:1px;background:linear-gradient(90deg,var(--border),transparent);}
+
+/* ═══════════════════════════════════════════
+   CARD
+═══════════════════════════════════════════ */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:28px;margin-bottom:18px;
+  box-shadow:var(--sh-sm);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s ease;
+  animation:rUp .7s cubic-bezier(.16,1,.3,1) both;
+}
+.card::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(122deg,rgba(255,255,255,.20) 0%,rgba(255,255,255,0) 52%);
+  opacity:0;transition:opacity .32s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-md);}
+.card:hover::after{opacity:1;}
+
+.card.fog   {background:linear-gradient(142deg,rgba(190,207,224,.26) 0%,var(--surface) 64%);border-color:rgba(190,207,224,.44);}
+.card.butter{background:linear-gradient(142deg,rgba(204,175, 96,.18) 0%,var(--surface) 64%);border-color:rgba(204,175, 96,.32);}
+.card.blush {background:linear-gradient(142deg,rgba(207,160,152,.18) 0%,var(--surface) 64%);border-color:rgba(207,160,152,.32);}
+.card.sage  {background:linear-gradient(142deg,rgba(168,187,170,.20) 0%,var(--surface) 64%);border-color:rgba(168,187,170,.36);}
+.card.latte {background:linear-gradient(142deg,rgba(196,168,130,.16) 0%,var(--surface) 64%);border-color:rgba(196,168,130,.32);}
+
+.card:nth-child(1){animation-delay:.04s}
+.card:nth-child(2){animation-delay:.10s}
+.card:nth-child(3){animation-delay:.16s}
+.card:nth-child(4){animation-delay:.22s}
+.card:nth-child(5){animation-delay:.28s}
+
+/* ═══════════════════════════════════════════
+   COUNTDOWN
+═══════════════════════════════════════════ */
+.cd-nums{
+  display:flex;align-items:baseline;justify-content:center;
+  gap:4px;margin:18px 0 22px;
+}
+.cd-blk{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.cd-v{
+  font-family:var(--f-d);
+  font-size:clamp(52px,13vw,84px);
+  font-weight:200;font-style:italic;
+  color:var(--ink);line-height:1;letter-spacing:-.04em;
+}
+.cd-u{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-5);}
+.cd-s{
+  font-family:var(--f-d);font-size:40px;font-weight:200;font-style:italic;
+  color:var(--ink-5);padding-bottom:18px;
+}
+.cd-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+.cd-row label{font-size:12px;font-weight:500;color:var(--ink-3);white-space:nowrap;}
+input.date-in{
+  padding:8px 18px;border-radius:var(--r-f);
+  border:1.5px solid var(--fog-l);background:rgba(255,255,255,.52);
+  font-family:var(--f-b);font-size:13px;font-weight:500;color:var(--ink);
+  outline:none;cursor:pointer;
+  transition:border-color .2s,box-shadow .2s;backdrop-filter:blur(4px);
+}
+input.date-in:focus{border-color:var(--fog);box-shadow:0 0 0 3px rgba(190,207,224,.2);}
+.cd-cap{
+  text-align:center;margin-top:15px;
+  font-size:12px;font-weight:400;font-style:italic;
+  color:var(--ink-4);letter-spacing:.04em;
+  font-family:var(--f-h);min-height:18px;
+}
+
+/* ═══════════════════════════════════════════
+   STAMP
+═══════════════════════════════════════════ */
+.stamp-top{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:18px;flex-wrap:wrap;gap:10px;
+}
+.stamp-top-l{font-size:12px;font-weight:500;color:var(--ink-3);}
+.stamp-top-l span{font-family:var(--f-d);font-style:italic;font-size:16px;color:var(--latte);}
+.stamp-cfg{display:flex;align-items:center;gap:7px;}
+.stamp-cfg label{font-size:11px;font-weight:500;color:var(--ink-4);}
+input.ni{
+  width:50px;padding:5px 8px;border-radius:var(--r-xs);
+  border:1.5px solid var(--latte-l);background:rgba(255,255,255,.52);
+  font-family:var(--f-b);font-size:13px;font-weight:600;color:var(--ink);
+  text-align:center;outline:none;
+}
+input.ni:focus{border-color:var(--latte);}
+
+.sg{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(40px,1fr));
+  gap:7px;margin-bottom:18px;
+}
+.sc{
+  aspect-ratio:1;border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  border:1.5px dashed rgba(160,136,108,.20);
+  background:rgba(234,224,208,.15);
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1);
+}
+.sc.on{
+  border:1.5px solid rgba(160,136,108,.32);
+  background:linear-gradient(135deg,var(--butter-xl),var(--latte-xl));
+  box-shadow:0 2px 9px rgba(160,136,108,.16);
+  animation:sIn .36s cubic-bezier(.34,1.56,.64,1) both;
+}
+.sc.on:hover{transform:scale(1.14) rotate(3deg);}
+.sc:not(.on):hover{transform:scale(1.06);}
+@keyframes sIn{
+  0%{transform:scale(0) rotate(-14deg);opacity:0}
+  70%{transform:scale(1.16) rotate(2deg)}
+  100%{transform:scale(1) rotate(0);opacity:1}
+}
+.sg-hint{
+  grid-column:1/-1;text-align:center;
+  font-size:12px;font-style:italic;color:var(--ink-5);
+  padding:6px 0;letter-spacing:.04em;font-family:var(--f-h);
+}
+
+.pr-row{display:flex;align-items:center;gap:13px;}
+.pr-track{
+  flex:1;height:5px;background:rgba(160,136,108,.14);
+  border-radius:var(--r-f);overflow:hidden;
+}
+.pr-fill{
+  height:100%;border-radius:var(--r-f);
+  background:linear-gradient(90deg,var(--latte),var(--butter));
+  transition:width .65s cubic-bezier(.34,1.56,.64,1);
+}
+.pr-lbl{
+  font-family:var(--f-d);font-style:italic;font-weight:200;
+  font-size:17px;color:var(--latte);white-space:nowrap;
+}
+.done-banner{
+  display:none;margin-top:16px;padding:13px 18px;
+  background:linear-gradient(135deg,var(--butter-xl),var(--latte-xl));
+  border:1px solid var(--butter-l);border-radius:var(--r-md);
+  text-align:center;font-size:13.5px;font-weight:600;
+  color:var(--latte);letter-spacing:.04em;font-family:var(--f-h);
+  animation:rUp .5s ease both;
+}
+.done-banner.show{display:block;}
+
+/* ═══════════════════════════════════════════
+   CTA
+═══════════════════════════════════════════ */
+.cta-wrap{
+  text-align:center;padding:6px 0;
+  animation:rUp .8s cubic-bezier(.16,1,.3,1) .22s both;
+}
+.cta{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:17px 48px;
+  background:var(--ink);color:rgba(255,252,247,.92);
+  border:none;border-radius:var(--r-f);
+  font-family:var(--f-b);font-size:14.5px;font-weight:500;letter-spacing:.1em;
+  cursor:pointer;
+  box-shadow:0 8px 28px rgba(40,32,26,.28),0 2px 6px rgba(40,32,26,.14);
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s;
+  position:relative;overflow:hidden;
+}
+.cta::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.09),transparent);
+}
+.cta:hover{
+  transform:translateY(-4px) scale(1.024);
+  box-shadow:0 14px 44px rgba(40,32,26,.30),0 4px 10px rgba(40,32,26,.16);
+}
+.cta:active{transform:scale(.97);}
+.cta-cap{margin-top:9px;font-size:11.5px;color:var(--ink-5);letter-spacing:.06em;}
+.cta-echo{
+  margin-top:12px;font-size:13.5px;font-weight:500;
+  font-family:var(--f-h);color:var(--latte);
+  min-height:20px;letter-spacing:.04em;
+  opacity:0;transform:translateY(5px);
+  transition:opacity .4s ease,transform .4s cubic-bezier(.16,1,.3,1);
+}
+.cta-echo.show{opacity:1;transform:translateY(0);}
+
+/* ═══════════════════════════════════════════
+   MOOD
+═══════════════════════════════════════════ */
+.mg{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:14px;}
+.mb{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  padding:12px 4px 10px;
+  background:rgba(255,255,255,.32);border:1.5px solid transparent;
+  border-radius:var(--r-md);cursor:pointer;font-family:var(--f-b);
+  transition:all .22s ease;
+}
+.mb:hover{background:rgba(255,255,255,.58);border-color:var(--blush-l);transform:translateY(-3px);box-shadow:var(--sh-xs);}
+.mb.on{
+  background:rgba(255,255,255,.72);border-color:var(--blush);
+  box-shadow:0 4px 16px rgba(207,160,152,.20);transform:translateY(-3px);
+}
+.me{font-size:23px;line-height:1;}
+.mw{font-size:9.5px;font-weight:700;color:var(--ink-3);letter-spacing:.04em;text-align:center;}
+.mr{
+  padding:13px 17px;
+  background:rgba(255,255,255,.40);border:1px solid var(--blush-l);
+  border-radius:var(--r-md);
+  font-size:13px;font-weight:400;font-family:var(--f-h);
+  color:var(--ink-2);line-height:1.72;letter-spacing:.03em;
+  min-height:48px;opacity:0;transition:opacity .4s ease;
+}
+.mr.show{opacity:1;}
+.mr-empty{font-size:12px;color:var(--ink-5);font-style:italic;text-align:center;padding:13px 0;font-family:var(--f-h);}
+
+/* ═══════════════════════════════════════════
+   WISH LIST
+═══════════════════════════════════════════ */
+.wi-row{display:flex;gap:8px;margin-bottom:13px;}
+.wi{
+  flex:1;padding:10px 18px;border-radius:var(--r-f);
+  border:1.5px solid var(--sage-l);background:rgba(255,255,255,.48);
+  font-family:var(--f-b);font-size:13.5px;color:var(--ink);
+  outline:none;backdrop-filter:blur(4px);
+  transition:border-color .2s,box-shadow .2s;
+}
+.wi:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(168,187,170,.14);}
+.wi::placeholder{color:var(--ink-5);font-style:italic;}
+.ic-btn{
+  width:42px;height:42px;border-radius:50%;flex-shrink:0;
+  border:none;background:var(--ink);color:rgba(255,252,247,.9);
+  font-size:22px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 12px rgba(40,32,26,.20);
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .2s;
+}
+.ic-btn:hover{transform:scale(1.1) rotate(8deg);box-shadow:0 6px 20px rgba(40,32,26,.26);}
+.ic-btn:active{transform:scale(.93);}
+
+.wl{display:flex;flex-direction:column;gap:7px;max-height:240px;overflow-y:auto;padding-right:2px;}
+.wl::-webkit-scrollbar{width:3px;}
+.wl::-webkit-scrollbar-thumb{background:var(--sage-l);border-radius:10px;}
+
+.witem{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 13px;
+  background:rgba(255,255,255,.38);border:1px solid rgba(168,187,170,.20);
+  border-radius:var(--r-md);
+  animation:sli .28s cubic-bezier(.34,1.56,.64,1) both;
+  transition:background .2s;
+}
+.witem.done{background:rgba(168,187,170,.10);border-color:rgba(168,187,170,.24);}
+.witem.done .wt{text-decoration:line-through;color:var(--ink-5);}
+@keyframes sli{0%{transform:translateX(-13px);opacity:0}100%{transform:translateX(0);opacity:1}}
+
+.wck{
+  width:20px;height:20px;border-radius:50%;
+  border:1.5px solid var(--sage);background:transparent;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:10px;color:transparent;flex-shrink:0;
+  transition:all .2s;
+}
+.wck.on{background:var(--sage);border-color:var(--sage);color:white;}
+.wt{flex:1;font-size:13.5px;font-weight:400;color:var(--ink-2);}
+.wd{
+  background:none;border:none;cursor:pointer;
+  font-size:15px;color:var(--ink-5);padding:2px 4px;border-radius:6px;line-height:1;
+  transition:color .2s,background .2s;
+}
+.wd:hover{color:var(--blush);background:var(--blush-xl);}
+
+.wempty{
+  text-align:center;padding:20px 0;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+.wempty p{font-size:12.5px;color:var(--ink-5);font-style:italic;font-family:var(--f-h);letter-spacing:.04em;}
+
+/* ═══════════════════════════════════════════
+   QUOTE
+═══════════════════════════════════════════ */
+.qt{text-align:center;padding:8px 10px;}
+.qt-deco{font-size:28px;display:block;margin-bottom:16px;animation:flt 4.2s ease-in-out infinite;}
+.qt-text{
+  font-family:var(--f-h);font-size:clamp(16px,3.8vw,20px);
+  font-weight:600;color:var(--ink);line-height:1.66;letter-spacing:.025em;
+  margin-bottom:8px;min-height:66px;
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity .3s ease;
+}
+.qt-text.fade{opacity:0;}
+.qt-src{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-5);margin-bottom:22px;}
+
+/* buttons */
+.ghost{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 20px;border-radius:var(--r-f);
+  border:1.5px solid var(--latte-l);background:transparent;
+  font-family:var(--f-b);font-size:11.5px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--latte);
+  cursor:pointer;transition:background .2s,color .2s,transform .2s;
+}
+.ghost:hover{background:var(--latte);color:white;transform:scale(1.04);}
+.pill{
+  padding:6px 14px;border-radius:var(--r-f);
+  border:1.5px solid var(--latte-l);background:transparent;
+  font-family:var(--f-b);font-size:11.5px;font-weight:700;
+  letter-spacing:.08em;color:var(--latte);cursor:pointer;
+  transition:all .2s;
+}
+.pill:hover{background:var(--latte-xl);transform:scale(1.04);}
+
+/* ═══════════════════════════════════════════
+   LETTER
+═══════════════════════════════════════════ */
+.la{
+  width:100%;min-height:110px;padding:15px 17px;
+  border-radius:var(--r-md);border:1.5px solid var(--latte-l);
+  background:rgba(255,255,255,.44);
+  font-family:var(--f-h);font-size:14px;color:var(--ink-2);
+  line-height:1.84;letter-spacing:.03em;
+  resize:vertical;outline:none;
+  transition:border-color .2s,box-shadow .2s;backdrop-filter:blur(4px);
+}
+.la:focus{border-color:var(--latte);box-shadow:0 0 0 3px rgba(196,168,130,.13);}
+.la::placeholder{color:var(--ink-5);font-style:italic;}
+.lfoot{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:10px;}
+.shint{font-size:11px;font-weight:500;color:var(--sage);letter-spacing:.07em;opacity:0;transition:opacity .3s;}
+.shint.show{opacity:1;}
+
+/* ═══════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════ */
+@keyframes rUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
+
+/* particles */
+.pt{
+  position:fixed;pointer-events:none;font-size:17px;
+  animation:ptfly .88s ease-out both;z-index:9999;
+}
+@keyframes ptfly{
+  0%{transform:translate(-50%,-50%) scale(0) rotate(var(--r0));opacity:1}
+  80%{opacity:1}
+  100%{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.1) rotate(var(--r1));opacity:0}
+}
+
+/* toast */
+.toast{
+  position:fixed;bottom:34px;left:50%;
+  transform:translateX(-50%) translateY(70px);
+  background:rgba(40,32,26,.88);color:rgba(255,252,247,.94);
+  padding:11px 24px;border-radius:var(--r-f);
+  font-size:13px;font-weight:500;letter-spacing:.04em;
+  z-index:9998;pointer-events:none;white-space:nowrap;
+  backdrop-filter:blur(14px);
+  box-shadow:0 8px 28px rgba(40,32,26,.26);
+  opacity:0;transition:transform .42s cubic-bezier(.34,1.56,.64,1),opacity .35s;
+}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
+
+/* celebration */
+.cel{
+  position:fixed;inset:0;z-index:9990;pointer-events:none;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:opacity .4s;
+  background:rgba(40,32,26,.18);backdrop-filter:blur(3px);
+}
+.cel.show{opacity:1;pointer-events:all;}
+.cel-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-xl);padding:40px 52px;text-align:center;
+  box-shadow:var(--sh-lg);backdrop-filter:blur(24px);
+  transform:scale(.82) translateY(18px);
+  transition:transform .52s cubic-bezier(.34,1.56,.64,1);
+  pointer-events:all;
+}
+.cel.show .cel-card{transform:scale(1) translateY(0);}
+.cel-e{font-size:46px;display:block;margin-bottom:12px;animation:flt 3.2s ease-in-out infinite;}
+.cel-t{
+  font-family:var(--f-d);font-style:italic;font-size:28px;
+  font-weight:200;color:var(--ink);margin-bottom:8px;
+}
+.cel-s{
+  font-size:13.5px;font-family:var(--f-h);color:var(--ink-3);
+  line-height:1.7;margin-bottom:22px;
+}
+
+/* responsive */
+@media(max-width:480px){
+  .card{padding:22px 17px;}
+  .sg{grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:6px;}
+  .mg{gap:6px;}
+  .mb{padding:10px 3px 9px;}
+  .me{font-size:20px;}
+  .mw{font-size:8.5px;}
+  .cta{font-size:13.5px;padding:14px 34px;}
+  .hero{padding:52px 0 36px;}
+  .cd-v{font-size:clamp(44px,12vw,68px);}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-a"></div>
+<div class="bg-g"></div>
+
+<div class="page">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+  <div class="hero-orb o3"></div>
+
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    自由倒數中 · In Progress
+  </div>
+
+  <h1 class="hero-title">我的<br><span class="ac">離職</span>計畫</h1>
+
+  <p class="hero-sub">
+    認真上班中，靜靜倒數中<br>
+    每一天都是送給未來自己的一點點勇氣
+  </p>
+
+  <div class="scene">
+    <div class="si">
+      <svg width="40" height="50" viewBox="0 0 40 50" fill="none">
+        <rect x="4" y="15" width="25" height="21" rx="5" fill="var(--latte-xl)" stroke="var(--latte-l)" stroke-width="1.2"/>
+        <path d="M29 19 Q36 19 36 24.5 Q36 30 29 30" stroke="var(--latte-l)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <rect x="7" y="36" width="19" height="4" rx="2" fill="var(--latte-l)"/>
+        <path d="M11 8 Q13 4 15 8" stroke="var(--fog-l)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <path d="M17 6 Q19 2 21 6" stroke="var(--latte-l)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="si">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+        <g transform="translate(22,22)">
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--blush-l)"/>
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--blush-l)" transform="rotate(60)"/>
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--fog-l)" transform="rotate(120)"/>
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--blush-l)" transform="rotate(180)"/>
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--blush-l)" transform="rotate(240)"/>
+          <ellipse rx="4" ry="6.5" cy="-9" fill="var(--fog-l)" transform="rotate(300)"/>
+          <circle r="5" fill="var(--butter-xl)" stroke="var(--butter-l)" stroke-width="1"/>
+        </g>
+      </svg>
+    </div>
+    <div class="si">
+      <svg width="44" height="50" viewBox="0 0 44 50" fill="none">
+        <rect x="2" y="10" width="40" height="32" rx="6" fill="var(--fog-xl)" stroke="var(--fog-l)" stroke-width="1.2"/>
+        <rect x="2" y="10" width="40" height="11" rx="6" fill="var(--fog-l)"/>
+        <rect x="2" y="17" width="40" height="4" fill="var(--fog-l)"/>
+        <line x1="13" y1="5" x2="13" y2="15" stroke="var(--fog)" stroke-width="1.4" stroke-linecap="round"/>
+        <line x1="31" y1="5" x2="31" y2="15" stroke="var(--fog)" stroke-width="1.4" stroke-linecap="round"/>
+        <text x="22" y="34" font-size="12" text-anchor="middle" fill="var(--blush)" font-style="italic" font-family="Georgia,serif">bye</text>
+      </svg>
+    </div>
+    <div class="si">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M18 2 L21.5 13 L33 13 L23.5 19.5 L27 30.5 L18 24 L9 30.5 L12.5 19.5 L3 13 L14.5 13Z"
+          fill="var(--butter-xl)" stroke="var(--butter-l)" stroke-width="1.2" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="si">
+      <svg width="42" height="30" viewBox="0 0 42 30" fill="none">
+        <path d="M21 15 Q8 3 2 7 Q-3 11 9 15 Q-3 19 2 23 Q8 27 21 15Z" fill="var(--fog-l)" stroke="var(--fog)" stroke-width="1.1"/>
+        <path d="M21 15 Q34 3 40 7 Q45 11 33 15 Q45 19 40 23 Q34 27 21 15Z" fill="var(--fog-l)" stroke="var(--fog)" stroke-width="1.1"/>
+        <circle cx="21" cy="15" r="3.5" fill="var(--fog)" stroke="var(--fog)" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- STATUS PILL -->
+<div class="spill">
+  <div class="spill-l">
+    <div class="pulse-dot"></div>
+    <span class="spill-text" id="statusTxt">今天也在為離開努力中 ☕</span>
+  </div>
+  <span class="spill-chip" id="workChip">計算中…</span>
+</div>
+
+<!-- COUNTDOWN -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="13" height="16" viewBox="0 0 13 16" fill="none">
+        <path d="M1.5 1h10M1.5 15h10" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round"/>
+        <path d="M2.5 1 Q2.5 7 6.5 8 Q10.5 9 10.5 15H2.5 Q2.5 9 6.5 8 Q10.5 7 10.5 1" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+    <span class="sl-tx">自由倒數</span>
+  </div>
+  <div class="card fog">
+    <div class="cd-nums">
+      <div class="cd-blk"><span class="cd-v" id="cdD">—</span><span class="cd-u">Days</span></div>
+      <span class="cd-s">·</span>
+      <div class="cd-blk"><span class="cd-v" id="cdH">—</span><span class="cd-u">Hrs</span></div>
+      <span class="cd-s">·</span>
+      <div class="cd-blk"><span class="cd-v" id="cdM">—</span><span class="cd-u">Min</span></div>
+    </div>
+    <div class="cd-row">
+      <label>🗓 最後上班日</label>
+      <input type="date" class="date-in" id="targetDate">
+    </div>
+    <p class="cd-cap" id="cdCap">設定日期，讓倒數開始替你期待</p>
+  </div>
+</section>
+
+<!-- STAMP -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="13" height="16" viewBox="0 0 13 16" fill="none">
+        <rect x="1.5" y="7.5" width="10" height="6" rx="1.5" stroke="var(--ic)" stroke-width="var(--ic-w)"/>
+        <path d="M3.5 7.5 V5 Q3.5 1.5 6.5 1.5 Q9.5 1.5 9.5 5 V7.5" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round" fill="none"/>
+        <line x1=".5" y1="14.5" x2="12.5" y2="14.5" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="sl-tx">集點卡</span>
+  </div>
+  <div class="card butter">
+    <div class="stamp-top">
+      <div class="stamp-top-l">已收集 <span id="scnt">0</span> 個印章</div>
+      <div class="stamp-cfg">
+        <label>目標</label>
+        <input type="number" class="ni" id="totalIn" value="30" min="5" max="100">
+        <button class="pill" onclick="applyTotal()">更新</button>
+      </div>
+    </div>
+    <div class="sg" id="sg"></div>
+    <div class="pr-row">
+      <div class="pr-track"><div class="pr-fill" id="pf" style="width:0%"></div></div>
+      <span class="pr-lbl" id="pl">0 / 30</span>
+    </div>
+    <div class="done-banner" id="db">🎓 恭喜即將畢業 · 你已經準備好自由了</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-wrap">
+  <button class="cta" id="ctaBtn" onclick="handleStamp(event)">
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+      <path d="M7.5 1.5 C9.5 1.5 13 4.2 13 7.8 C13 11.4 7.5 14 7.5 14 C7.5 14 2 11.4 2 7.8 C2 4.2 5.5 1.5 7.5 1.5Z" fill="rgba(255,252,247,.72)"/>
+    </svg>
+    今天也撐過去了
+  </button>
+  <p class="cta-cap">每天一下 · 只記今天</p>
+  <div class="cta-echo" id="ctaEcho"></div>
+</div>
+
+<!-- MOOD -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <circle cx="7.5" cy="7.5" r="6" stroke="var(--ic)" stroke-width="var(--ic-w)"/>
+        <circle cx="5.2" cy="6.2" r=".85" fill="var(--ic)"/>
+        <circle cx="9.8" cy="6.2" r=".85" fill="var(--ic)"/>
+        <path d="M5 9.5 Q7.5 11.5 10 9.5" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <span class="sl-tx">今日狀態</span>
+  </div>
+  <div class="card blush">
+    <div class="mg">
+      <button class="mb" onclick="setMood(0)"><span class="me">🌫️</span><span class="mw">平靜如水</span></button>
+      <button class="mb" onclick="setMood(1)"><span class="me">😮‍💨</span><span class="mw">靈魂出竅</span></button>
+      <button class="mb" onclick="setMood(2)"><span class="me">✈️</span><span class="mw">想飛走了</span></button>
+      <button class="mb" onclick="setMood(3)"><span class="me">🌱</span><span class="mw">有點期待</span></button>
+      <button class="mb" onclick="setMood(4)"><span class="me">🤍</span><span class="mw">默默撐著</span></button>
+    </div>
+    <div class="mr" id="moodR"><div class="mr-empty">今天是什麼狀態呢？點一下讓我陪你記錄</div></div>
+  </div>
+</section>
+
+<!-- WISH LIST -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <path d="M2 4h11M2 8h7.5M2 12h5" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round"/>
+        <circle cx="13" cy="11" r="2.5" fill="none" stroke="var(--ic)" stroke-width="var(--ic-w)"/>
+        <path d="M12 11h2M13 10v2" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="sl-tx">離職後願望清單</span>
+  </div>
+  <div class="card sage">
+    <div class="wi-row">
+      <input class="wi" id="wIn" type="text" placeholder="離職後想做的一件事…" maxlength="40">
+      <button class="ic-btn" onclick="addWish()">+</button>
+    </div>
+    <div class="wl" id="wl"></div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+        <path d="M1.5 1.5h12a1 1 0 011 1v6.5a1 1 0 01-1 1H5.5L2 13V10H1.5a1 1 0 01-1-1V2.5a1 1 0 011-1z" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+    <span class="sl-tx">今日金句</span>
+  </div>
+  <div class="card latte">
+    <div class="qt">
+      <span class="qt-deco" id="qDeco">☕</span>
+      <p class="qt-text" id="qText">每撐過一天，都更靠近自由。</p>
+      <p class="qt-src" id="qSrc">— 寫給認真上班的你</p>
+      <button class="ghost" onclick="nextQ()">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+          <path d="M9 2A5 5 0 1 0 9.8 5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M9 2V5h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        換一句陪伴
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- LETTER -->
+<section>
+  <div class="sl">
+    <div class="sl-ic">
+      <svg width="15" height="12" viewBox="0 0 15 12" fill="none">
+        <rect x="1" y="1" width="13" height="10" rx="2" stroke="var(--ic)" stroke-width="var(--ic-w)"/>
+        <path d="M1 3l6.5 4.5L14 3" stroke="var(--ic)" stroke-width="var(--ic-w)" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <span class="sl-tx">給未來自己的信</span>
+  </div>
+  <div class="card latte">
+    <textarea class="la" id="la" placeholder="親愛的自己，&#10;&#10;等你看到這封信的時候，應該已經自由了。&#10;現在的你，是這樣撐過來的……"></textarea>
+    <div class="lfoot">
+      <span class="shint" id="sh">✦ 已悄悄儲存</span>
+      <button class="ghost" onclick="saveLetter()">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+          <path d="M1.5 6l2.5 2.5 5.5-5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        儲存
+      </button>
+    </div>
+  </div>
+</section>
+
+</div><!-- /page -->
+
+<!-- CELEBRATION -->
+<div class="cel" id="cel" onclick="hideCel()">
+  <div class="cel-card" onclick="event.stopPropagation()">
+    <span class="cel-e">🎓</span>
+    <p class="cel-t">恭喜你</p>
+    <p class="cel-s">集點完成了。<br>這是你給自己最好的禮物。<br>去提離職吧，你等這一天很久了。</p>
+    <button class="ghost" onclick="hideCel()">好，我去了 →</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* DATA */
+const STAMPS=['🌸','⭐','☕','🍰','🌙','✦','🎀','🌷','🍵','☁️','🌼','💛','🍪','🌿','✿','🧋','🌻','💫','🎂','🌾'];
+const DAILY=['今天也在為離開努力中 ☕','再撐一下，我快自由了','這不是上班，是修煉','撐過今天就是勝利 ✦','我不是不想上班，我只是想離職'];
+const MOODS=[
+  '平靜也是一種力量。不好不壞的一天，也是在倒數的一天。',
+  '靈魂出竅了也沒關係，肉體還在辦公室就好。撐著，快了。',
+  '想飛走的感覺最真實。把這份渴望記住——它會帶你去更好的地方。',
+  '有期待的日子是最好看的。帶著這份光，好好過今天 🌱',
+  '默默撐著的你，是最值得被心疼的人。今天真的辛苦了。',
+];
+const QUOTES=[
+  {d:'☕',t:'今天不是不想努力，是想先快樂一下。',     s:'— 上班族內心深處'},
+  {d:'🌸',t:'每撐過一天，都更靠近自由。',             s:'— 寫給認真上班的你'},
+  {d:'⭐',t:'上班很累，但我很棒。',                   s:'— 每天鏡子前的自我喊話'},
+  {d:'🌙',t:'快了快了，幸福正在靠近中。',             s:'— 倒數中的溫柔提醒'},
+  {d:'🍵',t:'薪水是暫時的，但你的夢想是永遠的。',     s:'— 某個週三下午的頓悟'},
+  {d:'🌷',t:'忍耐不是妥協，是在為自己爭取時間。',     s:'— 給仍在等待的你'},
+  {d:'✦', t:'那些讓你皺眉的事，終將成為你笑著說的故事。',s:'— 未來的你留言'},
+  {d:'🍰',t:'今天委屈了，晚上補一塊蛋糕，這是合理的。',s:'— 人生原則第七條'},
+  {d:'☁️',t:'你不是在逃跑，你是在選擇。',             s:'— 親愛的，這很不一樣'},
+  {d:'🌻',t:'認真對待自己的感受，本身就是一種勇敢。', s:'— 致所有在撐著的人'},
+];
+const ECHOES=['今天又積了一點點自由 ✦','你真的很厲害，繼續 🌸','又近了一步 ☕','撐住了，就是勝利 ⭐','每一天都在累積 🌿','你值得更好的，快了 🌙','印章 get！今天的你很勇敢 🎀'];
+const WISH_DEF=['睡到自然醒','去旅行，想去哪就去哪','整天追喜歡的劇','好好吃一頓大餐','買一直想買的東西'];
+const ML={5:'✨ 撐過 5 天！給自己一塊蛋糕',10:'🌿 10 天，你真的在好好為自己努力',15:'☕ 15 天，過半了，快了',20:'⭐ 20 個印章，離職能量全滿中',25:'🌸 25 天，最後衝刺，你可以的'};
+
+/* STATE */
+let S={stamps:0,total:30,date:'',sDate:'',mood:null,mDate:'',wishes:[],qIdx:0,letter:''};
+
+/* INIT */
+function init(){
+  const r=localStorage.getItem('rsn_v4');
+  if(r){try{Object.assign(S,JSON.parse(r));}catch(e){}}
+  else{S.wishes=WISH_DEF.map((t,i)=>({id:i+1,text:t,done:false}));}
+
+  S.qIdx=Math.floor(Math.random()*QUOTES.length);
+  const td=ds();
+  if(S.mDate!==td){S.mood=null;S.mDate=td;}
+
+  document.getElementById('totalIn').value=S.total;
+  if(S.date) document.getElementById('targetDate').value=S.date;
+  else{const d=new Date();d.setDate(d.getDate()+60);S.date=d.toISOString().split('T')[0];document.getElementById('targetDate').value=S.date;}
+  if(S.letter) document.getElementById('la').value=S.letter;
+
+  document.getElementById('statusTxt').textContent=DAILY[new Date().getDay()%DAILY.length];
+
+  renderAll();tick();setInterval(tick,30000);
+
+  document.getElementById('targetDate').addEventListener('change',function(){S.date=this.value;save();tick();});
+  document.getElementById('wIn').addEventListener('keydown',e=>{if(e.key==='Enter')addWish();});
+
+  if(S.mood!==null){
+    document.querySelectorAll('.mb').forEach((b,i)=>b.classList.toggle('on',i===S.mood));
+    const r=document.getElementById('moodR');r.innerHTML=MOODS[S.mood];r.classList.add('show');
+  }
+
+  let lt;
+  document.getElementById('la').addEventListener('input',()=>{clearTimeout(lt);lt=setTimeout(saveLetter,1100);});
+}
+
+function renderAll(){renderStamps();renderWishes();renderQuote();}
+function save(){localStorage.setItem('rsn_v4',JSON.stringify(S));}
+function ds(){return new Date().toDateString();}
+function pad(n){return String(n).padStart(2,'0');}
+
+/* TICK */
+function tick(){
+  const target=new Date(S.date+'T18:00:00');
+  const diff=target-new Date();
+  if(diff<=0){
+    ['cdD','cdH','cdM'].forEach(id=>document.getElementById(id).textContent='0');
+    document.getElementById('cdCap').textContent='🎉 自由已經到來！';
+    document.getElementById('workChip').textContent='已自由 🎉';
+    return;
+  }
+  const days=Math.floor(diff/864e5);
+  const hrs=Math.floor((diff%864e5)/36e5);
+  const mins=Math.floor((diff%36e5)/6e4);
+  document.getElementById('cdD').textContent=days;
+  document.getElementById('cdH').textContent=pad(hrs);
+  document.getElementById('cdM').textContent=pad(mins);
+  document.getElementById('workChip').textContent=`約 ${Math.floor(days*.7)} 個工作天`;
+  const cap=days===0?'今天就是最後一天，深呼吸 ✦':days<=7?`就快了，再撐 ${days} 天`:days<=30?`還有 ${days} 天，每一天都算`:`${days} 天，慢慢來，你不急的`;
+  document.getElementById('cdCap').textContent=cap;
+}
+
+/* STAMPS */
+function renderStamps(){
+  const g=document.getElementById('sg'),total=S.total;
+  g.innerHTML='';
+  if(S.stamps===0){
+    const h=document.createElement('div');h.className='sg-hint';
+    h.textContent='每天按一下，把今天的勇氣留下來 ✦';g.appendChild(h);
+  }
+  for(let i=0;i<total;i++){
+    const c=document.createElement('div');
+    c.className='sc'+(i<S.stamps?' on':'');
+    if(i<S.stamps){c.textContent=STAMPS[i%STAMPS.length];c.style.animationDelay=(i*.022)+'s';}
+    g.appendChild(c);
+  }
+  const pct=Math.min(100,S.stamps/total*100);
+  document.getElementById('pf').style.width=pct+'%';
+  document.getElementById('pl').textContent=`${S.stamps} / ${total}`;
+  document.getElementById('scnt').textContent=S.stamps;
+  document.getElementById('db').classList.toggle('show',S.stamps>=total);
+}
+
+function applyTotal(){
+  const v=parseInt(document.getElementById('totalIn').value);
+  if(v>=5&&v<=100){S.total=v;save();renderStamps();toast('目標更新了 ✦');}
+}
+
+/* CTA */
+function handleStamp(e){
+  if(S.sDate===ds()){toast('今天已經記錄了 🌸 明天再見');return;}
+  if(S.stamps>=S.total){toast('已集滿！可以快樂離職了 🎉');return;}
+  S.stamps++;S.sDate=ds();save();renderStamps();
+  spawnPt(e.clientX,e.clientY);
+  const ec=document.getElementById('ctaEcho');
+  ec.textContent=ECHOES[Math.floor(Math.random()*ECHOES.length)];
+  ec.classList.add('show');setTimeout(()=>ec.classList.remove('show'),2800);
+  if(ML[S.stamps])setTimeout(()=>toast(ML[S.stamps]),700);
+  if(S.stamps===S.total)setTimeout(()=>{document.getElementById('cel').classList.add('show');spawnPt(window.innerWidth/2,window.innerHeight/2,20);},800);
+}
+function hideCel(){document.getElementById('cel').classList.remove('show');}
+
+/* MOOD */
+function setMood(i){
+  S.mood=i;S.mDate=ds();save();
+  document.querySelectorAll('.mb').forEach((b,idx)=>b.classList.toggle('on',idx===i));
+  const r=document.getElementById('moodR');r.innerHTML=MOODS[i];r.classList.add('show');
+}
+
+/* WISH LIST */
+function addWish(){
+  const inp=document.getElementById('wIn'),text=inp.value.trim();
+  if(!text)return;
+  S.wishes.push({id:Date.now(),text,done:false});save();renderWishes();
+  inp.value='';inp.focus();
+}
+function toggleWish(id){const w=S.wishes.find(x=>x.id===id);if(w){w.done=!w.done;save();renderWishes();}}
+function delWish(id){S.wishes=S.wishes.filter(x=>x.id!==id);save();renderWishes();}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function renderWishes(){
+  const list=document.getElementById('wl');
+  if(!S.wishes.length){
+    list.innerHTML=`<div class="wempty"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15 4 C18.5 4 23.5 8.5 23.5 13.5 C23.5 18.5 15 26 15 26 C15 26 6.5 18.5 6.5 13.5 C6.5 8.5 11.5 4 15 4Z" fill="none" stroke="#CEB" stroke-width="1.3"/></svg><p>還沒有願望哦 ——<br>把離職後最想做的事寫下來吧</p></div>`;
+    return;
+  }
+  list.innerHTML=S.wishes.map(w=>`
+    <div class="witem${w.done?' done':''}">
+      <div class="wck${w.done?' on':''}" onclick="toggleWish(${w.id})">${w.done?'✓':''}</div>
+      <span class="wt">${esc(w.text)}</span>
+      <button class="wd" onclick="delWish(${w.id})">×</button>
+    </div>`).join('');
+}
+
+/* QUOTE */
+function renderQuote(){const q=QUOTES[S.qIdx];document.getElementById('qDeco').textContent=q.d;document.getElementById('qText').textContent=q.t;document.getElementById('qSrc').textContent=q.s;}
+function nextQ(){
+  const el=document.getElementById('qText');el.classList.add('fade');
+  setTimeout(()=>{S.qIdx=(S.qIdx+1)%QUOTES.length;renderQuote();el.classList.remove('fade');},280);
+}
+
+/* LETTER */
+function saveLetter(){
+  S.letter=document.getElementById('la').value;save();
+  const h=document.getElementById('sh');h.classList.add('show');
+  setTimeout(()=>h.classList.remove('show'),1800);
+}
+
+/* PARTICLES */
+const PE=['🌸','⭐','✦','🌷','☕','🍰','🌙','💛','☁️','🌿','🎀','🍵'];
+function spawnPt(x,y,n=11){
+  for(let i=0;i<n;i++){
+    const p=document.createElement('div');p.className='pt';
+    p.textContent=PE[Math.floor(Math.random()*PE.length)];
+    const a=Math.random()*Math.PI*2,dist=55+Math.random()*85;
+    p.style.cssText=`left:${x}px;top:${y}px;--dx:${Math.cos(a)*dist}px;--dy:${Math.sin(a)*dist-28}px;--r0:${(Math.random()-.5)*30}deg;--r1:${(Math.random()-.5)*60}deg;animation-delay:${Math.random()*.1}s;font-size:${12+Math.random()*11}px;`;
+    document.body.appendChild(p);setTimeout(()=>p.remove(),930);
+  }
+}
+
+/* TOAST */
+let _tt;
+function toast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  clearTimeout(_tt);_tt=setTimeout(()=>t.classList.remove('show'),2700);
+}
+
+init();
+</script>
+</body>
+</html>
