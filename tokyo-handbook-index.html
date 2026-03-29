@@ -1,0 +1,3975 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東京五日旅遊手冊 6/10–6/14 | 情侶完全攻略</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Fraunces:ital,wght@0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  /* Sky Blue Palette */
+  --sky:#4DAFFF; --sky-d:#1a91f0; --sky-l:#e0f2ff; --sky-xl:#f0f9ff;
+  --sky-md:#a8d8ff;
+  /* Accent */
+  --amber:#FFB347; --amber-d:#e8960e; --amber-l:#fff8ed;
+  --coral:#FF6B6B; --coral-l:#fff0f0;
+  --mint:#2DD4BF; --mint-l:#e6faf8; --mint-d:#0fa898;
+  --lavender:#a78bfa; --lav-l:#f3f0ff;
+  /* Neutral */
+  --ink:#1e2d3d; --ink2:#3a5068; --ink3:#7a92a8;
+  --bg:#f4f8fc; --white:#ffffff; --line:#dde8f2;
+  /* Glass */
+  --glass:rgba(255,255,255,0.72);
+  --glass-border:rgba(255,255,255,0.9);
+  /* Shadows */
+  --shadow-sm:0 1px 8px rgba(30,45,61,0.07);
+  --shadow:0 4px 24px rgba(30,45,61,0.10);
+  --shadow-lg:0 12px 48px rgba(30,45,61,0.14);
+  --shadow-sky:0 8px 32px rgba(77,175,255,0.22);
+  /* Radius */
+  --r:16px; --r-sm:10px; --r-xs:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:14px}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-thumb{background:var(--sky);border-radius:3px;opacity:.6}
+::-webkit-scrollbar-track{background:var(--sky-l)}
+
+/* ────────────── HERO ────────────── */
+.hero{
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse 90% 70% at 80% 10%, rgba(77,175,255,0.28) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 85%, rgba(45,212,191,0.18) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 60% at 90% 80%, rgba(255,179,71,0.16) 0%, transparent 50%),
+    linear-gradient(170deg, #e8f6ff 0%, #d0eaff 25%, #e4f4ff 55%, #f5faff 75%, #fff8f0 100%);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:90px 24px 64px;position:relative;overflow:hidden;
+}
+.hero-shape{
+  position:absolute;border-radius:50%;pointer-events:none;
+  animation:shapeFloat 14s ease-in-out infinite;
+}
+.hs1{width:520px;height:520px;background:rgba(77,175,255,0.12);filter:blur(72px);top:-180px;right:-100px;animation-delay:0s}
+.hs2{width:400px;height:400px;background:rgba(45,212,191,0.10);filter:blur(60px);bottom:-120px;left:-80px;animation-delay:5s}
+.hs3{width:320px;height:320px;background:rgba(255,179,71,0.12);filter:blur(56px);top:40%;right:5%;animation-delay:9s}
+@keyframes shapeFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(15px,-15px) scale(1.06)}}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1.5px solid rgba(255,255,255,0.95);
+  border-radius:99px;padding:7px 20px;
+  font-size:11px;letter-spacing:.18em;font-weight:600;color:var(--sky-d);
+  box-shadow:0 2px 16px rgba(77,175,255,0.18),inset 0 1px 0 rgba(255,255,255,0.9);
+  margin-bottom:28px;animation:riseIn .7s cubic-bezier(.22,1,.36,1) both;
+}
+.hero-kana{
+  font-family:'Fraunces',serif;font-size:clamp(52px,9vw,96px);font-weight:700;
+  line-height:1;letter-spacing:-.01em;
+  background:linear-gradient(145deg,#0d6ebd 0%,#1a91f0 35%,#4DAFFF 65%,#38d4c8 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:4px;animation:riseIn .75s cubic-bezier(.22,1,.36,1) .08s both;
+  filter:drop-shadow(0 2px 12px rgba(77,175,255,0.25));
+}
+.hero-subtitle{
+  font-family:'Fraunces',serif;font-size:clamp(22px,3.5vw,34px);
+  font-weight:500;font-style:italic;color:var(--amber-d);
+  margin-bottom:16px;animation:riseIn .8s cubic-bezier(.22,1,.36,1) .14s both;
+}
+.hero-meta{font-size:13px;color:var(--ink3);margin-bottom:10px;letter-spacing:.05em;animation:riseIn .85s cubic-bezier(.22,1,.36,1) .18s both}
+.hero-tagline{
+  font-size:16px;color:var(--ink2);max-width:480px;margin:0 auto 36px;
+  line-height:1.75;animation:riseIn .9s cubic-bezier(.22,1,.36,1) .22s both;
+}
+.hero-tagline strong{color:var(--sky-d)}
+.hero-chips{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  margin-bottom:40px;animation:riseIn .95s cubic-bezier(.22,1,.36,1) .26s both;
+}
+.hchip{
+  padding:6px 16px;border-radius:99px;font-size:12px;font-weight:600;
+  background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1.5px solid rgba(255,255,255,.9);color:var(--ink2);
+  transition:all .22s;box-shadow:0 2px 8px rgba(77,175,255,0.1);
+}
+.hchip:hover{background:var(--sky);color:#fff;border-color:var(--sky);transform:translateY(-2px);box-shadow:var(--shadow-sky)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;animation:riseIn 1s cubic-bezier(.22,1,.36,1) .3s both}
+.hero-scroll{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  font-size:10px;letter-spacing:.18em;color:var(--ink3);text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  animation:breathe 3s ease-in-out infinite;
+}
+.hero-scroll::after{content:'↓';font-size:16px;color:var(--sky)}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes breathe{0%,100%{opacity:.35}50%{opacity:.85}}
+
+/* ────────────── BUTTONS ────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:11px 26px;border-radius:99px;font-size:13px;font-weight:700;
+  cursor:pointer;transition:all .22s;border:none;
+  font-family:'DM Sans',sans-serif;letter-spacing:.01em;white-space:nowrap;
+}
+.btn-sky{
+  background:linear-gradient(135deg,var(--sky) 0%,var(--sky-d) 100%);
+  color:#fff;box-shadow:0 4px 20px rgba(77,175,255,0.45);
+}
+.btn-sky:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(77,175,255,0.55)}
+.btn-amber{
+  background:linear-gradient(135deg,var(--amber) 0%,var(--amber-d) 100%);
+  color:#fff;box-shadow:0 4px 18px rgba(255,179,71,0.45);
+}
+.btn-amber:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,179,71,0.5)}
+.btn-mint{background:linear-gradient(135deg,var(--mint) 0%,var(--mint-d) 100%);color:#fff;box-shadow:0 4px 18px rgba(45,212,191,0.4)}
+.btn-mint:hover{transform:translateY(-2px)}
+.btn-glass{
+  background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1.5px solid rgba(255,255,255,.9);color:var(--ink2);font-weight:600;
+  box-shadow:0 2px 12px rgba(77,175,255,0.12);
+}
+.btn-glass:hover{background:var(--sky-l);border-color:var(--sky);color:var(--sky-d);transform:translateY(-2px)}
+.btn-white{background:#fff;color:var(--sky-d);box-shadow:var(--shadow)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-outline-sky{background:transparent;border:2px solid var(--sky);color:var(--sky-d);font-weight:700}
+.btn-outline-sky:hover{background:var(--sky);color:#fff;transform:translateY(-2px)}
+.btn-sm{padding:6px 15px;font-size:12px}
+.btn-lg{padding:13px 30px;font-size:15px}
+
+/* ────────────── NAV ────────────── */
+.sticky-nav{
+  position:sticky;top:0;z-index:900;
+  background:rgba(244,248,252,0.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(77,175,255,0.15);
+  box-shadow:0 2px 18px rgba(30,45,61,0.07);
+}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 20px;display:flex;align-items:center;overflow-x:auto;gap:2px}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-link{
+  padding:13px 12px;font-size:12px;font-weight:600;color:var(--ink3);
+  white-space:nowrap;letter-spacing:.04em;transition:all .2s;
+  border-bottom:2.5px solid transparent;
+}
+.nav-link:hover,.nav-link.active{color:var(--sky-d);border-bottom-color:var(--sky)}
+
+/* ────────────── LAYOUT ────────────── */
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.section{padding:60px 0 28px}
+.sec-label{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--sky-d);font-weight:700;margin-bottom:5px}
+.sec-title{
+  font-family:'Fraunces',serif;font-size:clamp(26px,4vw,38px);
+  font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.15;
+}
+.sec-desc{font-size:14px;color:var(--ink3);max-width:640px;line-height:1.8;margin-bottom:30px}
+
+/* ────────────── OVERVIEW ────────────── */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:13px;margin-bottom:28px}
+.ov-card{
+  background:var(--white);border-radius:var(--r);padding:22px 16px;text-align:center;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  transition:transform .28s,box-shadow .28s;position:relative;overflow:hidden;cursor:default;
+}
+.ov-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:3px 3px 0 0;background:var(--bar-color,var(--sky))}
+.ov-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sky)}
+.ov-icon{font-size:28px;margin-bottom:9px}
+.ov-num{font-family:'Fraunces',serif;font-size:26px;font-weight:700;color:var(--ink)}
+.ov-label{font-size:11px;color:var(--ink3);letter-spacing:.05em;margin-top:2px;font-weight:500}
+.trip-summary{
+  background:linear-gradient(135deg,var(--sky-xl),var(--white));
+  border-radius:var(--r);padding:22px 26px;border:1px solid rgba(77,175,255,0.2);
+  box-shadow:var(--shadow-sm);line-height:2.1;
+}
+
+/* ────────────── WEATHER ────────────── */
+.weather-strip{
+  background:var(--white);border-radius:var(--r);overflow:hidden;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);margin-bottom:14px;
+}
+.wstrip-inner{display:grid;grid-template-columns:repeat(5,1fr)}
+.wday{
+  padding:18px 10px;text-align:center;border-right:1px solid var(--line);
+  transition:background .2s;position:relative;cursor:default;
+}
+.wday:last-child{border-right:none}
+.wday:hover{background:var(--sky-xl)}
+.wday.wstar{background:linear-gradient(160deg,var(--amber-l),var(--sky-xl))}
+.wday.wstar::after{
+  content:'✈ Sky Day';position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);
+  font-size:9px;color:var(--amber-d);white-space:nowrap;font-weight:700;letter-spacing:.06em;
+}
+.wdate{font-size:10px;color:var(--ink3);font-weight:600;letter-spacing:.07em;margin-bottom:5px}
+.wicon{font-size:26px;margin-bottom:5px;line-height:1}
+.wtemp{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.wnote{font-size:10px;color:var(--ink3);line-height:1.45}
+.wpill{display:inline-block;margin-top:5px;padding:2px 8px;border-radius:99px;font-size:9px;font-weight:700}
+.wp-rain{background:rgba(77,175,255,0.12);color:#0d6ebd}
+.wp-sun{background:rgba(255,179,71,0.18);color:var(--amber-d)}
+.wp-ok{background:rgba(45,212,191,0.14);color:var(--mint-d)}
+
+/* ────────────── MODE BAR ────────────── */
+.mode-bar{
+  background:var(--white);border-radius:var(--r);padding:18px 22px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px;
+}
+.mode-label{font-size:13px;font-weight:700;color:var(--ink2);white-space:nowrap}
+.mbtn-wrap{display:flex;gap:7px;flex-wrap:wrap}
+.mbtn{
+  padding:7px 18px;border-radius:99px;font-size:12px;font-weight:700;
+  cursor:pointer;transition:all .22s;border:2px solid var(--line);
+  background:var(--white);color:var(--ink3);
+}
+.mbtn:hover{border-color:var(--sky);color:var(--sky-d)}
+.mbtn.active{
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  color:#fff;border-color:transparent;box-shadow:0 4px 16px rgba(77,175,255,0.38);
+}
+.mode-info-txt{font-size:12px;color:var(--ink3);font-style:italic;margin-left:auto}
+
+/* ────────────── QUICK BTNS ────────────── */
+.quick-wrap{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 32px;justify-content:center}
+
+/* ────────────── DAY TABS ────────────── */
+.dtabs{display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;padding-bottom:4px}
+.dtabs::-webkit-scrollbar{display:none}
+.dtab{
+  flex-shrink:0;padding:9px 22px;border-radius:99px;font-size:13px;font-weight:700;
+  cursor:pointer;transition:all .22s;border:2px solid var(--line);
+  background:var(--white);color:var(--ink3);
+}
+.dtab:hover{border-color:var(--sky);color:var(--sky-d)}
+.dtab.active{
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  color:#fff;border-color:transparent;box-shadow:0 4px 18px rgba(77,175,255,0.42);
+}
+.dpanels>.dpanel{display:none}
+.dpanels>.dpanel.active{display:block;animation:panelIn .32s cubic-bezier(.22,1,.36,1)}
+@keyframes panelIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ────────────── DAY CARD ────────────── */
+.day-card{
+  background:var(--white);border-radius:var(--r);
+  box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden;margin-bottom:16px;
+}
+.day-head{
+  padding:26px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(150deg,var(--sky-xl) 0%,rgba(255,255,255,0) 70%);
+}
+.day-bignum{
+  font-family:'Fraunces',serif;font-size:56px;font-weight:700;
+  color:rgba(77,175,255,0.15);line-height:1;flex-shrink:0;user-select:none;
+}
+.day-meta{flex:1}
+.day-title{font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:3px;line-height:1.2}
+.day-datestr{font-size:11px;color:var(--ink3);font-weight:600;letter-spacing:.07em;margin-bottom:9px}
+.day-badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.dbadge{display:inline-flex;align-items:center;gap:4px;padding:3px 11px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:.03em}
+.db-sky{background:var(--sky-l);color:var(--sky-d);border:1px solid rgba(77,175,255,0.25)}
+.db-amber{background:var(--amber-l);color:var(--amber-d);border:1px solid rgba(255,179,71,0.3)}
+.db-mint{background:var(--mint-l);color:var(--mint-d);border:1px solid rgba(45,212,191,0.25)}
+.db-lav{background:var(--lav-l);color:#6d44d4;border:1px solid rgba(167,139,250,0.3)}
+.db-coral{background:var(--coral-l);color:#c0392b;border:1px solid rgba(255,107,107,0.25)}
+.day-tagline{font-size:13px;color:var(--sky-d);font-style:italic;margin-top:3px;font-weight:500}
+.day-cost{
+  background:linear-gradient(135deg,var(--amber-l),#fff9f0);
+  border:1px solid rgba(255,179,71,0.4);border-radius:var(--r-sm);
+  padding:11px 15px;text-align:right;flex-shrink:0;
+}
+.day-cost .dc-lbl{font-size:10px;color:var(--ink3);font-weight:600;margin-bottom:3px}
+.day-cost .dc-amt{font-family:'Fraunces',serif;font-size:18px;font-weight:700;color:var(--amber-d)}
+
+.day-body{padding:26px 28px}
+
+/* ────────────── CALLOUT BOXES ────────────── */
+.why-box{
+  background:linear-gradient(135deg,var(--sky-xl),rgba(240,249,255,0.6));
+  border-radius:var(--r-sm);padding:16px 20px;margin-bottom:20px;
+  border-left:4px solid var(--sky);
+}
+.box-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.why-box .box-label{color:var(--sky-d)}
+.why-box p{font-size:13px;color:var(--ink2);line-height:1.85}
+.moment-box{
+  background:linear-gradient(135deg,var(--amber-l),#fff9f0);
+  border-radius:var(--r-sm);padding:14px 18px;margin-bottom:20px;
+  border-left:4px solid var(--amber);display:flex;align-items:flex-start;gap:10px;
+}
+.moment-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.moment-box p{font-size:13px;color:#7a4a00;line-height:1.85;font-style:italic}
+.moment-box .box-label{color:var(--amber-d)}
+
+/* ────────────── MUST/CAN ────────────── */
+.mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.mc-box{border-radius:var(--r-sm);padding:14px 16px;border:1px solid var(--line)}
+.mc-must{background:var(--mint-l);border-color:rgba(45,212,191,0.3)}
+.mc-skip{background:var(--bg);border-color:var(--line)}
+.mc-title{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.mc-must .mc-title{color:var(--mint-d)}
+.mc-skip .mc-title{color:var(--ink3)}
+.mc-ul{list-style:none}
+.mc-ul li{font-size:12px;color:var(--ink2);padding:4px 0;display:flex;align-items:flex-start;gap:6px;line-height:1.55;border-bottom:1px dashed rgba(0,0,0,0.06)}
+.mc-ul li:last-child{border-bottom:none}
+.mc-must .mc-ul li::before{content:'✅';font-size:11px;flex-shrink:0}
+.mc-skip .mc-ul li::before{content:'⬜';font-size:11px;flex-shrink:0}
+
+/* ────────────── ROUTE SWITCHER ────────────── */
+.route-wrap{margin-bottom:22px}
+.route-tabs{display:flex;gap:6px;margin-bottom:10px}
+.rtab{
+  padding:5px 14px;border-radius:99px;font-size:12px;font-weight:700;
+  cursor:pointer;transition:all .2s;border:1.5px solid var(--line);
+  background:var(--white);color:var(--ink3);
+}
+.rtab:hover{border-color:var(--sky);color:var(--sky-d)}
+.rtab.active{background:var(--sky);color:#fff;border-color:var(--sky)}
+.rpanel{display:none}
+.rpanel.active{display:block}
+.route-flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.rnode{
+  padding:5px 13px;background:var(--white);border:1.5px solid var(--line);
+  border-radius:var(--r-xs);font-size:12px;color:var(--ink2);font-weight:600;
+  transition:all .2s;
+}
+.rnode.highlight{background:var(--sky-l);border-color:rgba(77,175,255,0.4);color:var(--sky-d)}
+.rarrow{font-size:11px;color:var(--ink3)}
+.route-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.route-note-txt{font-size:12px;color:var(--ink3);line-height:1.75;margin-top:6px}
+
+/* ────────────── LINE CHIPS ────────────── */
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:5px;font-size:11px;font-weight:700}
+.chip-jr{background:#1b5e20;color:#fff}
+.chip-metro{background:#0d5c9e;color:#fff}
+.chip-toei{background:#6a1b9a;color:#fff}
+.chip-sky{background:var(--sky-l);color:var(--sky-d)}
+.chip-exit{background:var(--amber-l);color:var(--amber-d)}
+.chip-suica{background:var(--mint-l);color:var(--mint-d)}
+.chip-yen{background:var(--amber-l);color:var(--amber-d)}
+.chip-warn{background:#fff3e0;color:#c84b00}
+.chip-new{background:var(--lav-l);color:#6d44d4}
+.chip-ok{background:var(--mint-l);color:var(--mint-d)}
+
+/* ────────────── TIMELINE ────────────── */
+.tl{position:relative;padding-left:36px}
+.tl::before{
+  content:'';position:absolute;left:12px;top:20px;bottom:20px;width:2px;
+  background:linear-gradient(to bottom,var(--sky),var(--mint),var(--amber));
+  border-radius:2px;
+}
+.tl-item{position:relative;margin-bottom:24px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{
+  position:absolute;left:-28px;top:10px;
+  width:16px;height:16px;border-radius:50%;
+  background:var(--white);border:3px solid var(--line);z-index:1;transition:all .2s;
+}
+.tl-item.tl-meal .tl-dot{border-color:var(--amber);background:var(--amber)}
+.tl-item.tl-break .tl-dot{border-color:var(--mint);background:var(--mint)}
+.tl-item.tl-key .tl-dot{border-color:var(--sky);background:var(--sky);box-shadow:0 0 0 4px rgba(77,175,255,0.2)}
+.tl-item.tl-transit .tl-dot{border-color:var(--sky-md);background:var(--sky-md)}
+.tl-head{display:flex;align-items:center;gap:8px;margin-bottom:5px;flex-wrap:wrap}
+.tl-tag{font-size:10px;letter-spacing:.1em;font-weight:700;padding:2px 9px;border-radius:99px}
+.tt-meal{background:var(--amber-l);color:var(--amber-d)}
+.tt-break{background:var(--mint-l);color:var(--mint-d)}
+.tt-key{background:var(--sky-l);color:var(--sky-d)}
+.tt-transit{background:rgba(77,175,255,0.08);color:#4a7a9b}
+.tt-default{background:var(--bg);color:var(--ink3)}
+.tl-name{font-size:15px;font-weight:700;color:var(--ink)}
+.tl-desc{font-size:13px;color:var(--ink2);line-height:1.85;margin-top:5px}
+.tl-desc strong{color:var(--ink);font-weight:700}
+.price-tag{
+  display:inline-flex;align-items:center;gap:4px;margin-top:6px;
+  padding:3px 11px;background:var(--amber-l);border:1px solid rgba(255,179,71,0.4);
+  border-radius:99px;font-size:12px;color:var(--amber-d);font-weight:700;
+}
+.callout-note{
+  margin-top:9px;padding:9px 14px;background:var(--sky-xl);
+  border-left:3px solid var(--sky);border-radius:0 var(--r-xs) var(--r-xs) 0;
+  font-size:12px;color:var(--ink2);line-height:1.8;
+}
+.callout-warn{
+  margin-top:9px;padding:9px 14px;background:var(--amber-l);
+  border-left:3px solid var(--amber);border-radius:0 var(--r-xs) var(--r-xs) 0;
+  font-size:12px;color:#7a4a00;line-height:1.8;
+}
+.callout-alt{
+  margin-top:9px;padding:9px 14px;background:var(--bg);
+  border-left:3px solid var(--line);border-radius:0 var(--r-xs) var(--r-xs) 0;
+  font-size:12px;color:var(--ink3);line-height:1.8;
+}
+.callout-alt strong,.callout-note strong,.callout-warn strong{color:var(--ink2);font-weight:700}
+
+/* ────────────── RESTAURANT CARD ────────────── */
+.rest-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:14px 16px;margin-top:10px;transition:all .25s;
+}
+.rest-card:hover{background:var(--white);box-shadow:var(--shadow);transform:translateY(-2px)}
+.rest-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:7px}
+.rest-name{font-size:14px;font-weight:700;color:var(--ink)}
+.rest-scores{display:flex;gap:5px;flex-shrink:0}
+.rscore{font-size:11px;padding:2px 8px;border-radius:4px;font-weight:700}
+.rs-tb{background:#dbeafe;color:#1e40af}
+.rs-gg{background:#fef3c7;color:#92400e}
+.rest-why{font-size:12px;color:var(--ink3);line-height:1.7;margin-bottom:8px;font-style:italic}
+.rest-facts{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.rf{font-size:11px;padding:2px 8px;border-radius:4px;font-weight:600}
+.rf-q{background:#fff3e0;color:#c84b00}
+.rf-nq{background:var(--mint-l);color:var(--mint-d)}
+.rf-res{background:var(--sky-l);color:var(--sky-d)}
+.rf-nres{background:var(--bg);color:var(--ink3);border:1px solid var(--line)}
+.rf-must{background:var(--amber-l);color:var(--amber-d)}
+.rest-link{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:4px 12px;border-radius:99px;
+  background:var(--sky-l);border:1px solid rgba(77,175,255,0.3);
+  color:var(--sky-d);font-size:11px;font-weight:700;
+  text-decoration:none;transition:all .2s;
+}
+.rest-link:hover{background:var(--sky);color:#fff}
+
+/* ────────────── INFO GRID ────────────── */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.ig{background:var(--bg);border-radius:var(--r-sm);padding:14px 16px;border:1px solid var(--line)}
+.ig.rain{border-left:3px solid var(--sky)}
+.ig.tired{border-left:3px solid var(--mint)}
+.ig.del{border-left:3px solid var(--amber)}
+.ig.cost{border-left:3px solid var(--amber);grid-column:1/-1}
+.ig-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:700;margin-bottom:6px}
+.ig p{font-size:13px;color:var(--ink2);line-height:1.8}
+
+/* ────────────── SPOTS ────────────── */
+.spots-tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.stab{
+  padding:8px 20px;border-radius:99px;font-size:13px;font-weight:700;
+  cursor:pointer;transition:all .22s;border:2px solid var(--line);
+  background:var(--white);color:var(--ink3);
+}
+.stab:hover{border-color:var(--sky);color:var(--sky-d)}
+.stab.active{background:linear-gradient(135deg,var(--sky),var(--sky-d));color:#fff;border-color:transparent}
+.spanel{display:none}
+.spanel.active{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px;animation:panelIn .3s ease}
+.spot-card{
+  background:var(--white);border-radius:var(--r);padding:20px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  transition:all .28s;position:relative;overflow:hidden;cursor:default;
+}
+.spot-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sky),var(--mint))}
+.spot-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sky)}
+.spot-rank{
+  position:absolute;top:13px;right:13px;
+  width:26px;height:26px;border-radius:50%;
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  color:#fff;font-family:'Fraunces',serif;font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.spot-icon{font-size:28px;margin-bottom:10px}
+.spot-name{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.spot-why{font-size:12px;color:var(--ink3);line-height:1.7;margin-bottom:9px}
+.spot-tags{display:flex;flex-wrap:wrap;gap:4px}
+.stag{padding:2px 8px;border-radius:99px;font-size:10px;font-weight:600;background:var(--sky-l);color:var(--sky-d)}
+
+/* ────────────── ACCORDION ────────────── */
+.accord{
+  background:var(--white);border-radius:var(--r);
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);overflow:hidden;margin-bottom:12px;
+}
+.accord-head{
+  padding:16px 22px;cursor:pointer;display:flex;align-items:center;gap:12px;
+  transition:background .2s;
+}
+.accord-head:hover{background:var(--sky-xl)}
+.accord-num{
+  width:34px;height:34px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:14px;
+  display:flex;align-items:center;justify-content:center;
+}
+.accord-title{font-size:14px;font-weight:700;flex:1;color:var(--ink)}
+.accord-badge{font-size:11px;padding:2px 9px;border-radius:99px;background:var(--amber-l);color:var(--amber-d);font-weight:700}
+.accord-arrow{font-size:12px;color:var(--ink3);transition:transform .3s;flex-shrink:0}
+.accord-arrow.open{transform:rotate(180deg)}
+.accord-body{padding:0 22px;max-height:0;overflow:hidden;transition:max-height .45s ease,padding .3s}
+.accord-body.open{max-height:3200px;padding:0 22px 22px}
+.adetail{background:var(--bg);border-radius:var(--r-sm);padding:14px 16px;margin-bottom:10px;border:1px solid var(--line)}
+.adetail:last-child{margin-bottom:0}
+.adetail-title{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.adetail p,.adetail li{font-size:13px;color:var(--ink2);line-height:1.9;margin-bottom:3px}
+.adetail ul,.adetail ol{padding-left:17px}
+.anote{background:var(--sky-xl);border:1px solid rgba(77,175,255,0.18);border-radius:var(--r-xs);padding:9px 13px;margin-top:8px;font-size:12px;color:var(--ink2);line-height:1.8}
+.awarn{background:var(--amber-l);border:1px solid rgba(255,179,71,0.3);border-radius:var(--r-xs);padding:9px 13px;margin-top:8px;font-size:12px;color:#7a4a00;line-height:1.8}
+.rc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.rcbox{background:var(--white);border-radius:var(--r-xs);padding:12px 14px;border:1px solid var(--line)}
+.rcbox.rce{border-left:3px solid var(--mint)}
+.rcbox.rcf{border-left:3px solid var(--sky)}
+.rcbox .rcl{font-size:10px;letter-spacing:.1em;font-weight:700;margin-bottom:5px}
+.rcbox.rce .rcl{color:var(--mint-d)}
+.rcbox.rcf .rcl{color:var(--sky-d)}
+.rcbox p{font-size:12px;color:var(--ink2);line-height:1.7}
+
+/* ────────────── SHIBUYA SKY ────────────── */
+.sky-block{
+  border-radius:var(--r);padding:40px 36px;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,#d4edff 0%,#aad8ff 25%,#c8eaff 55%,#e8f7ff 75%,#fff8ec 100%);
+  box-shadow:0 10px 48px rgba(77,175,255,0.22);border:1px solid rgba(77,175,255,0.25);
+}
+.sky-block::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 55% 45% at 85% 15%,rgba(255,179,71,0.2) 0%,transparent 55%),
+    radial-gradient(ellipse 45% 40% at 10% 85%,rgba(77,175,255,0.18) 0%,transparent 50%);
+  pointer-events:none;
+}
+.sky-eyebrow{font-size:10px;letter-spacing:.22em;color:var(--amber-d);font-weight:700;margin-bottom:7px;text-transform:uppercase;position:relative}
+.sky-title{font-family:'Fraunces',serif;font-size:clamp(30px,5vw,48px);font-weight:700;color:var(--ink);margin-bottom:5px;position:relative;line-height:1.1}
+.sky-title span{color:var(--sky-d)}
+.sky-tagline{font-size:14px;color:var(--ink3);margin-bottom:24px;font-style:italic;line-height:1.75;position:relative}
+.sky-cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:10px;margin-bottom:22px;position:relative}
+.sky-cell{
+  background:rgba(255,255,255,0.68);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.9);border-radius:var(--r-sm);padding:13px 15px;
+}
+.sky-cell-l{font-size:10px;letter-spacing:.12em;color:var(--ink3);font-weight:600;margin-bottom:4px}
+.sky-cell-v{font-size:14px;font-weight:700;color:var(--ink)}
+.sky-cell-v em{color:var(--sky-d);font-style:normal}
+.sky-btns{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;position:relative}
+.sky-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:10px 20px;border-radius:99px;font-size:13px;font-weight:700;
+  text-decoration:none;transition:all .22s;border:none;cursor:pointer;
+  font-family:'DM Sans',sans-serif;
+}
+.skb-official{background:linear-gradient(135deg,var(--sky),var(--sky-d));color:#fff;box-shadow:0 4px 18px rgba(77,175,255,0.42)}
+.skb-official:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(77,175,255,0.52)}
+.skb-kk{background:linear-gradient(135deg,#ff6600,#dd3300);color:#fff}
+.skb-kk:hover{transform:translateY(-2px)}
+.skb-kl{background:linear-gradient(135deg,#00b090,#008070);color:#fff}
+.skb-kl:hover{transform:translateY(-2px)}
+.sky-notice{
+  background:rgba(255,255,255,0.68);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border:1px solid rgba(255,179,71,0.3);border-radius:var(--r-sm);
+  padding:14px 18px;font-size:12px;color:var(--ink2);line-height:1.9;position:relative;
+}
+.sky-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;position:relative}
+.sky-tip-box{
+  background:rgba(255,255,255,0.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.85);border-radius:var(--r-sm);padding:16px 18px;
+}
+.sky-tip-box h4{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:9px}
+.sky-tip-box ul{list-style:none;font-size:12px;color:var(--ink2);line-height:2.1}
+.sky-tip-box li::before{content:'→ ';color:var(--sky-d);font-weight:700}
+
+/* ────────────── TICKET GRID ────────────── */
+.ticket-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tcard{
+  background:var(--white);border-radius:var(--r);padding:22px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  border-top:4px solid var(--tcard-color,var(--sky));
+  transition:all .28s;
+}
+.tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-sky)}
+.tcard-icon{font-size:28px;margin-bottom:10px}
+.tcard-name{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.tcard-desc{font-size:12px;color:var(--ink3);line-height:1.7;margin-bottom:10px}
+.tcard-price{font-size:13px;color:var(--amber-d);font-weight:700;margin-bottom:12px}
+.tcard-steps{list-style:none;counter-reset:step}
+.tcard-steps li{
+  font-size:12px;color:var(--ink2);padding:5px 0;
+  border-bottom:1px dashed var(--line);
+  counter-increment:step;display:flex;gap:7px;line-height:1.6;
+}
+.tcard-steps li:last-child{border-bottom:none}
+.tcard-steps li::before{
+  content:counter(step)'.';color:var(--sky-d);
+  font-weight:700;flex-shrink:0;font-family:'Fraunces',serif;
+}
+
+/* ────────────── FOOD ────────────── */
+.food-hero-box{
+  background:linear-gradient(135deg,var(--sky-xl),var(--amber-l));
+  border-radius:var(--r);padding:26px;margin-bottom:20px;border:1px solid rgba(77,175,255,0.15);
+}
+.food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:13px}
+.fcard{
+  background:var(--white);border-radius:var(--r);padding:18px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  border-top:4px solid var(--fcard-color,var(--sky));
+  transition:all .28s;
+}
+.fcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-sky)}
+.f-icon{font-size:26px;margin-bottom:7px}
+.f-name{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.f-shop{font-size:11px;color:var(--ink3);margin-bottom:5px}
+.f-why{font-size:11px;color:var(--ink3);line-height:1.65;margin-bottom:7px;font-style:italic}
+.f-price{font-size:12px;color:var(--amber-d);font-weight:700;margin-bottom:5px}
+.f-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:7px}
+.ft{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:700}
+.ft-q{background:#fff3e0;color:#c84b00}
+.ft-nq{background:var(--mint-l);color:var(--mint-d)}
+.ft-res{background:var(--sky-l);color:var(--sky-d)}
+.ft-nres{background:var(--bg);color:var(--ink3);border:1px solid var(--line)}
+.f-link{
+  display:inline-flex;align-items:center;gap:3px;
+  padding:3px 10px;background:var(--sky-l);border:1px solid rgba(77,175,255,0.25);
+  border-radius:99px;font-size:11px;color:var(--sky-d);font-weight:700;
+  text-decoration:none;transition:all .2s;
+}
+.f-link:hover{background:var(--sky);color:#fff}
+
+/* ────────────── MEAL TABLE ────────────── */
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.mcard{
+  background:var(--white);border-radius:var(--r-sm);padding:13px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);border-top:3px solid transparent;
+}
+.mcard.mb{border-top-color:var(--mint)}
+.mcard.ml{border-top-color:var(--sky)}
+.mcard.md{border-top-color:var(--amber)}
+.mtype{font-size:10px;font-weight:700;letter-spacing:.1em;margin-bottom:4px}
+.mb .mtype{color:var(--mint-d)}.ml .mtype{color:var(--sky-d)}.md .mtype{color:var(--amber-d)}
+.mname{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.minfo{font-size:11px;color:var(--ink3);line-height:1.6}
+.mtags{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px}
+.mtag{font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700}
+
+/* ────────────── BUDGET ────────────── */
+.budget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin-bottom:18px}
+.bitem{
+  background:var(--white);border-radius:var(--r);padding:18px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  display:flex;flex-direction:column;gap:5px;transition:all .25s;
+}
+.bitem:hover{transform:translateY(-3px);box-shadow:var(--shadow-sky)}
+.bi-icon{font-size:22px}
+.bi-label{font-size:12px;color:var(--ink3)}
+.bi-range{font-family:'Fraunces',serif;font-size:17px;font-weight:700;color:var(--ink)}
+.btotal{
+  background:linear-gradient(135deg,var(--ink) 0%,#2a4060 100%);
+  color:#fff;border-radius:var(--r);padding:26px 30px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.bt-lbl{font-size:12px;color:rgba(255,255,255,.5)}
+.bt-amt{font-family:'Fraunces',serif;font-size:32px;font-weight:700;color:var(--amber)}
+.bt-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:3px}
+
+/* ────────────── TIPS ────────────── */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:13px}
+.tip-card{
+  background:var(--white);border-radius:var(--r);padding:20px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  border-left:4px solid var(--tip-color,var(--sky));transition:all .25s;
+}
+.tip-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sky)}
+.tip-icon{font-size:20px;margin-bottom:7px}
+.tip-title{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.tip-text{font-size:13px;color:var(--ink2);line-height:1.8}
+
+/* ────────────── BACKUP ────────────── */
+.backup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.bc{background:var(--white);border-radius:var(--r);padding:22px;box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+.bc h3{font-size:14px;font-weight:700;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.bc ul{list-style:none}
+.bc ul li{padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink2);display:flex;align-items:flex-start;gap:6px;line-height:1.6}
+.bc ul li:last-child{border-bottom:none}
+.bc ul li::before{content:'→';color:var(--sky-d);font-weight:700;flex-shrink:0}
+
+/* ────────────── BACK TOP ────────────── */
+#bk{
+  position:fixed;bottom:26px;right:26px;z-index:999;
+  width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  color:#fff;border:none;cursor:pointer;font-size:18px;
+  box-shadow:0 4px 22px rgba(77,175,255,0.5);
+  display:none;align-items:center;justify-content:center;transition:all .22s;
+}
+#bk.show{display:flex}
+#bk:hover{transform:scale(1.12);box-shadow:0 8px 32px rgba(77,175,255,0.6)}
+
+/* ────────────── FOOTER ────────────── */
+footer{
+  background:linear-gradient(135deg,var(--ink) 0%,#2a4060 100%);
+  color:rgba(255,255,255,.4);text-align:center;padding:48px 20px;
+  font-size:12px;letter-spacing:.07em;margin-top:20px;
+}
+
+/* ────────────── RESPONSIVE ────────────── */
+@media(max-width:700px){
+  .hero{padding:80px 18px 50px}
+  .wstrip-inner{grid-template-columns:repeat(5,88px);overflow-x:auto}
+  .mc-grid,.info-grid,.rc-grid{grid-template-columns:1fr}
+  .sky-2col{grid-template-columns:1fr}
+  .mgrid{grid-template-columns:1fr}
+  .backup-grid{grid-template-columns:1fr}
+  .day-head{flex-direction:column}
+  .day-cost{align-self:flex-start}
+  .btotal{flex-direction:column;text-align:center}
+}
+
+
+/* ══════════ v5 ADDITIONS ══════════ */
+
+/* BOARDING PASS */
+.bp-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:0}
+.bp-card{
+  background:linear-gradient(135deg,rgba(26,145,240,0.92) 0%,rgba(77,175,255,0.88) 50%,rgba(45,212,191,0.82) 100%);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-radius:20px;padding:26px 28px;position:relative;overflow:hidden;
+  border:1px solid rgba(255,255,255,0.35);
+  box-shadow:0 8px 40px rgba(26,145,240,0.35),inset 0 1px 0 rgba(255,255,255,0.4);
+  color:#fff;
+}
+.bp-card::before{
+  content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;
+  background:rgba(255,255,255,0.08);border-radius:50%;
+}
+.bp-card::after{
+  content:'';position:absolute;bottom:-40px;left:-30px;width:150px;height:150px;
+  background:rgba(255,255,255,0.06);border-radius:50%;
+}
+.bp-type{font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-bottom:10px;font-weight:700;position:relative}
+.bp-airline{font-family:'Fraunces',serif;font-size:22px;font-weight:700;margin-bottom:16px;position:relative;display:flex;align-items:center;gap:10px}
+.bp-flight-badge{
+  background:rgba(255,255,255,0.22);border:1px solid rgba(255,255,255,0.4);
+  border-radius:6px;padding:3px 10px;font-size:13px;font-weight:700;letter-spacing:.05em;
+}
+.bp-route{display:flex;align-items:center;gap:12px;margin-bottom:18px;position:relative}
+.bp-airport{text-align:center}
+.bp-airport-code{font-family:'Fraunces',serif;font-size:32px;font-weight:700;line-height:1}
+.bp-airport-name{font-size:10px;opacity:.7;margin-top:3px;letter-spacing:.04em;white-space:nowrap}
+.bp-plane-line{flex:1;display:flex;align-items:center;gap:4px;opacity:.6}
+.bp-line{flex:1;height:1px;background:rgba(255,255,255,0.5);border-top:1.5px dashed rgba(255,255,255,0.6)}
+.bp-plane-icon{font-size:18px}
+.bp-divider{
+  border:none;border-top:2px dashed rgba(255,255,255,0.3);
+  margin:16px 0;position:relative;
+}
+.bp-info-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px;position:relative}
+.bp-info-cell .lbl{font-size:9px;letter-spacing:.14em;opacity:.6;text-transform:uppercase;margin-bottom:3px;font-weight:700}
+.bp-info-cell .val{font-size:14px;font-weight:700;line-height:1.3}
+.bp-time-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;position:relative}
+.bp-time{font-family:'Fraunces',serif;font-size:36px;font-weight:700;line-height:1}
+.bp-time-arrow{font-size:22px;opacity:.6}
+.bp-alerts{display:flex;flex-direction:column;gap:6px;position:relative}
+.bp-alert{
+  background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);
+  border-radius:8px;padding:7px 11px;font-size:12px;display:flex;align-items:center;gap:7px;
+}
+.bp-btns{display:flex;gap:8px;margin-top:14px;position:relative;flex-wrap:wrap}
+.bp-btn{
+  background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);
+  border-radius:99px;padding:6px 14px;font-size:12px;font-weight:700;color:#fff;
+  cursor:pointer;transition:all .22s;display:inline-flex;align-items:center;gap:5px;
+}
+.bp-btn:hover{background:rgba(255,255,255,0.32);transform:translateY(-1px)}
+.bp-btn.starred{background:rgba(255,215,0,0.3);border-color:rgba(255,215,0,0.5)}
+
+/* METRO GUIDE */
+.metro-img-wrap{
+  background:var(--white);border-radius:var(--r);padding:20px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  margin-bottom:20px;text-align:center;
+}
+.metro-img-wrap img{max-width:100%;border-radius:var(--r-sm);cursor:zoom-in}
+.metro-img-caption{font-size:12px;color:var(--ink3);margin-top:8px}
+.metro-lines-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:13px;margin-bottom:16px}
+.metro-line-card{
+  background:var(--white);border-radius:var(--r);padding:16px 18px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  border-left:5px solid var(--lc,var(--sky));
+  transition:all .25s;
+}
+.metro-line-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sky)}
+.mlc-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.ml-dot{width:14px;height:14px;border-radius:50%;background:var(--lc,var(--sky));flex-shrink:0}
+.ml-name{font-size:13px;font-weight:700;color:var(--ink)}
+.ml-badges{display:flex;gap:5px;margin-left:auto}
+.ml-badge{font-size:10px;padding:2px 7px;border-radius:99px;font-weight:700}
+.mlb-main{background:var(--sky-l);color:var(--sky-d)}
+.mlb-new{background:var(--mint-l);color:var(--mint-d)}
+.ml-route{font-size:11px;color:var(--sky-d);font-weight:600;margin-bottom:5px}
+.ml-desc{font-size:12px;color:var(--ink3);line-height:1.7}
+.ml-price{font-size:11px;color:var(--amber-d);font-weight:700;margin-top:5px}
+
+/* MAPS BUTTONS */
+.map-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 12px;border-radius:99px;font-size:11px;font-weight:700;
+  background:var(--sky-l);border:1.5px solid rgba(77,175,255,0.35);color:var(--sky-d);
+  cursor:pointer;transition:all .2s;text-decoration:none;
+}
+.map-btn:hover{background:var(--sky);color:#fff;transform:translateY(-1px)}
+.map-btn.green{background:var(--mint-l);border-color:rgba(45,212,191,0.35);color:var(--mint-d)}
+.map-btn.green:hover{background:var(--mint);color:#fff}
+.map-btn.amber{background:var(--amber-l);border-color:rgba(255,179,71,0.4);color:var(--amber-d)}
+.map-btn.amber:hover{background:var(--amber);color:#fff}
+.copy-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 12px;border-radius:99px;font-size:11px;font-weight:700;
+  background:var(--bg);border:1.5px solid var(--line);color:var(--ink3);
+  cursor:pointer;transition:all .2s;
+}
+.copy-btn:hover{background:var(--line);color:var(--ink2)}
+.copy-btn.copied{background:var(--mint-l);border-color:var(--mint);color:var(--mint-d)}
+.fav-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 12px;border-radius:99px;font-size:11px;font-weight:700;
+  background:var(--bg);border:1.5px solid var(--line);color:var(--ink3);
+  cursor:pointer;transition:all .2s;
+}
+.fav-btn:hover{border-color:var(--amber);color:var(--amber-d)}
+.fav-btn.faved{background:var(--amber-l);border-color:var(--amber);color:var(--amber-d)}
+.place-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.place-address{font-size:11px;color:var(--ink3);margin-top:5px;display:flex;align-items:flex-start;gap:4px}
+.place-address span{color:var(--ink2)}
+
+/* DAY MAP BUTTONS */
+.day-nav-strip{
+  background:var(--sky-xl);border-radius:var(--r-sm);padding:14px 16px;margin-bottom:18px;
+  border:1px solid rgba(77,175,255,0.2);
+}
+.day-nav-title{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-d);font-weight:700;margin-bottom:8px}
+.day-nav-btns{display:flex;flex-wrap:wrap;gap:7px}
+
+/* TRANSIT CARD UPGRADE */
+.transit-detail{
+  background:linear-gradient(135deg,var(--sky-xl),var(--white));
+  border-radius:var(--r-sm);padding:14px 16px;margin-top:9px;
+  border:1px solid rgba(77,175,255,0.2);
+}
+.transit-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.transit-warn-box{
+  background:#fff8ec;border:1px solid rgba(255,179,71,0.3);
+  border-radius:var(--r-xs);padding:8px 12px;font-size:12px;color:#7a4a00;
+  margin-top:6px;display:flex;align-items:flex-start;gap:6px;line-height:1.7;
+}
+.chip-newbie{background:var(--mint-l);color:var(--mint-d);font-weight:700;font-size:10px;padding:2px 8px;border-radius:4px}
+.chip-warn2{background:#fff3e0;color:#c84b00;font-weight:700;font-size:10px;padding:2px 8px;border-radius:4px}
+.chip-ok2{background:var(--mint-l);color:var(--mint-d);font-weight:700;font-size:10px;padding:2px 8px;border-radius:4px}
+
+/* TOAST */
+.toast{
+  position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--ink);color:#fff;padding:10px 20px;border-radius:99px;
+  font-size:13px;font-weight:600;opacity:0;transition:all .3s;z-index:9999;
+  pointer-events:none;white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* RESPONSIVE additions */
+@media(max-width:700px){
+  .bp-wrap{grid-template-columns:1fr}
+  .bp-time{font-size:26px}
+  .metro-lines-grid{grid-template-columns:1fr}
+}
+
+/* ══════════ v6 NEW CSS ══════════ */
+
+/* ── CHECKLIST ── */
+.checklist-section { }
+.cl-cats { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; margin-bottom:20px; }
+.cl-cat {
+  background:var(--white); border-radius:var(--r); padding:20px 22px;
+  box-shadow:var(--shadow-sm); border:1px solid var(--line);
+  transition:box-shadow .25s;
+}
+.cl-cat:hover { box-shadow:var(--shadow-sky); }
+.cl-cat-title {
+  font-size:13px; font-weight:700; color:var(--ink); margin-bottom:14px;
+  display:flex; align-items:center; gap:8px; padding-bottom:10px;
+  border-bottom:1px solid var(--line);
+}
+.cl-item {
+  display:flex; align-items:flex-start; gap:10px; padding:7px 0;
+  border-bottom:1px dashed rgba(0,0,0,0.06); cursor:pointer; transition:background .15s;
+  border-radius:4px; user-select:none;
+}
+.cl-item:last-child { border-bottom:none; }
+.cl-item:hover { background:var(--sky-xl); padding-left:4px; }
+.cl-checkbox {
+  width:18px; height:18px; border-radius:4px; border:2px solid var(--line);
+  flex-shrink:0; margin-top:1px; display:flex; align-items:center; justify-content:center;
+  transition:all .2s; background:var(--white);
+}
+.cl-item.checked .cl-checkbox {
+  background:linear-gradient(135deg,var(--sky),var(--sky-d));
+  border-color:var(--sky); color:#fff; font-size:11px;
+}
+.cl-item.checked .cl-checkbox::after { content:'✓'; font-weight:700; color:#fff; font-size:12px; }
+.cl-item.checked .cl-text { text-decoration:line-through; color:var(--ink3); }
+.cl-text { font-size:13px; color:var(--ink2); line-height:1.5; flex:1; }
+.cl-text small { display:block; font-size:11px; color:var(--ink3); margin-top:1px; }
+
+/* Progress bar */
+.cl-progress-wrap {
+  background:var(--white); border-radius:var(--r); padding:20px 24px;
+  box-shadow:var(--shadow-sm); border:1px solid var(--line); margin-bottom:20px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.cl-progress-label { font-size:14px; font-weight:700; color:var(--ink); white-space:nowrap; }
+.cl-progress-bar-wrap { flex:1; min-width:160px; }
+.cl-progress-bar {
+  height:10px; background:var(--line); border-radius:99px; overflow:hidden;
+}
+.cl-progress-fill {
+  height:100%; background:linear-gradient(90deg,var(--sky),var(--mint));
+  border-radius:99px; transition:width .4s ease;
+}
+.cl-progress-pct { font-size:14px; font-weight:700; color:var(--sky-d); white-space:nowrap; }
+.cl-reset-btn {
+  padding:6px 14px; border-radius:99px; font-size:12px; font-weight:700;
+  background:var(--bg); border:1.5px solid var(--line); color:var(--ink3);
+  cursor:pointer; transition:all .2s;
+}
+.cl-reset-btn:hover { border-color:var(--coral); color:var(--coral); }
+
+/* ── FOOD AREA TABS ── */
+.food-area-tabs { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+.fat { padding:8px 18px; border-radius:99px; font-size:13px; font-weight:700;
+  cursor:pointer; transition:all .22s; border:2px solid var(--line);
+  background:var(--white); color:var(--ink3); }
+.fat:hover { border-color:var(--sky); color:var(--sky-d); }
+.fat.active { background:linear-gradient(135deg,var(--sky),var(--sky-d)); color:#fff; border-color:transparent; box-shadow:0 4px 16px rgba(77,175,255,0.35); }
+.fat-panel { display:none; animation:panelIn .3s ease; }
+.fat-panel.active { display:block; }
+
+/* Restaurant full card */
+.rest-full-card {
+  background:var(--white); border-radius:var(--r); padding:20px 22px;
+  box-shadow:var(--shadow-sm); border:1px solid var(--line);
+  border-left:4px solid var(--rfc-color,var(--sky));
+  transition:all .28s; margin-bottom:12px;
+}
+.rest-full-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-sky); }
+.rfc-top { display:flex; align-items:flex-start; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+.rfc-name { font-size:15px; font-weight:700; color:var(--ink); flex:1; }
+.rfc-scores { display:flex; gap:5px; flex-shrink:0; flex-wrap:wrap; }
+.rfc-score { font-size:11px; padding:2px 8px; border-radius:4px; font-weight:700; }
+.rfc-tb { background:#dbeafe; color:#1e40af; }
+.rfc-gg { background:#fef3c7; color:#92400e; }
+.rfc-vibe { display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:2px 9px; border-radius:99px; background:var(--lav-l); color:#6d44d4; font-weight:600; margin-bottom:7px; }
+.rfc-why { font-size:13px; color:var(--ink2); line-height:1.75; margin-bottom:9px; }
+.rfc-facts { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:9px; }
+.rff { font-size:11px; padding:2px 9px; border-radius:4px; font-weight:600; }
+.rff-q { background:#fff3e0; color:#c84b00; }
+.rff-nq { background:var(--mint-l); color:var(--mint-d); }
+.rff-res { background:var(--sky-l); color:var(--sky-d); }
+.rff-nres { background:var(--bg); color:var(--ink3); border:1px solid var(--line); }
+.rff-must { background:var(--amber-l); color:var(--amber-d); }
+.rff-vibe { background:var(--lav-l); color:#6d44d4; }
+.rfc-must { font-size:12px; color:var(--amber-d); font-weight:700; margin-bottom:8px; padding:6px 10px; background:var(--amber-l); border-radius:var(--r-xs); display:flex; align-items:flex-start; gap:5px; }
+.rfc-addr { font-size:11px; color:var(--ink3); margin-top:6px; display:flex; align-items:flex-start; gap:4px; line-height:1.55; }
+.rfc-addr span { color:var(--ink2); }
+.rfc-actions { display:flex; flex-wrap:wrap; gap:6px; margin-top:9px; }
+.rfc-tag { font-size:11px; padding:2px 8px; border-radius:99px; background:var(--amber-l); color:var(--amber-d); font-weight:600; }
+.area-section-title { font-size:15px; font-weight:700; color:var(--ink); margin:18px 0 10px; display:flex; align-items:center; gap:8px; padding-bottom:8px; border-bottom:2px solid var(--line); }
+
+/* ── TOKYO TIPS ── */
+.tips-knowledge-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
+.tk-card {
+  background:var(--white); border-radius:var(--r); padding:20px;
+  box-shadow:var(--shadow-sm); border:1px solid var(--line);
+  border-top:4px solid var(--tkc,var(--sky)); transition:all .25s;
+}
+.tk-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-sky); }
+.tk-icon { font-size:24px; margin-bottom:8px; }
+.tk-title { font-size:14px; font-weight:700; color:var(--ink); margin-bottom:8px; }
+.tk-body { font-size:12px; color:var(--ink2); line-height:1.85; }
+.tk-body strong { color:var(--ink); font-weight:700; }
+.tk-list { list-style:none; margin-top:6px; }
+.tk-list li { padding:3px 0; border-bottom:1px dashed rgba(0,0,0,0.06); font-size:12px; color:var(--ink2); display:flex; align-items:flex-start; gap:5px; line-height:1.55; }
+.tk-list li:last-child { border-bottom:none; }
+.tk-list li::before { content:'→'; color:var(--sky-d); font-weight:700; flex-shrink:0; }
+.cvs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:8px; }
+.cvs-item { text-align:center; padding:10px 6px; background:var(--bg); border-radius:var(--r-xs); border:1px solid var(--line); }
+.cvs-item .ci { font-size:20px; margin-bottom:4px; }
+.cvs-item .cn { font-size:11px; font-weight:700; color:var(--ink); }
+.cvs-item .cs { font-size:10px; color:var(--ink3); margin-top:2px; }
+
+/* ── SPOT FULL CARD ── */
+.spot-full-card {
+  background:var(--white); border-radius:var(--r); padding:18px 20px;
+  box-shadow:var(--shadow-sm); border:1px solid var(--line);
+  transition:all .28s; position:relative;
+}
+.spot-full-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-sky); }
+.sfc-head { display:flex; align-items:flex-start; gap:10px; margin-bottom:8px; }
+.sfc-icon { font-size:26px; flex-shrink:0; }
+.sfc-name { font-size:14px; font-weight:700; color:var(--ink); }
+.sfc-time { font-size:11px; color:var(--ink3); margin-top:2px; }
+.sfc-desc { font-size:12px; color:var(--ink3); line-height:1.7; margin-bottom:8px; }
+.sfc-tags { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px; }
+.sfc-tag { padding:2px 8px; border-radius:99px; font-size:10px; font-weight:600; background:var(--sky-l); color:var(--sky-d); }
+.sfc-alt { background:var(--bg); border-radius:var(--r-xs); padding:8px 12px; font-size:12px; color:var(--ink3); margin-bottom:8px; border-left:3px solid var(--line); }
+.sfc-alt strong { color:var(--ink2); font-weight:700; }
+.spot-grid-3 { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-bottom:16px; }
+
+/* ── MISC ── */
+.divider-label {
+  display:flex; align-items:center; gap:10px; margin:20px 0 14px;
+}
+.divider-label::before, .divider-label::after {
+  content:''; flex:1; height:1px; background:var(--line);
+}
+.divider-label span { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink3); font-weight:700; white-space:nowrap; }
+
+.callout-green {
+  background:var(--mint-l); border:1px solid rgba(45,212,191,0.25);
+  border-left:3px solid var(--mint); border-radius:0 var(--r-xs) var(--r-xs) 0;
+  padding:9px 14px; font-size:12px; color:#0a4a40; line-height:1.8; margin-top:8px;
+}
+
+@media(max-width:700px){
+  .cl-cats { grid-template-columns:1fr; }
+  .tips-knowledge-grid { grid-template-columns:1fr; }
+  .cvs-grid { grid-template-columns:1fr; }
+  .spot-grid-3 { grid-template-columns:1fr; }
+}
+
+</style>
+</head>
+<body>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-shape hs1"></div>
+  <div class="hero-shape hs2"></div>
+  <div class="hero-shape hs3"></div>
+  <div class="hero-badge">✈ TOKYO TRAVEL HANDBOOK 2026</div>
+  <h1 class="hero-kana">東京五日</h1>
+  <div class="hero-subtitle">情侶旅遊手冊</div>
+  <p class="hero-meta">June 10–14, 2026 &nbsp;·&nbsp; 新宿 JR 九州酒店 &nbsp;·&nbsp; 2 人同行</p>
+  <p class="hero-tagline">「這不只是行程表，而是<strong>你們兩個人的東京故事</strong>。<br>帶著它出發，回來的時候你們一定有說不完的話。」</p>
+  <div class="hero-chips">
+    <span class="hchip">🍜 在地名店優先</span>
+    <span class="hchip">💑 情侶浪漫路線</span>
+    <span class="hchip">🌇 Shibuya Sky</span>
+    <span class="hchip">☔ 梅雨備案</span>
+    <span class="hchip">🚆 交通詳解</span>
+    <span class="hchip">💴 費用全透明</span>
+    <span class="hchip">❌ 無觀光連鎖店</span>
+  </div>
+  <div class="hero-ctas">
+    <a href="#itinerary" class="btn btn-sky btn-lg">📅 看完整行程</a>
+    <a href="#sky" class="btn btn-amber btn-lg">🌇 Shibuya Sky</a>
+    <a href="#food" class="btn btn-mint btn-lg">🍣 美食清單</a>
+    <a href="#checklist" class="btn btn-glass btn-lg">✅ 出發準備</a>
+    <a href="#flights" class="btn btn-glass btn-lg">✈️ 班機資訊</a>
+    <a href="#transport" class="btn btn-glass btn-lg">🚆 交通攻略</a>
+    <a href="#tickets" class="btn btn-glass btn-lg">🎫 購票指南</a>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- NAV -->
+<nav class="sticky-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-link">🏠 首頁</a>
+    <a href="#flights" class="nav-link">✈ 班機</a>
+    <a href="#metro" class="nav-link">🚆 地鐵</a>
+    <a href="#checklist" class="nav-link">✅ 出發準備</a>
+    <a href="#overview" class="nav-link">總覽</a>
+    <a href="#weather" class="nav-link">天氣</a>
+    <a href="#itinerary" class="nav-link">行程</a>
+    <a href="#spots" class="nav-link">景點</a>
+    <a href="#transport" class="nav-link">交通</a>
+    <a href="#sky" class="nav-link">Shibuya Sky</a>
+    <a href="#tickets" class="nav-link">購票</a>
+    <a href="#food" class="nav-link">🍜 美食</a>
+    <a href="#tokyotips" class="nav-link">💡 實用知識</a>
+    <a href="#budget" class="nav-link">預算</a>
+    <a href="#tips" class="nav-link">防踩雷</a>
+    <a href="#backup" class="nav-link">備案</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ══════════ FLIGHT INFO ══════════ -->
+<section class="section" id="flights" style="padding-bottom:0">
+<div class="wrap">
+  <div class="sec-label">Flight Information</div>
+  <h2 class="sec-title">✈️ 班機資訊</h2>
+  <p class="sec-desc">中華航空 CI100 / CI109，出發前記得再次確認班機狀態。</p>
+  <div class="bp-wrap">
+
+    <!-- OUTBOUND -->
+    <div class="bp-card">
+      <div class="bp-type">✈ Outbound Flight · 去程</div>
+      <div class="bp-airline">
+        中華航空 China Airlines
+        <span class="bp-flight-badge">CI 100</span>
+      </div>
+      <div class="bp-route">
+        <div class="bp-airport">
+          <div class="bp-airport-code">TPE</div>
+          <div class="bp-airport-name">桃園 T2</div>
+        </div>
+        <div class="bp-plane-line">
+          <div class="bp-line"></div>
+          <div class="bp-plane-icon">✈️</div>
+          <div class="bp-line"></div>
+        </div>
+        <div class="bp-airport">
+          <div class="bp-airport-code">NRT</div>
+          <div class="bp-airport-name">成田 T2</div>
+        </div>
+      </div>
+      <div class="bp-time-row">
+        <div>
+          <div style="font-size:10px;opacity:.65;margin-bottom:2px">DEPARTS</div>
+          <div class="bp-time">08:50</div>
+        </div>
+        <div class="bp-time-arrow">→</div>
+        <div style="text-align:right">
+          <div style="font-size:10px;opacity:.65;margin-bottom:2px">ARRIVES</div>
+          <div class="bp-time">13:15</div>
+        </div>
+      </div>
+      <hr class="bp-divider">
+      <div class="bp-info-row">
+        <div class="bp-info-cell"><div class="lbl">日期</div><div class="val">2026/06/10</div></div>
+        <div class="bp-info-cell"><div class="lbl">週幾</div><div class="val">週三</div></div>
+        <div class="bp-info-cell"><div class="lbl">飛行時間</div><div class="val">約 3h25m</div></div>
+      </div>
+      <div class="bp-alerts">
+        <div class="bp-alert">🕕 建議 <strong>06:30</strong> 前抵達桃園機場 T2</div>
+        <div class="bp-alert">📋 落地後出關預計 <strong>14:15–14:30</strong> 完成</div>
+        <div class="bp-alert">🚆 接 N'EX，預計 <strong>16:10–16:30</strong> 抵新宿</div>
+      </div>
+      <div class="bp-btns">
+        <button class="bp-btn" onclick="copyFlight('out')">📋 複製航班資訊</button>
+        <button class="bp-btn" id="fav-out" onclick="toggleFlightFav('out')">⭐ 收藏</button>
+      </div>
+    <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:10px">
+      <a href="https://www.google.com/maps/search/成田国際空港+第2ターミナル" target="_blank" class="bp-btn">📍 成田空港 T2 地圖</a>
+      <a href="https://www.google.com/maps/dir/成田国際空港/新宿駅" target="_blank" class="bp-btn">🚆 成田→新宿 路線</a>
+    </div>
+    </div>
+
+    <!-- RETURN -->
+    <div class="bp-card" style="background:linear-gradient(135deg,rgba(45,212,191,0.9) 0%,rgba(26,145,240,0.88) 50%,rgba(77,175,255,0.85) 100%)">
+      <div class="bp-type">↩ Return Flight · 回程</div>
+      <div class="bp-airline">
+        中華航空 China Airlines
+        <span class="bp-flight-badge">CI 109</span>
+      </div>
+      <div class="bp-route">
+        <div class="bp-airport">
+          <div class="bp-airport-code">NRT</div>
+          <div class="bp-airport-name">成田 T2</div>
+        </div>
+        <div class="bp-plane-line">
+          <div class="bp-line"></div>
+          <div class="bp-plane-icon">✈️</div>
+          <div class="bp-line"></div>
+        </div>
+        <div class="bp-airport">
+          <div class="bp-airport-code">TPE</div>
+          <div class="bp-airport-name">桃園 T2</div>
+        </div>
+      </div>
+      <div class="bp-time-row">
+        <div>
+          <div style="font-size:10px;opacity:.65;margin-bottom:2px">DEPARTS</div>
+          <div class="bp-time">20:00</div>
+        </div>
+        <div class="bp-time-arrow">→</div>
+        <div style="text-align:right">
+          <div style="font-size:10px;opacity:.65;margin-bottom:2px">ARRIVES</div>
+          <div class="bp-time">22:45</div>
+        </div>
+      </div>
+      <hr class="bp-divider">
+      <div class="bp-info-row">
+        <div class="bp-info-cell"><div class="lbl">日期</div><div class="val">2026/06/14</div></div>
+        <div class="bp-info-cell"><div class="lbl">週幾</div><div class="val">週日</div></div>
+        <div class="bp-info-cell"><div class="lbl">飛行時間</div><div class="val">約 3h45m</div></div>
+      </div>
+      <div class="bp-alerts">
+        <div class="bp-alert">⏰ 建議 <strong>15:30</strong> 前從新宿搭 N'EX 出發</div>
+        <div class="bp-alert">🏨 建議 <strong>17:00</strong> 前抵達成田 T2</div>
+        <div class="bp-alert">⚠️ 週日人多，<strong>不要晚於 16:00</strong> 才出發</div>
+      </div>
+      <div class="bp-btns">
+        <button class="bp-btn" onclick="copyFlight('ret')">📋 複製航班資訊</button>
+        <button class="bp-btn" id="fav-ret" onclick="toggleFlightFav('ret')">⭐ 收藏</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ══════════ METRO GUIDE ══════════ -->
+<section class="section" id="metro">
+<div class="wrap">
+  <div class="sec-label">Tokyo Metro Guide</div>
+  <h2 class="sec-title">🚆 東京地鐵路線指南</h2>
+  <p class="sec-desc">本次行程主要使用線路整理，新手友善說明。地鐵圖為官方版本，可點擊放大。</p>
+
+  <div class="metro-img-wrap">
+    <a href="https://www.tokyometro.jp/en/subwaymap/" target="_blank">
+      <img src="https://www.tokyometro.jp/station/mapsearch/images/map_img.png"
+           alt="東京地鐵路線圖"
+           onerror="this.parentElement.innerHTML='<div style=\'padding:40px;color:var(--ink3);font-size:14px\'>📍 請<a href=\'https://www.tokyometro.jp/en/subwaymap/\' target=\'_blank\' style=\'color:var(--sky-d)\'>點此查看東京 Metro 官方路線圖</a>（開啟新分頁）<br><br>或下載：<a href=\'https://www.tokyometro.jp/en/subwaymap/pdf/gesubway2022_j.pdf\' target=\'_blank\' style=\'color:var(--sky-d)\'>PDF 版本</a></div>'"
+           style="max-height:480px;object-fit:contain">
+    </a>
+    <div class="metro-img-caption">📍 東京 Metro 路線圖（點擊可至官方網站查看完整版）｜本次行程主要使用線路見下方說明</div>
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+      <a href="https://www.tokyometro.jp/en/subwaymap/" target="_blank" class="map-btn">🗺️ Metro 官方地圖</a>
+      <a href="https://www.hyperdia.com/" target="_blank" class="map-btn green">🔍 Hyperdia 路線查詢</a>
+      <a href="https://transit.yahoo.co.jp/" target="_blank" class="map-btn amber">🚆 Yahoo! 路線（日文）</a>
+    </div>
+  </div>
+
+  <div style="font-size:13px;font-weight:700;color:var(--ink);margin-bottom:14px">🗂️ 本次行程使用線路說明</div>
+  <div class="metro-lines-grid">
+
+    <div class="metro-line-card" style="--lc:#ff9500">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">JR 山手線（やまのてせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">最常用</span>
+          <span class="ml-badge mlb-new">新手友善</span>
+        </div>
+      </div>
+      <div class="ml-route">新宿 → 原宿 → 澀谷 → 品川 → 東京 → 上野 → 池袋 → 新宿（環狀）</div>
+      <div class="ml-desc">東京最重要的環狀線，幾乎所有大站都連接。本次 Day 3 新宿→原宿、原宿→澀谷都用這條。月台清楚、班距密集（約 3–4 分一班），新手最友善。</div>
+      <div class="ml-price">💴 Suica 可刷 · 視距離收費</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#f7941d">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">東京 Metro 銀座線（ぎんざせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">Day 2·4</span>
+        </div>
+      </div>
+      <div class="ml-route">澀谷 → 表參道 → 銀座 → 日本橋 → 上野 → 淺草</div>
+      <div class="ml-desc">東京最古老的地鐵線，連接淺草→上野→銀座→澀谷的黃金路線。Day 2 從淺草到上野、Day 4 去銀座都用這條。月台較小，注意上下車時車廂縫隙。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#e60012">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">東京 Metro 丸之內線（まるのうちせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">轉乘用</span>
+        </div>
+      </div>
+      <div class="ml-route">荻窪 → 新宿 → 銀座 → 東京 → 池袋</div>
+      <div class="ml-desc">新宿與東京車站、銀座之間快速移動。若從飯店（新宿）直接去銀座，可考慮這條。約 15 分鐘。月台在地下，記得跟「丸の内線」標示走。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#800080">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">都營大江戸線（おおえどせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">Day 2</span>
+        </div>
+      </div>
+      <div class="ml-route">新宿 → 青山一丁目 → 大門 → 蔵前 → 両国 → 飯田橋（環狀）</div>
+      <div class="ml-desc">從新宿出發前往淺草方向的最直接路線（換乘至淺草線）。Day 2 去淺草用這條，需在「蔵前」換乘都營淺草線到淺草，約 30 分鐘。月台在最深處，預留時間。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#ef7c00">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">東京 Metro 半藏門線（はんぞうもんせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">前往押上</span>
+        </div>
+      </div>
+      <div class="ml-route">澀谷 → 表參道 → 永田町 → 大手町 → 押上（晴空塔）</div>
+      <div class="ml-desc">從澀谷或上野前往押上（晴空塔）的直通路線。Day 2 上野→押上約 5 分鐘，非常方便。也從澀谷方向過去，約 15 分鐘。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#b5b5ac">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">東京 Metro 日比谷線（ひびやせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">Day 4 六本木</span>
+        </div>
+      </div>
+      <div class="ml-route">北千住 → 上野 → 銀座 → 六本木 → 中目黒</div>
+      <div class="ml-desc">Day 4 銀座→六本木的關鍵線路，約 7 分鐘直達。從銀座站換乘，跟「日比谷線」標示走，六本木站 1C 出口直達 六本木 Hills（森美術館）。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#009944">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">JR 中央線 快速（ちゅうおうせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">東京站←→新宿</span>
+        </div>
+      </div>
+      <div class="ml-route">東京 → 神田 → 御茶ノ水 → 四谷 → 新宿 → 中野</div>
+      <div class="ml-desc">新宿到東京車站最快方式，約 14 分鐘，比地鐵快。Day 4 去東京車站可用這條。在新宿站要找「中央線 快速」月台（JR 橘色線標示）。</div>
+      <div class="ml-price">💴 Suica 可刷 · 不含 Tokyo Subway Ticket</div>
+    </div>
+
+    <div class="metro-line-card" style="--lc:#9b7cdb">
+      <div class="mlc-head">
+        <div class="ml-dot"></div>
+        <div class="ml-name">東京 Metro 副都心線（ふくとしんせん）</div>
+        <div class="ml-badges">
+          <span class="ml-badge mlb-main">Day 3</span>
+        </div>
+      </div>
+      <div class="ml-route">和光市 → 池袋 → 新宿三丁目 → 渋谷</div>
+      <div class="ml-desc">Day 3 表參道→澀谷的另一選擇。從新宿三丁目站可直通澀谷（約 7 分）。班次密集，月台清楚，接澀谷的位置也靠近 Scramble Square。</div>
+      <div class="ml-price">💴 Suica 可刷 · Tokyo Subway Ticket 含</div>
+    </div>
+
+  </div>
+
+  <div style="background:var(--mint-l);border:1px solid rgba(45,212,191,0.25);border-radius:var(--r-sm);padding:14px 18px;font-size:13px;color:var(--ink2);line-height:1.9">
+    💡 <strong>新手建議：</strong>安裝 <strong>Google Maps</strong> 導航最省事，輸入目的地直接選「電車」路線。或使用 <strong>Yahoo! 路線（日文）/ Hyperdia（英文）</strong>查詢最新班次。<br>
+    ✅ <strong>本次建議</strong>：Suica 儲值作主卡 + Day 2–4 加買 72h Tokyo Subway Ticket（¥1,500/人），最省錢又最方便。
+  </div>
+</div>
+</section>
+
+
+<!-- ══════════ PRE-TRIP CHECKLIST ══════════ -->
+<section class="section checklist-section" id="checklist">
+<div class="wrap">
+  <div class="sec-label">Pre-Trip Preparation</div>
+  <h2 class="sec-title">✅ 出發前準備清單</h2>
+  <p class="sec-desc">勾選完成的項目，網頁關掉後仍會記住進度。出發前把這張清單跑完，在東京就能完全放鬆。</p>
+
+  <div class="cl-progress-wrap">
+    <div class="cl-progress-label">準備進度</div>
+    <div class="cl-progress-bar-wrap">
+      <div class="cl-progress-bar"><div class="cl-progress-fill" id="cl-fill" style="width:0%"></div></div>
+    </div>
+    <div class="cl-progress-pct" id="cl-pct">0 / 0 完成</div>
+    <button class="cl-reset-btn" onclick="resetChecklist()">↺ 重置</button>
+  </div>
+
+  <div class="cl-cats">
+
+    <!-- 文件 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">📄 文件與入境</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="doc1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          Visit Japan Web 登錄完成
+          <small>在台灣提前完成，取得入境 QR Code（visitjapan.digital.go.jp）</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="doc2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          護照效期確認（剩餘 6 個月以上）
+          <small>護照效期需至 2026/12 以上</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="doc3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          機票訂單截圖（離線可查）
+          <small>CI100 去程 / CI109 回程 + 預訂確認信</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="doc4">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          飯店訂單截圖（離線可查）
+          <small>新宿 JR 九州酒店預訂確認</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="doc5">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          景點/餐廳預約確認信截圖
+          <small>Shibuya Sky / 今半 / Omakase / 叙々苑 等</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 金錢 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">💰 金錢與支付</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="pay1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          信用卡開通海外交易功能
+          <small>致電銀行確認，VISA/MC 日本接受度最高</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="pay2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          兌換日幣現金（建議 ¥50,000–80,000）
+          <small>很多在地小店只收現金，ATM 費用較高</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="pay3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          確認 Suica / PASMO 計畫
+          <small>到成田機場 JR 窗口購買，或提前設定 Apple/Google Pay 虛擬 Suica</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="pay4">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          Tokyo Subway Ticket 計畫
+          <small>Day 2–4 密集地鐵日，72h ¥1,500 考慮購買</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 網路 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">📶 網路與通訊</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="net1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          購買/設定日本 eSIM
+          <small>推薦：IIJmio / KDDI / Docomo 系，訊號穩定優先</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="net2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          Google Maps 離線地圖下載（東京）
+          <small>Maps → 個人頭像 → 離線地圖 → 選取東京區域下載</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="net3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          Google 翻譯下載日文離線包
+          <small>餐廳菜單看不懂時救命</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="net4">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          緊急聯絡資訊記錄
+          <small>台灣緊急電話 / 保險公司 / 飯店電話</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 保險 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">🛡️ 保險</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="ins1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          旅遊平安險（意外/醫療）
+          <small>日本醫療費極高，務必投保。部分信用卡附帶，確認內容</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="ins2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          旅遊不便險（班機延誤/行李遺失）
+          <small>梅雨季班機延誤風險較高，不便險可保心安</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="ins3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          保險公司緊急電話截圖備用
+          <small>出發前拍下備用，離線也能查</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 行李 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">🎒 行李確認</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="bag1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          轉接頭（日本插座：兩孔扁型，台灣可直插）
+          <small>台灣與日本插座相同（110V 兩孔扁型），台灣電器可直接使用</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="bag2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          行動電源（Shibuya Sky / 室外場合備用）
+          <small>注意航班規定：100Wh 以下可帶上機</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="bag3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          常用藥品（感冒/腸胃/痠痛）
+          <small>日本藥局語言障礙高，建議自備慣用藥</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="bag4">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          折疊傘（梅雨季必備）
+          <small>6 月為梅雨季，輕量折疊傘每天帶出門</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="bag5">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          防曬乳 + 薄外套
+          <small>日本夏日紫外線強，室內冷氣強烈，薄外套必備</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 預約確認 -->
+    <div class="cl-cat">
+      <div class="cl-cat-title">📋 預約確認</div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="book1">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          Shibuya Sky 購票完成（KKday / Klook）
+          <small>6/12 週五 17:30 時段，選可退票方案</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="book2">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          淺草今半 別館訂位（TableCheck）
+          <small>6/11 午間，提前 2 週</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="book3">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          銀座 Omakase 訂位（Tableall）
+          <small>6/13 午間，提前 1 個月</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="book4">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          叙々苑 六本木訂位（Tabelog / 官網）
+          <small>6/13 晚，提前 2–3 週</small>
+        </div>
+      </div>
+      <div class="cl-item" onclick="toggleCheck(this)" data-id="book5">
+        <div class="cl-checkbox"></div>
+        <div class="cl-text">
+          N'EX 回程票購買（建議 Day 4 晚上買）
+          <small>6/14 15:30 班次 → 成田 T1，¥3,070/人</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+<div class="wrap">
+  <div class="sec-label">Your Trip at a Glance</div>
+  <h2 class="sec-title">旅行概覽</h2>
+  <p class="sec-desc">五天四夜，從觀光客變成真正懂東京的旅人。每一天有主題，每一餐都是記憶。</p>
+  <div class="ov-grid">
+    <div class="ov-card" style="--bar-color:var(--sky)"><div class="ov-icon">🗓️</div><div class="ov-num">5天4夜</div><div class="ov-label">旅行天數</div></div>
+    <div class="ov-card" style="--bar-color:var(--mint)"><div class="ov-icon">🍽️</div><div class="ov-num">15餐</div><div class="ov-label">精選在地美食</div></div>
+    <div class="ov-card" style="--bar-color:var(--amber)"><div class="ov-icon">📍</div><div class="ov-num">20+</div><div class="ov-label">景點體驗</div></div>
+    <div class="ov-card" style="--bar-color:var(--lavender)"><div class="ov-icon">🗺️</div><div class="ov-num">5 區域</div><div class="ov-label">集中不折返</div></div>
+    <div class="ov-card" style="--bar-color:var(--coral)"><div class="ov-icon">💑</div><div class="ov-num">情侶版</div><div class="ov-label">浪漫感設計</div></div>
+  </div>
+  <div class="trip-summary">
+    <p style="font-size:14px;color:var(--ink2)">
+      <strong style="color:var(--sky-d)">Day 1</strong> ✈ 成田抵達 → 新宿入門夜 &ensp;|&ensp;
+      <strong style="color:var(--sky-d)">Day 2</strong> 🏮 淺草・上野・晴空塔（下町文化日）&ensp;|&ensp;
+      <strong style="color:var(--amber-d)">Day 3 ⭐</strong> 澀谷・原宿・Shibuya Sky（整趟精華）&ensp;|&ensp;
+      <strong style="color:var(--sky-d)">Day 4</strong> 🏙️ 銀座・東京車站・六本木夜景（大人的東京）&ensp;|&ensp;
+      <strong style="color:var(--sky-d)">Day 5</strong> 🌿 新宿御苑 → 採購 → 返程成田
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- WEATHER -->
+<section class="section" id="weather">
+<div class="wrap">
+  <div class="sec-label">Weather Forecast</div>
+  <h2 class="sec-title">每日天氣預估</h2>
+  <p class="sec-desc">6月是東京梅雨季（梅雨），帶折疊傘出門是基本。通常是短暫陣雨，不是整天下，備好備案就放心。</p>
+  <div class="weather-strip">
+    <div class="wstrip-inner">
+      <div class="wday">
+        <div class="wdate">6/10 WED</div><div class="wicon">⛅</div>
+        <div class="wtemp">22–27°C</div><div class="wnote">午後短暫陣雨</div>
+        <div class="wpill wp-ok">抵達日</div>
+      </div>
+      <div class="wday">
+        <div class="wdate">6/11 THU</div><div class="wicon">🌧️</div>
+        <div class="wtemp">21–26°C</div><div class="wnote">陣雨機率偏高</div>
+        <div class="wpill wp-rain">帶傘 備室內</div>
+      </div>
+      <div class="wday wstar">
+        <div class="wdate">6/12 FRI ✨</div><div class="wicon">🌤️</div>
+        <div class="wtemp">23–28°C</div><div class="wnote">午後逐漸放晴</div>
+        <div class="wpill wp-sun">最佳夕陽日</div>
+      </div>
+      <div class="wday">
+        <div class="wdate">6/13 SAT</div><div class="wicon">⛅</div>
+        <div class="wtemp">24–28°C</div><div class="wnote">多雲間晴 小雨</div>
+        <div class="wpill wp-ok">銀座室內佳</div>
+      </div>
+      <div class="wday">
+        <div class="wdate">6/14 SUN</div><div class="wicon">🌦️</div>
+        <div class="wtemp">22–26°C</div><div class="wnote">雲多小雨 返程</div>
+        <div class="wpill wp-rain">保守計畫</div>
+      </div>
+    </div>
+    <p style="text-align:center;padding:12px 16px;font-size:11px;color:var(--ink3);border-top:1px solid var(--line)">
+      ⚠️ 以上為季節性估算，出發前請至 <strong>tenki.jp</strong> 或 <strong>Yahoo! 天気</strong> 確認即時預報
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- MODE BAR -->
+<div class="wrap">
+  <div class="mode-bar">
+    <span class="mode-label">🎛️ 行程模式：</span>
+    <div class="mbtn-wrap">
+      <div class="mbtn active" onclick="setMode(this,'標準版：平衡景點與休息，適合大多數旅客')">⚖️ 標準版</div>
+      <div class="mbtn" onclick="setMode(this,'滿滿版：每天塞最多景點，需要充足體力，日行 15,000+ 步')">🔥 滿滿版</div>
+      <div class="mbtn" onclick="setMode(this,'輕鬆版：每天 2 個重點，重視悠閒與美食，不趕時間')">😌 輕鬆版</div>
+      <div class="mbtn" onclick="setMode(this,'雨天版：全室內路線，博物館、百貨、teamLab，下雨也精彩')">☔ 雨天版</div>
+    </div>
+    <span class="mode-info-txt" id="minfo">標準版：平衡景點與休息，適合大多數旅客</span>
+  </div>
+</div>
+
+<!-- QUICK BTNS -->
+<div class="wrap">
+  <div class="quick-wrap">
+    <a href="#itinerary" onclick="switchDay(0);return true" class="btn btn-sky">📅 Day 1 抵達</a>
+    <a href="#itinerary" onclick="switchDay(1);return true" class="btn btn-sky">🏮 Day 2 淺草上野</a>
+    <a href="#itinerary" onclick="switchDay(2);return true" class="btn btn-amber">⭐ Day 3 精華日</a>
+    <a href="#itinerary" onclick="switchDay(3);return true" class="btn btn-sky">🏙️ Day 4 銀座</a>
+    <a href="#itinerary" onclick="switchDay(4);return true" class="btn btn-sky">✈️ Day 5 返程</a>
+    <a href="#sky" class="btn btn-amber">🌇 Shibuya Sky</a>
+    <a href="#food" class="btn btn-mint">🍜 美食清單</a>
+    <a href="#transport" class="btn btn-outline-sky">🚆 交通</a>
+  </div>
+</div>
+
+<!-- ════════════ ITINERARY ════════════ -->
+<section class="section" id="itinerary">
+<div class="wrap">
+  <div class="sec-label">Day by Day</div>
+  <h2 class="sec-title">每日詳細行程</h2>
+  <p class="sec-desc">每天包含：為什麼這樣排、今日最值得期待的瞬間、必做清單、最順路線、在地餐廳、雨天與刪減備案。</p>
+
+  <div class="dtabs">
+    <div class="dtab active" onclick="switchDay(0)">Day 1 · 抵達</div>
+    <div class="dtab" onclick="switchDay(1)">Day 2 · 淺草上野</div>
+    <div class="dtab" onclick="switchDay(2)">Day 3 · 精華 ⭐</div>
+    <div class="dtab" onclick="switchDay(3)">Day 4 · 銀座</div>
+    <div class="dtab" onclick="switchDay(4)">Day 5 · 返程</div>
+  </div>
+
+  <div class="dpanels">
+
+  <!-- ─────── DAY 1 ─────── -->
+  <div class="dpanel active">
+    <div class="day-card">
+      <div class="day-head">
+        <div class="day-bignum">01</div>
+        <div class="day-meta">
+          <div class="day-title">抵達東京・新宿的第一個夜晚</div>
+          <div class="day-datestr">6月10日（週三）&nbsp; ⛅ 22–27°C</div>
+          <div class="day-badges">
+            <span class="dbadge db-sky">✈ 抵達日</span>
+            <span class="dbadge db-mint">成田→新宿</span>
+            <span class="dbadge db-amber">輕鬆模式</span>
+          </div>
+          <div class="day-tagline">「踏出海關的那一刻，你們的東京故事正式開始。」</div>
+        </div>
+        <div class="day-cost">
+          <div class="dc-lbl">今日預估（2人）</div>
+          <div class="dc-amt">¥11,000–16,000</div>
+        </div>
+      </div>
+      <div class="day-body">
+      <div class="day-nav-strip">
+        <div class="day-nav-title">🗺️ 今日導航快捷</div>
+        <div class="day-nav-btns">
+          <a href="https://www.google.com/maps/search/新宿駅+西口" target="_blank" class="map-btn" style="font-size:11px">🏨 飯店附近</a>
+          <a href="https://www.google.com/maps/search/歌舞伎町一番街" target="_blank" class="map-btn" style="font-size:11px">🌆 歌舞伎町</a>
+          <a href="https://www.google.com/maps/search/麺屋武蔵+鷹虎+新宿" target="_blank" class="map-btn" style="font-size:11px">🍜 晚餐</a>
+          <a href="https://www.google.com/maps/search/ドン・キホーテ+新宿" target="_blank" class="map-btn" style="font-size:11px">🛍 Donki</a>
+        </div>
+      </div>
+      <div class="day-nav-strip">
+        <div class="day-nav-title">🗺️ 今日導航快捷</div>
+        <div class="day-nav-btns">
+          <a href="https://www.google.com/maps/search/浅草寺+雷門" target="_blank" class="map-btn" style="font-size:11px">⛩ 淺草寺</a>
+        <a href="https://www.google.com/maps/search/合羽橋道具街" target="_blank" class="map-btn" style="font-size:11px">🍳 合羽橋</a>
+        <a href="https://www.google.com/maps/search/上野公園" target="_blank" class="map-btn" style="font-size:11px">🌸 上野公園</a>
+        <a href="https://www.google.com/maps/search/アメ横" target="_blank" class="map-btn" style="font-size:11px">🛍 阿美橫</a>
+        <a href="https://www.google.com/maps/search/東京スカイツリー" target="_blank" class="map-btn" style="font-size:11px">🗼 晴空塔</a>
+        </div>
+      </div>
+
+        <div class="why-box">
+          <div class="box-label">💡 為什麼今天這樣排</div>
+          <p>13:15 才落地，出關＋買票＋搭車，到飯店最快也下午 4 點多了。今天不要強排景點，任務就三件事：<strong>平安到達、買好 Suica、吃一碗好拉麵</strong>。把精力留給後面四天，今晚在新宿霓虹燈下漫步就夠了。</p>
+        </div>
+
+        <div class="moment-box">
+          <div class="moment-icon">✨</div>
+          <div>
+            <div class="box-label" style="color:var(--amber-d)">🌟 今天最值得期待的瞬間</div>
+            <p>「放完行李，走出飯店，第一次站在新宿東口的霓虹燈下。那個畫面，是你們東京旅行的第一個畫面，也是最純粹的驚喜。」</p>
+          </div>
+        </div>
+
+        <div class="mc-grid">
+          <div class="mc-box mc-must">
+            <div class="mc-title">🎯 今天一定要做</div>
+            <ul class="mc-ul">
+              <li>搭 N'EX 到新宿（最舒適方式）</li>
+              <li>機場買好 Suica 儲值卡</li>
+              <li>新宿東口・歌舞伎町夜間散步</li>
+              <li>第一碗正宗在地拉麵</li>
+            </ul>
+          </div>
+          <div class="mc-box mc-skip">
+            <div class="mc-title">⬜ 太累就跳過</div>
+            <ul class="mc-ul">
+              <li>Donki 採購（明天再去）</li>
+              <li>若已筋疲力竭→便利商店解決晚餐也 ok</li>
+              <li>歌舞伎町深入探索（明後天再說）</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="route-wrap">
+          <div class="route-tabs">
+            <div class="rtab active" onclick="switchRoute(this,'r1a')">✅ 推薦路線（新手友善）</div>
+            <div class="rtab" onclick="switchRoute(this,'r1b')">💰 省錢路線（需換車）</div>
+          </div>
+          <div id="r1a" class="rpanel active">
+            <div class="route-flow">
+              <span class="rnode highlight">成田機場 T1</span><span class="rarrow">→</span>
+              <span class="rnode highlight">JR N'EX 成田特快</span><span class="rarrow">→</span>
+              <span class="rnode highlight">新宿站 西口</span><span class="rarrow">→</span>
+              <span class="rnode">步行 3 分</span><span class="rarrow">→</span>
+              <span class="rnode highlight">JR 九州酒店</span>
+            </div>
+            <div class="route-chips">
+              <span class="chip chip-jr">JR 成田特快</span>
+              <span class="chip chip-sky">約 80 分直達</span>
+              <span class="chip chip-yen">¥3,070/人</span>
+              <span class="chip chip-warn">❌ 不可刷 Suica</span>
+              <span class="chip chip-new">✅ 新手首選</span>
+            </div>
+            <p class="route-note-txt">全程不換車，有大型行李架，行李多也輕鬆。抵達新宿站後從「西口」出，沿小田急百貨步行約 3 分鐘到飯店。</p>
+          </div>
+          <div id="r1b" class="rpanel">
+            <div class="route-flow">
+              <span class="rnode highlight">成田 T1</span><span class="rarrow">→</span>
+              <span class="rnode">京成 スカイライナー</span><span class="rarrow">→</span>
+              <span class="rnode highlight">日暮里</span><span class="rarrow">→</span>
+              <span class="rnode">JR 山手線（外回り）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">新宿 西口</span>
+            </div>
+            <div class="route-chips">
+              <span class="chip chip-yen">¥2,680/人（省¥390）</span>
+              <span class="chip chip-warn">需換車 1 次</span>
+              <span class="chip chip-sky">約 85–90 分</span>
+            </div>
+            <p class="route-note-txt">京成 Skyliner 到日暮里（¥2,520）＋JR 山手線到新宿（¥160）。省錢但行李多時換車不方便，第一次去建議還是搭 N'EX。</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item tl-transit">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-transit">13:15 落地</span></div>
+            <div class="tl-name">🛬 成田機場出關（估計 45–60 分鐘）</div>
+            <div class="tl-desc">入境審查 → 行李提取 → 海關申報，6 月週三人流適中，預估 <strong>14:00–14:20 出海關</strong>。出關後往 1F 到着ロビー。</div>
+          </div>
+
+          <div class="tl-item tl-transit">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-transit">14:20 購票</span></div>
+            <div class="tl-name">🎫 購買 N'EX 票券 + Suica 儲值卡</div>
+            <div class="tl-desc">
+              找「<strong>JR EAST Travel Service Center</strong>」人工窗口（有英文服務）。<br>
+              ① 購 N'EX 指定席 → Shinjuku（¥3,070/人）<br>
+              ② 同時購 Suica 儲值卡（建議各存 ¥3,000–4,000）<br>
+              自動售票機：English → Limited Express → N'EX → Shinjuku → Reserved Seat
+            </div>
+            <div class="callout-warn">⚠️ N'EX 需獨立購票，<strong>Suica 不可乘坐 N'EX</strong>。票上有號車＆座位，對號入座。</div>
+          </div>
+
+          <div class="tl-item tl-transit">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-transit">約 14:52 / 15:22 出發</span></div>
+            <div class="tl-name">🚆 N'EX → 新宿（約 80 分鐘）</div>
+            <div class="tl-desc">B1F 月台，有大型行李架。<strong>建議出發前確認當日實際班次時刻表。</strong> 抵達新宿後：JR 改札 → 西口 → 步行 3 分到飯店。</div>
+          </div>
+
+          <div class="tl-item tl-transit">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-transit">約 16:10–16:40 抵達</span></div>
+            <div class="tl-name">🏨 Check-in + 放行李休息</div>
+            <div class="tl-desc">JR 九州酒店新宿（新宿站西口徒步 3 分）。Check-in 後換上輕便衣服，喝點東西，準備出門感受東京。</div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">17:30 傍晚</span></div>
+            <div class="tl-name">🌆 新宿東口・歌舞伎町一番街散步</div>
+            <div class="tl-desc">踏出飯店第一步，走到東口廣場，<strong>歌舞伎町一番街</strong>的霓虹燈和人潮會讓你們立刻明白「東京果然不一樣」。不用進任何店，就是感受這個城市的第一個夜晚。這個很適合兩個人手牽手慢慢走。</div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">晚餐 19:00</span></div>
+            <div class="tl-name">🍜 麺屋武蔵 鷹虎（新宿・在地拉麵）</div>
+            <div class="tl-desc">第一餐就要吃有個性的在地店，不是觀光連鎖。麺屋武蔵系列是東京知名非連鎖拉麵品牌，鷹虎是其新宿旗下店，湯頭深厚有層次，在地上班族常客。</div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍜 麺屋武蔵 鷹虎</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.6</span>
+                  <span class="rscore rs-gg">Google 4.3</span>
+                </div>
+              </div>
+              <div class="rest-why">麺屋武蔵是東京頂尖拉麵品牌之一，完全非連鎖，強調自製特製湯頭，是真正在地人自己會去的選擇，而非觀光型店。</div>
+              <div class="rest-facts">
+                <span class="rf rf-q">🕐 排隊 10–25 分</span>
+                <span class="rf rf-nres">📍 現場候位，不可預約</span>
+                <span class="rf rf-must">⭐ 必點：特製拉麵・味玉トッピング</span>
+              </div>
+              <div class="price-tag">💴 人均 ¥1,200–1,700</div>
+              <div class="callout-alt" style="margin-top:10px">
+                <strong>備案（同樣非連鎖）：</strong>新宿西口「鳥こう 新宿」（雞湯水炊き，居酒屋風，¥2,000–3,000），或西口高架下拉麵街隨機進看起來當地人多的店。<br>
+                <strong style="color:var(--coral)">❌ 請避開：</strong>一風堂・一蘭・博多一幸舍等大型連鎖觀光拉麵
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/麺屋武蔵+鷹虎+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区西新宿1丁目', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-musha" onclick="toggleFav('rest-musha','麺屋武蔵 鷹虎',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都新宿区西新宿1丁目</span></div>
+    
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/MISOJYU+浅草本店" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区雷門2-2-14', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-misojyu" onclick="toggleFav('rest-misojyu','MISOJYU 浅草本店',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都台東区雷門2-2-14</span></div>
+    </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig rain"><div class="ig-label">☔ 若下雨</div><p>N'EX 完全不受影響。晚上可改去 <strong>新宿高島屋地下美食街</strong> 或 <strong>Lumine EST</strong>（全室內），感受日本百貨文化，氛圍很好。</p></div>
+          <div class="ig del"><div class="ig-label">✂️ 時間不夠怎麼刪</div><p>歌舞伎町散步省略，吃完拉麵直接回飯店休息。把體力留給明天的淺草上野，不要第一天就把自己累垮。</p></div>
+          <div class="ig cost"><div class="ig-label">💴 今日費用概估（2人）</div><p>N'EX ¥6,140 ＋ Suica ¥6,000（含 ¥500×2 押金可退）＋ 晚餐 ¥3,000 ＋ 雜費 ≈ <strong>¥15,000–18,000</strong>（Suica 押金回台退還後約 ¥14,000）</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── DAY 2 ─────── -->
+  <div class="dpanel">
+    <div class="day-card">
+      <div class="day-head">
+        <div class="day-bignum">02</div>
+        <div class="day-meta">
+          <div class="day-title">淺草・上野・晴空塔：下町靈魂日</div>
+          <div class="day-datestr">6月11日（週四）&nbsp; 🌧️ 21–26°C・帶傘</div>
+          <div class="day-badges">
+            <span class="dbadge db-sky">🏮 下町文化</span>
+            <span class="dbadge db-mint">傳統日本</span>
+            <span class="dbadge db-amber">晴空塔夜景</span>
+          </div>
+          <div class="day-tagline">「在東京最古老的街道上，感受千年前江戶的呼吸。」</div>
+        </div>
+        <div class="day-cost">
+          <div class="dc-lbl">今日預估（2人）</div>
+          <div class="dc-amt">¥9,000–15,000</div>
+        </div>
+      </div>
+      <div class="day-body">
+      <div class="day-nav-strip">
+        <div class="day-nav-title">🗺️ 今日導航快捷</div>
+        <div class="day-nav-btns">
+          <a href="https://www.google.com/maps/search/明治神宮" target="_blank" class="map-btn" style="font-size:11px">⛩ 明治神宮</a>
+        <a href="https://www.google.com/maps/search/竹下通" target="_blank" class="map-btn" style="font-size:11px">👗 竹下通</a>
+        <a href="https://www.google.com/maps/search/表参道" target="_blank" class="map-btn" style="font-size:11px">🛍 表參道</a>
+        <a href="https://www.google.com/maps/search/渋谷スクランブル交差点" target="_blank" class="map-btn" style="font-size:11px">🌀 十字路口</a>
+        <a href="https://www.google.com/maps/search/渋谷スクランブルスクエア+SHIBUYA+SKY" target="_blank" class="map-btn" style="font-size:11px">🌇 Shibuya Sky</a>
+        </div>
+      </div>
+
+        <div class="why-box">
+          <div class="box-label">💡 為什麼今天這樣排</div>
+          <p>淺草、上野、晴空塔都在台東區附近，是同一個方向，<strong>一線走不需折返</strong>，非常省體力。早上 9 點到淺草寺是黃金時間，人最少、光線最美。午餐吃百年老舖，下午上野公園，傍晚晴空塔夜景，動線自然流暢。</p>
+        </div>
+
+        <div class="moment-box">
+          <div class="moment-icon">🏮</div>
+          <div>
+            <div class="box-label" style="color:var(--amber-d)">🌟 今天最值得期待的瞬間</div>
+            <p>「早上 9 點，仲見世通還沒湧入人潮，兩個人走在那條通往淺草寺的石板小路上，四周安靜得像電影場景。這種安靜，是東京很少見的禮物。」</p>
+          </div>
+        </div>
+
+        <div class="mc-grid">
+          <div class="mc-box mc-must">
+            <div class="mc-title">🎯 今天必做</div>
+            <ul class="mc-ul">
+              <li>淺草寺・雷門（早上 9 點前抵達）</li>
+              <li>仲見世通採購伴手禮</li>
+              <li>阿美橫丁街頭小吃</li>
+              <li>上野公園 6 月繡球花</li>
+            </ul>
+          </div>
+          <div class="mc-box mc-skip">
+            <div class="mc-title">⬜ 視體力決定</div>
+            <ul class="mc-ul">
+              <li>合羽橋道具街（對廚具有興趣才去）</li>
+              <li>東京國立博物館（下雨優先）</li>
+              <li>晴空塔展望台（費用考量可省）</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="route-wrap">
+          <div class="route-tabs">
+            <div class="rtab active" onclick="switchRoute(this,'r2a')">🛤️ 最順路線</div>
+            <div class="rtab" onclick="switchRoute(this,'r2b')">☔ 雨天路線</div>
+          </div>
+          <div id="r2a" class="rpanel active">
+            <div class="route-flow">
+              <span class="rnode highlight">新宿站</span><span class="rarrow">→</span>
+              <span class="rnode">都營大江戸線（30分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">淺草寺</span><span class="rarrow">→</span>
+              <span class="rnode">步行 12 分</span><span class="rarrow">→</span>
+              <span class="rnode highlight">合羽橋</span><span class="rarrow">→</span>
+              <span class="rnode">地鐵銀座線（4分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">上野</span><span class="rarrow">→</span>
+              <span class="rnode">半藏門線（5分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">押上 晴空塔</span>
+            </div>
+            <div class="route-chips">
+              <span class="chip chip-toei">都營大江戸線</span>
+              <span class="chip chip-metro">東京地鐵銀座線</span>
+              <span class="chip chip-metro">半藏門線</span>
+              <span class="chip chip-suica">全程刷 Suica</span>
+              <span class="chip chip-ok">無折返 一線走</span>
+            </div>
+          </div>
+          <div id="r2b" class="rpanel">
+            <div class="route-flow">
+              <span class="rnode highlight">新宿</span><span class="rarrow">→</span>
+              <span class="rnode">都營大江戸線</span><span class="rarrow">→</span>
+              <span class="rnode highlight">淺草（有屋簷走廊）</span><span class="rarrow">→</span>
+              <span class="rnode">地鐵</span><span class="rarrow">→</span>
+              <span class="rnode highlight">上野 國立博物館</span><span class="rarrow">→</span>
+              <span class="rnode">地鐵</span><span class="rarrow">→</span>
+              <span class="rnode highlight">晴空塔 Solamachi</span>
+            </div>
+            <p class="route-note-txt">☔ 雨天版：跳過公園，進博物館（¥1,000 但完全室內）→ 晴空塔 Solamachi 全室內商場，完全不被雨影響。</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item tl-break">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-break">早餐 8:30</span></div>
+            <div class="tl-name">☕ MISOJYU 浅草本店（日式味噌早餐）</div>
+            <div class="tl-desc">到淺草後的第一件事，在淺草寺還沒人潮前，先吃一頓有靈魂的日式早餐。手工味噌湯配飯糰漬物，這家是在地人真的會去的選擇。</div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍙 MISOJYU 浅草本店</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.6</span>
+                  <span class="rscore rs-gg">Google 4.4</span>
+                </div>
+              </div>
+              <div class="rest-why">以「味噌汁専門店」為概念的早餐店，每日手工味噌湯配飯糰，食材選用嚴謹，不是觀光型定番店，是真正在地淺草人的早餐選擇。</div>
+              <div class="rest-facts">
+                <span class="rf rf-q">🕐 尖峰排 10–20 分，8:30 前較快</span>
+                <span class="rf rf-nres">📍 現場候位，不可預約</span>
+                <span class="rf rf-must">⭐ 必點：季節味噌湯定食・おにぎり</span>
+              </div>
+              <div class="price-tag">💴 約 ¥700–1,000</div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/浅草今半+別館" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区西浅草3-1-12', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-imahan" onclick="toggleFav('rest-imahan','淺草今半 別館',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都台東区西浅草3-1-12</span></div>
+    </div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">上午 9:00</span></div>
+            <div class="tl-name">⛩️ 淺草寺・雷門・仲見世通</div>
+            <div class="tl-desc">雷門大紅燈籠是日本最 iconic 的畫面之一，<strong>9 點前人最少</strong>，光線好，是最適合拍照的時間。仲見世通邊走邊試吃人形燒，買幾樣伴手禮。<strong>這段很適合兩個人牽手慢慢走，不要急。</strong></div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-toei">都營大江戸線</span><span class="chip chip-exit">淺草站 A4 出口</span><span class="chip chip-suica">刷 Suica</span><span class="chip chip-sky">步行 3 分</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">上午 11:00（選配）</span></div>
+            <div class="tl-name">🍳 合羽橋道具街</div>
+            <div class="tl-desc">廚具餐具的天堂，超逼真食物模型讓人噴笑。步行 10 分鐘，對烹飪有興趣的男友一定喜歡，沒興趣的話可直接跳到午餐。</div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">午餐 12:30</span></div>
+            <div class="tl-name">🥩 淺草今半 別館（和牛壽喜燒）</div>
+            <div class="tl-desc">今天最重要的一餐。百年老舖「淺草今半」的別館，和牛壽喜燒，午間套餐比本館親民，是淺草最值得花的一頓飯。<strong>這頓飯後你們都會覺得來東京真的值得。</strong></div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍲 淺草今半 別館</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.8</span>
+                  <span class="rscore rs-gg">Google 4.5</span>
+                </div>
+              </div>
+              <div class="rest-why">1895 年創業，東京和牛壽喜燒的代名詞。別館午間套餐比本館便宜但品質相同。仲見世通旁步行 5 分，位置絕佳。</div>
+              <div class="rest-facts">
+                <span class="rf rf-res">📖 TableCheck 預約（強烈建議，2 週前）</span>
+                <span class="rf rf-q">🕐 未預約等 30–60 分</span>
+                <span class="rf rf-must">⭐ 必點：黒毛和牛すき焼き 午間套餐</span>
+              </div>
+              <div class="price-tag">💴 午間套餐 ¥5,000–8,000/人</div>
+              <a href="https://www.tablecheck.com/shops/asakusa-imahan-betsukanrooms/reserve" target="_blank" class="rest-link" style="margin-top:8px">TableCheck 訂位 →</a>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>平替（同樣好）：</strong>合羽橋「喜久鮨」（1910 年創業老字號壽司，散壽司套餐 ¥1,500 起，不需預約）
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/焼鳥大吉+上野御徒町" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区上野6丁目', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-taiki" onclick="toggleFav('rest-taiki','焼鳥大吉 上野御徒町',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都台東区上野6丁目</span></div>
+    </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">下午 14:30</span></div>
+            <div class="tl-name">🐟 上野公園・アメ横（阿美橫丁）</div>
+            <div class="tl-desc">
+              上野公園 6 月繡球花盛開，兩個人在公園裡散步，配上陰天或微雨，反而有特別的氛圍。<br>
+              接著逛<strong>阿美橫丁</strong>，這裡是東京最有下町氣息的市場街，邊走邊吃才是正確姿勢。
+            </div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-metro">東京地鐵銀座線</span><span class="chip chip-exit">上野站 1 號出口</span><span class="chip chip-suica">刷 Suica</span><span class="chip chip-sky">4 分鐘</span>
+            </div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">傍晚 17:30（選配）</span></div>
+            <div class="tl-name">🗼 東京晴空塔 天望甲板（350m）</div>
+            <div class="tl-desc">從上野搭半藏門線約 5 分鐘到押上。夜景很震撼，塔下 Solamachi 商城可逛可吃。若費用考量可省，因為 Day 3 的 Shibuya Sky 更值得。</div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-metro">東京地鐵半藏門線</span><span class="chip chip-exit">押上站 B3 出口</span><span class="chip chip-yen">¥2,100 另購</span>
+            </div>
+            <div class="callout-note">📌 晴空塔展望台票建議官網或現場購買，票價與時刻請出發前確認（官網：www.tokyo-skytree.jp）</div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">晚餐 19:30</span></div>
+            <div class="tl-name">🍢 焼鳥大吉 上野御徒町（在地居酒屋）</div>
+            <div class="tl-desc">上野御徒町一帶有整條居酒屋街，第一次日本居酒屋體驗就在這裡。大吉是日本真正的在地居酒屋品牌（非觀光連鎖），炭火串燒配生啤，座滿的都是下班上班族，氛圍真實。</div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍢 焼鳥大吉 上野御徒町</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.5+</span>
+                  <span class="rscore rs-gg">Google 4.2+</span>
+                </div>
+              </div>
+              <div class="rest-why">大吉是日本傳統居酒屋品牌，不是觀光型，上班族聚集的店才是真正的東京晚上。御徒町一帶有多家，找看起來本地人最多的進去。</div>
+              <div class="rest-facts">
+                <span class="rf rf-nres">📍 現場候位，18:00 前到較佳</span>
+                <span class="rf rf-q">🕐 週四晚間通常不用久等</span>
+                <span class="rf rf-must">⭐ 必點：炭火焼き鳥盛り・生ビール・お通し（固定費 ¥300–500）</span>
+              </div>
+              <div class="price-tag">💴 人均 ¥2,000–3,200</div>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>備案：</strong>御徒町駅附近選門口有食物樣品的居酒屋，看起來上班族多的就進去，往往比觀光推薦的更道地
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/Verve+Coffee+Roasters+NEWoMan+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区新宿4-1-6 NEWoMan 2F', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-verve" onclick="toggleFav('rest-verve','Verve Coffee Roasters NEWoMan',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都新宿区新宿4-1-6 NEWoMan 2F</span></div>
+    
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/AFURI+原宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都渋谷区神宮前6-35-3', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-afuri" onclick="toggleFav('rest-afuri','Afuri 原宿店',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都渋谷区神宮前6-35-3</span></div>
+    </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig rain"><div class="ig-label">☔ 全天下雨</div><p>淺草寺仁王門有屋簷 → 東京國立博物館室內（¥1,000）→ 晴空塔 Solamachi 商城（全室內）。這三個串起來完全不被雨影響。</p></div>
+          <div class="ig del"><div class="ig-label">✂️ 時間不夠怎麼刪</div><p>跳過晴空塔，只去淺草＋阿美橫丁，下午 4 點回新宿休息。晴空塔不是非去不可，Day 3 的 Shibuya Sky 才是真的必排。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── DAY 3 ─────── -->
+  <div class="dpanel">
+    <div class="day-card">
+      <div class="day-head">
+        <div class="day-bignum">03</div>
+        <div class="day-meta">
+          <div class="day-title">澀谷・原宿・Shibuya Sky 精華日</div>
+          <div class="day-datestr">6月12日（週五）&nbsp; 🌤️ 23–28°C・傍晚放晴</div>
+          <div class="day-badges">
+            <span class="dbadge db-amber">⭐ 整趟精華</span>
+            <span class="dbadge db-sky">Shibuya Sky</span>
+            <span class="dbadge db-mint">夕陽夜景</span>
+          </div>
+          <div class="day-tagline">「這天是整趟旅程最重要的一天。Shibuya Sky 的夕陽，你們會記住一輩子。」</div>
+        </div>
+        <div class="day-cost">
+          <div class="dc-lbl">今日預估（2人）</div>
+          <div class="dc-amt">¥10,000–18,000</div>
+        </div>
+      </div>
+      <div class="day-body">
+      <div class="day-nav-strip">
+        <div class="day-nav-title">🗺️ 今日導航快捷</div>
+        <div class="day-nav-btns">
+          <a href="https://www.google.com/maps/search/東京駅+丸の内" target="_blank" class="map-btn" style="font-size:11px">🚉 東京站</a>
+        <a href="https://www.google.com/maps/search/皇居外苑" target="_blank" class="map-btn" style="font-size:11px">🌿 皇居外苑</a>
+        <a href="https://www.google.com/maps/search/銀座+Ginza+Six" target="_blank" class="map-btn" style="font-size:11px">🏙 銀座</a>
+        <a href="https://www.google.com/maps/search/六本木ヒルズ+森美術館" target="_blank" class="map-btn" style="font-size:11px">🎨 森美術館</a>
+        </div>
+      </div>
+
+        <div class="why-box">
+          <div class="box-label">💡 為什麼今天這樣排</div>
+          <p>6/12 天氣預報傍晚放晴，<strong>這是整趟旅程安排 Shibuya Sky 的最佳時機</strong>。早上去原宿感受年輕能量，午餐在地拉麵補充體力，下午進澀谷，<strong>17:30 準時上 Sky</strong>。行程不排太滿，要把最好的精神留給傍晚那個景色。</p>
+        </div>
+
+        <div class="moment-box">
+          <div class="moment-icon">🌇</div>
+          <div>
+            <div class="box-label" style="color:var(--amber-d)">🌟 今天最值得期待的瞬間</div>
+            <p>「Shibuya Sky，17:30 進場，站在 229 公尺高空，看著夕陽把整個東京染成橘紅色。澀谷十字路口在腳下，新宿大樓群在遠方。這一刻，你們會覺得這趟旅行的一切都值得了。」</p>
+          </div>
+        </div>
+
+        <div class="mc-grid">
+          <div class="mc-box mc-must">
+            <div class="mc-title">🎯 絕對不能少</div>
+            <ul class="mc-ul">
+              <li>Shibuya Sky 17:30 入場（整趟最重要）</li>
+              <li>澀谷十字路口站一下（感受震撼）</li>
+              <li>原宿竹下通り散步</li>
+              <li>Sky 後一起吃燒肉慶祝</li>
+            </ul>
+          </div>
+          <div class="mc-box mc-skip">
+            <div class="mc-title">⬜ 可視體力決定</div>
+            <ul class="mc-ul">
+              <li>明治神宮（體力好才去）</li>
+              <li>表參道精品街（快速掃過即可）</li>
+              <li>Scramble Square 商場購物</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="route-wrap">
+          <div class="route-tabs">
+            <div class="rtab active" onclick="switchRoute(this,'r3a')">🛤️ 標準路線</div>
+            <div class="rtab" onclick="switchRoute(this,'r3b')">😌 輕鬆版（保精力給 Sky）</div>
+          </div>
+          <div id="r3a" class="rpanel active">
+            <div class="route-flow">
+              <span class="rnode highlight">新宿</span><span class="rarrow">→</span>
+              <span class="rnode">JR 山手線（3分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">原宿・竹下通</span><span class="rarrow">→</span>
+              <span class="rnode">步行 15 分</span><span class="rarrow">→</span>
+              <span class="rnode highlight">表參道</span><span class="rarrow">→</span>
+              <span class="rnode">地鐵副都心線（7分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">澀谷 Shibuya Sky 17:30</span>
+            </div>
+            <div class="route-chips">
+              <span class="chip chip-jr">JR 山手線</span><span class="chip chip-metro">東京地鐵副都心線</span><span class="chip chip-suica">全程刷 Suica</span>
+            </div>
+          </div>
+          <div id="r3b" class="rpanel">
+            <div class="route-flow">
+              <span class="rnode highlight">新宿（中午出發）</span><span class="rarrow">→</span>
+              <span class="rnode">JR 山手線（3分）</span><span class="rarrow">→</span>
+              <span class="rnode highlight">原宿 竹下通</span><span class="rarrow">→</span>
+              <span class="rnode">步行 or 地鐵</span><span class="rarrow">→</span>
+              <span class="rnode highlight">澀谷</span><span class="rarrow">→</span>
+              <span class="rnode highlight">Shibuya Sky 17:30</span>
+            </div>
+            <p class="route-note-txt">😌 輕鬆版：跳過明治神宮，中午出發，確保精神飽滿迎接 Sky。Sky 才是今天主角，其他都可以妥協。</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item tl-break">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-break">早餐 8:30</span></div>
+            <div class="tl-name">☕ Verve Coffee Roasters（NEWoMan 新宿 2F）</div>
+            <div class="tl-desc">加州精品咖啡品牌，新宿南口 NEWoMan 2F，7:00 開始。今天是整趟最重要的一天，從一杯好咖啡開始，把期待存進心裡。</div>
+            <div class="price-tag">💴 ¥800–1,300</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">上午 10:00（選配）</span></div>
+            <div class="tl-name">🌿 明治神宮・代代木公園</div>
+            <div class="tl-desc">原宿站南口步行 5 分鐘，東京市中心的神秘森林，早上最靜謐。莊嚴感讓人的心靜下來，和澀谷的喧囂是完全不同的體驗，這個對比非常東京。<strong>很適合兩個人靜靜走，說說話。</strong></div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-jr">JR 山手線</span><span class="chip chip-exit">原宿站 南口</span><span class="chip chip-suica">刷 Suica</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">上午 11:30</span></div>
+            <div class="tl-name">👗 原宿竹下通り・表參道</div>
+            <div class="tl-desc">竹下通是次文化可麗餅＆復古小物聖地，年輕能量超滿；表參道是設計感建築大道，兩段加起來約 1 小時足夠。不用每家店都進去。</div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">午餐 13:00</span></div>
+            <div class="tl-name">🍜 Afuri 原宿店（柚子鹽拉麵）</div>
+            <div class="tl-desc">這頓不用太認真，留胃口給晚上燒肉。Afuri 以天然水製作的柚子鹽拉麵獨樹一格，湯頭清爽不油膩，是與前一天截然不同的拉麵風格，原宿竹下通步行 5 分鐘。</div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍜 Afuri 原宿店</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.6</span>
+                  <span class="rscore rs-gg">Google 4.4</span>
+                </div>
+              </div>
+              <div class="rest-why">東京知名拉麵品牌，以柚子鹽湯頭聞名，完全不同於豚骨或醬油系，是體驗日本拉麵多元性的好機會。原宿店是主要分店，品質穩定。</div>
+              <div class="rest-facts">
+                <span class="rf rf-nres">📍 現場候位</span>
+                <span class="rf rf-q">🕐 午間約 10–20 分</span>
+                <span class="rf rf-must">⭐ 必點：柚子しお拉麵・柚子醤油拉麵（選一）</span>
+              </div>
+              <div class="price-tag">💴 人均 ¥1,200–1,800</div>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>備案：</strong>表參道附近任何看起來有當地人的咖啡廳輕食，重點是別吃太撐，晚上燒肉才是正題
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">下午 15:00</span></div>
+            <div class="tl-name">🌀 澀谷十字路口・Scramble Square</div>
+            <div class="tl-desc">全球最大行人穿越路口，在路口中間站著的震撼感是獨一無二的體驗。<strong>Scramble Square 就是 Shibuya Sky 的大樓</strong>，可先進去逛逛，存好購票 QR Code。</div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-jr">JR 山手線</span><span class="chip chip-exit">澀谷站 中央改札</span><span class="chip chip-suica">刷 Suica</span>
+            </div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">⭐ 17:30 今日精華</span></div>
+            <div class="tl-name">🌇 SHIBUYA SKY 入場</div>
+            <div class="tl-desc">
+              6/12 日落約 19:00，<strong>17:30 入場</strong>可完整體驗黃昏→夕陽→入夜三段景色。站在 Sky Edge 懸空網格上，腳下是整個東京，這個角度是東京的精髓。<br>
+              <strong>這一刻，你們會知道為什麼每個人說 Shibuya Sky 必去。</strong>
+            </div>
+            <div class="price-tag">💴 ¥2,000/人（預購）</div>
+            <div class="callout-warn">⚠️ 務必至少 14 天前在 KKday 或 Klook 購票，日落時段最搶手。選可免費退票方案應對梅雨。<a href="#sky" style="color:var(--sky-d);font-weight:700"> → 完整購票教學</a></div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">晚餐 20:00</span></div>
+            <div class="tl-name">🔥 燒肉トラジ 渋谷道玄坂店</div>
+            <div class="tl-desc">Sky 出來後步行約 5 分鐘。今天最好的結尾：看完夕陽，再和最重要的人吃一頓好燒肉。<strong>這頓飯邊吃邊回味剛才的景色，是最自然的二人時刻。</strong></div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🥩 焼肉トラジ 渋谷道玄坂店</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.7</span>
+                  <span class="rscore rs-gg">Google 4.4</span>
+                </div>
+              </div>
+              <div class="rest-why">トラジ是日本知名的質感燒肉品牌，黑毛和牛品質有保障，服務細膩，澀谷道玄坂店距 Sky 步行 5 分，Sky 結束後直接過來最方便。</div>
+              <div class="rest-facts">
+                <span class="rf rf-res">📖 Tabelog 訂位（建議 1–2 週前）</span>
+                <span class="rf rf-q">🕐 未預約等 20–40 分</span>
+                <span class="rf rf-must">⭐ 必點：特選黒毛和牛カルビ・ロース・ナムル</span>
+              </div>
+              <div class="price-tag">💴 人均 ¥4,500–7,500</div>
+              <a href="https://tabelog.com/tokyo/A1303/A130301/" target="_blank" class="rest-link" style="margin-top:8px">Tabelog 訂位 →</a>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>中價位備案：</strong>澀谷「やきにく KINTAN」（和牛燒肉，Tabelog 3.6+，人均 ¥3,500–5,000）
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/焼肉トラジ+渋谷道玄坂店" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都渋谷区道玄坂2-29-11', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-toraji" onclick="toggleFav('rest-toraji','燒肉トラジ 渋谷道玄坂',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都渋谷区道玄坂2-29-11</span></div>
+    </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig rain"><div class="ig-label">☔ 若 Sky 遇大雨</div><p>強風大雨時露天頂層關閉。備案 A：<strong>東京都廳南展望台（45F 完全免費）</strong>；備案 B：<strong>六本木 Hills City View（¥2,000）</strong>。務必選可退票方案。</p></div>
+          <div class="ig del"><div class="ig-label">✂️ 時間不夠怎麼刪</div><p>跳過明治神宮，中午才出發。確保 17:30 前抵達 Sky 且精神飽滿，這是今天唯一的不可刪事項。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── DAY 4 ─────── -->
+  <div class="dpanel">
+    <div class="day-card">
+      <div class="day-head">
+        <div class="day-bignum">04</div>
+        <div class="day-meta">
+          <div class="day-title">銀座・東京車站・六本木：大人的東京</div>
+          <div class="day-datestr">6月13日（週六）&nbsp; ⛅ 24–28°C</div>
+          <div class="day-badges">
+            <span class="dbadge db-sky">🏙️ 質感一天</span>
+            <span class="dbadge db-mint">最佳午餐日</span>
+            <span class="dbadge db-lav">六本木夜景</span>
+          </div>
+          <div class="day-tagline">「這一天讓你們看到東京最精緻、最有底氣的那一面。」</div>
+        </div>
+        <div class="day-cost">
+          <div class="dc-lbl">今日預估（2人）</div>
+          <div class="dc-amt">¥12,000–25,000</div>
+        </div>
+      </div>
+      <div class="day-body">
+      <div class="day-nav-strip">
+        <div class="day-nav-title">🗺️ 今日導航快捷</div>
+        <div class="day-nav-btns">
+          <a href="https://www.google.com/maps/search/新宿御苑" target="_blank" class="map-btn" style="font-size:11px">🌸 新宿御苑</a>
+        <a href="https://www.google.com/maps/search/新宿高島屋" target="_blank" class="map-btn" style="font-size:11px">🛍 採購</a>
+        <a href="https://www.google.com/maps/search/新宿駅+JR" target="_blank" class="map-btn" style="font-size:11px">🚆 搭 N'EX</a>
+        </div>
+      </div>
+
+        <div class="why-box">
+          <div class="box-label">💡 為什麼今天這樣排</div>
+          <p>銀座和東京車站是「大人的東京」，歷史感最濃。<strong>最重要的是：銀座午間 Omakase 壽司是這趟旅程的美食高峰</strong>，同樣品質晚餐要多 40–50%，選午餐最划算。下午精緻逛銀座，傍晚六本木藝術＋夜景收尾，是整趟最「質感」的一天。</p>
+        </div>
+
+        <div class="moment-box">
+          <div class="moment-icon">🍣</div>
+          <div>
+            <div class="box-label" style="color:var(--amber-d)">🌟 今天最值得期待的瞬間</div>
+            <p>「銀座 Omakase，主廚把一貫一貫精心製作的壽司放在你們面前。那是一種被認真對待的感受。很多人說『在東京吃過 Omakase 後，才知道壽司可以這麼好吃』。」</p>
+          </div>
+        </div>
+
+        <div class="mc-grid">
+          <div class="mc-box mc-must">
+            <div class="mc-title">🎯 必做</div>
+            <ul class="mc-ul">
+              <li>東京車站丸之內拍照</li>
+              <li>銀座 Omakase 午餐（本趟美食最高峰）</li>
+              <li>Ginza Six + Itoya 文具逛逛</li>
+              <li>六本木 森美術館＋夜景</li>
+            </ul>
+          </div>
+          <div class="mc-box mc-skip">
+            <div class="mc-title">⬜ 可視體力</div>
+            <ul class="mc-ul">
+              <li>皇居外苑散步（下雨可跳）</li>
+              <li>六本木夜景（太累可省）</li>
+              <li>築地場外市場（觀光化嚴重，不推薦）</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item tl-break">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-break">早餐 9:00</span></div>
+            <div class="tl-name">☕ Café de l'Ambre（銀座・1948 年創業）</div>
+            <div class="tl-desc">今天在銀座附近，去這家老咖啡店當早餐。1948 年開業，日本咖啡文化的起點之一，老闆至今仍親自烘焙，進去就像走進時光機，是飲食文化體驗，不只是喝咖啡。</div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">☕ Café de l'Ambre（銀座）</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.9</span>
+                  <span class="rscore rs-gg">Google 4.4</span>
+                </div>
+              </div>
+              <div class="rest-why">1948 年創業的銀座老字號，日本咖啡自家焙煎文化的象徵。至今用老式手法烘豆，黑咖啡滋味深邃，是東京最有歷史感的咖啡體驗之一。</div>
+              <div class="rest-facts">
+                <span class="rf rf-nres">📍 現場（不需預約）</span>
+                <span class="rf rf-must">⭐ 必點：自家焙煎 無糖黑咖啡（不加糖才對味）</span>
+              </div>
+              <div class="price-tag">💴 ¥700–1,200</div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/Café+de+l'Ambre+銀座" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都中央区銀座8-10-15', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-lambre" onclick="toggleFav('rest-lambre','Café de l'Ambre 銀座',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都中央区銀座8-10-15</span></div>
+    </div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">上午 10:00</span></div>
+            <div class="tl-name">🚉 東京車站丸之內・皇居外苑</div>
+            <div class="tl-desc">1914 年建造的紅磚車站，是東京最有歷史感的畫面。廣場不大但氣場很強，<strong>兩個人坐在廣場上喝咖啡，感受一下「這是東京的中心」</strong>。皇居外苑松樹和護城河，步行 10 分鐘很舒服。</div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-jr">JR 中央線</span><span class="chip chip-exit">東京站 丸之內南口</span><span class="chip chip-suica">刷 Suica</span>
+            </div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">午餐 12:30 ⭐ 本趟美食高峰</span></div>
+            <div class="tl-name">🐟 銀座 午間 Omakase 壽司</div>
+            <div class="tl-desc">
+              <strong>這是整趟旅程最值得的一餐</strong>，請提前 1 個月在 Tableall 預約。銀座 Omakase 午間比晚間少 40–50%，但品質完全相同。主廚會根據當日進貨呈上 12–15 貫，每一貫都是驚喜。<br>
+              <strong>不要問可不可以省，這一餐不能省。</strong>
+            </div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🍣 銀座 壽司一碧 / 鮨 よしたけ（建議出發前確認）</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.7–4.0</span>
+                  <span class="rscore rs-gg">Google 4.5+</span>
+                </div>
+              </div>
+              <div class="rest-why">銀座是東京頂級日料的聚集地。「壽司一碧」是入門級精緻 Omakase 代表，「よしたけ」是米其林三星（預算更高）。午間 Omakase 遠超任何連鎖壽司，是東京壽司的真正體驗。</div>
+              <div class="rest-facts">
+                <span class="rf rf-res">📖 Tableall 提前 1 個月預約（強烈建議）</span>
+                <span class="rf rf-q">🕐 未預約幾乎無位，週六尤其難</span>
+                <span class="rf rf-must">⭐ Omakase 全由主廚決定，全部吃就對了</span>
+              </div>
+              <div class="price-tag">💴 午間 ¥8,000–18,000/人（依店級）</div>
+              <a href="https://tableall.com/" target="_blank" class="rest-link" style="margin-top:8px">Tableall 訂位 →</a>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>較平價替代：</strong>銀座周邊 Tabelog 4.0+ 海鮮丼店（¥2,500–4,000，不用預約但要排隊）
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/銀座+寿司+Omakase" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都中央区銀座', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-ginzasushi" onclick="toggleFav('rest-ginzasushi','銀座 Omakase 壽司',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都中央区銀座</span></div>
+    
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/叙々苑+六本木本店" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都港区六本木9-7-4 ハリウッドプラザ', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-jojoen" onclick="toggleFav('rest-jojoen','叙々苑 六本木本店',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都港区六本木9-7-4 ハリウッドプラザ</span></div>
+    </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">下午 15:00</span></div>
+            <div class="tl-name">🛍️ 銀座 Ginza Six・Itoya 文具</div>
+            <div class="tl-desc">Ginza Six 是東京最精緻百貨，B2F 有精選日本品牌；<strong>Itoya 是 10 層樓文具店</strong>，就算不買也值得逛，是東京文化體驗的一部分。吃完頂級壽司再逛文具，這個對比很有趣。</div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-metro">東京地鐵銀座線</span><span class="chip chip-exit">銀座站 A2 出口</span><span class="chip chip-suica">刷 Suica</span>
+            </div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">傍晚 18:30</span></div>
+            <div class="tl-name">🎨 六本木 森美術館・Tokyo City View</div>
+            <div class="tl-desc">52F 城市觀景台，夜景角度與澀谷完全不同。加上森美術館的當代藝術展，¥2,000 含兩者超值。<strong>在這個高度，你們可以找找昨天去過的 Shibuya Sky 大樓在哪裡。</strong></div>
+            <div class="route-chips" style="margin-top:7px">
+              <span class="chip chip-metro">東京地鐵日比谷線</span><span class="chip chip-exit">六本木站 1C 出口</span><span class="chip chip-yen">¥2,000 另購</span>
+            </div>
+            <div class="callout-note">📌 森美術館展覽內容每期不同，出發前請至官網確認：www.mori.art.museum</div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">晚餐 20:00</span></div>
+            <div class="tl-name">🥩 叙々苑 六本木本店（頂級和牛燒肉）</div>
+            <div class="tl-desc">東京燒肉界的標竿品牌。六本木本店是最高規格，環境優雅，<strong>這是整趟旅程最正式、最有「旅行結尾感」的一頓晚餐。邊吃邊回味這四天的東京，很自然。</strong></div>
+            <div class="rest-card">
+              <div class="rest-top">
+                <div class="rest-name">🥩 叙々苑 六本木本店</div>
+                <div class="rest-scores">
+                  <span class="rscore rs-tb">Tabelog 3.8</span>
+                  <span class="rscore rs-gg">Google 4.5</span>
+                </div>
+              </div>
+              <div class="rest-why">叙々苑是東京和牛燒肉的代名詞，六本木本店環境最好，黑毛和牛品質有保証，服務細膩，是結束旅程前最適合的慶祝餐廳。</div>
+              <div class="rest-facts">
+                <span class="rf rf-res">📖 官網 / Tabelog 提前 2–3 週預約</span>
+                <span class="rf rf-must">⭐ 必點：特撰カルビ・特撰ロース・ナムル盛り合わせ</span>
+              </div>
+              <div class="price-tag">💴 人均 ¥7,000–12,000</div>
+              <a href="https://tabelog.com/tokyo/A1307/A130701/" target="_blank" class="rest-link" style="margin-top:8px">Tabelog 訂位 →</a>
+              <div class="callout-alt" style="margin-top:8px">
+                <strong>中價位備案：</strong>六本木「ホルモンたろう」（內臟燒肉，¥3,000–4,500，在地下班族推薦）
+              </div>
+            
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/TORAYA+CAFE+AN+STAND+NEWoMan+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区新宿4-1-6 NEWoMan 2F', this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="rest-toraya" onclick="toggleFav('rest-toraya','TORAYA CAFÉ NEWoMan',this)">⭐ 收藏</button>
+      </div>
+      <div class="place-address">📮 <span>東京都新宿区新宿4-1-6 NEWoMan 2F</span></div>
+    </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig rain"><div class="ig-label">☔ 雨天完美路線</div><p>東京車站室內拱廊 → 銀座百貨 → Omakase 午餐 → 六本木 森美術館（全室內）→ 叙々苑。這天幾乎全室內，雨天反而超合適。</p></div>
+          <div class="ig del"><div class="ig-label">✂️ 時間不夠怎麼刪</div><p>跳過六本木，下午 Ginza Six 逛完後直接回新宿吃叙々苑新宿靖国通り店，少搭一段車省體力。Omakase 午餐是今天的靈魂，絕對不能刪。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── DAY 5 ─────── -->
+  <div class="dpanel">
+    <div class="day-card">
+      <div class="day-head">
+        <div class="day-bignum">05</div>
+        <div class="day-meta">
+          <div class="day-title">新宿最後晨光・從容返程成田</div>
+          <div class="day-datestr">6月14日（週日）&nbsp; 🌦️ 22–26°C &nbsp; ✈ 20:00 起飛</div>
+          <div class="day-badges">
+            <span class="dbadge db-sky">✈ 返程日</span>
+            <span class="dbadge db-amber">最後採購</span>
+            <span class="dbadge db-coral">15:30 出發</span>
+          </div>
+          <div class="day-tagline">「最後一個早晨，慢慢走，把東京的氣味記進記憶裡。」</div>
+        </div>
+        <div class="day-cost">
+          <div class="dc-lbl">今日預估（2人）</div>
+          <div class="dc-amt">¥10,000–15,000</div>
+        </div>
+      </div>
+      <div class="day-body">
+
+        <div class="why-box">
+          <div class="box-label">💡 為什麼今天這樣排</div>
+          <p>20:00 起飛，<strong>15:30 前搭上 N'EX 是鐵則</strong>。今天上午就安排新宿御苑輕鬆散步，最後採購，中午吃完就準備出發。不要貪心，讓今天有呼吸感。旅程的結尾應該是從容的，帶著好心情回家。</p>
+        </div>
+
+        <div class="moment-box">
+          <div class="moment-icon">🌸</div>
+          <div>
+            <div class="box-label" style="color:var(--amber-d)">🌟 今天最值得期待的瞬間</div>
+            <p>「新宿御苑裡繡球花開的小路，你們兩個慢慢走著，不說話也很好。這是東京送給你們最後的禮物，帶著這個記憶回家。」</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item tl-break">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-break">早餐 9:00</span></div>
+            <div class="tl-name">🍵 TORAYA CAFÉ・AN STAND（NEWoMan 新宿 2F）</div>
+            <div class="tl-desc">虎屋旗下豆沙甜點咖啡廳，紅豆奶油吐司＋無糖紅豆茶，最後一個早餐用日式溫柔收尾。10:00 開始，退房前可先去。</div>
+            <div class="price-tag">💴 ¥900–1,500</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">上午 10:30</span></div>
+            <div class="tl-name">🌸 新宿御苑（最後散步）</div>
+            <div class="tl-desc">飯店步行約 10 分鐘。6 月繡球花＋玫瑰盛開，是東京難得的安靜大公園。¥500 超值，逛 1–1.5 小時最剛好。兩個人慢慢走，不用趕。</div>
+            <div class="price-tag">💴 ¥500/人</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-default">中午 12:00</span></div>
+            <div class="tl-name">🛍️ 最後採購：高島屋地下超市・Donki</div>
+            <div class="tl-desc">退房後行李寄放飯店（免費），輕裝出發。高島屋地下超市買伴手禮最划算，Donki 最後掃貨。<strong>13:30 前回飯店取行李。</strong></div>
+          </div>
+
+          <div class="tl-item tl-meal">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-meal">午餐 13:00</span></div>
+            <div class="tl-name">🍱 新宿 Lumine EST 地下美食街</div>
+            <div class="tl-desc">快速解決，蕎麥麵、烏龍麵、定食都有，¥800–1,500 不用花時間選，目標是保留體力趕飛機。</div>
+            <div class="price-tag">💴 ¥800–1,500</div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">⏰ 14:30 取行李出發</span></div>
+            <div class="tl-name">🧳 飯店取行李 → 新宿站買 N'EX 票</div>
+            <div class="tl-desc">新宿站 B1F JR 售票機購買 N'EX 指定席（Narita Airport Terminal 1，¥3,070/人）。<strong>建議前一天晚上就買好，不要留到最後一天。</strong></div>
+          </div>
+
+          <div class="tl-item tl-key">
+            <div class="tl-dot"></div>
+            <div class="tl-head"><span class="tl-tag tt-key">⏰ 15:30 鐵則出發</span></div>
+            <div class="tl-name">🚆 N'EX → 成田 T1（約 80 分鐘）</div>
+            <div class="tl-desc">17:10 抵達成田，check-in＋安全檢查，20:00 起飛前有約 2h50m。</div>
+            <div class="callout-warn">
+              ✅ <strong>最保險：15:30 出發</strong>（17:10 抵達，2h50m 餘裕）<br>
+              ⚠️ <strong>最晚底線：15:48 出發</strong>（17:28 抵達，2h32m）<br>
+              ❌ <strong>不建議 16:00 後</strong>：週日成田國際航班多，請不要冒這個險
+            </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="ig cost"><div class="ig-label">💴 今日費用概估（2人）</div><p>N'EX 返程 ¥6,140 ＋ 新宿御苑 ¥1,000 ＋ 午餐 ¥3,000 ＋ 早餐 ¥2,500 ＋ 採購（自行）≈ <strong>¥12,640 起</strong></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /dpanels -->
+</div>
+</section>
+
+<!-- SPOTS -->
+<section class="section" id="spots">
+<div class="wrap">
+  <div class="sec-label">Must-Visit Places</div>
+  <h2 class="sec-title">必去景點完全指南</h2>
+  <p class="sec-desc">依主題分類，幫你快速找到最適合的景點。</p>
+  <div class="spots-tabs">
+    <div class="stab active" onclick="switchSpots(this,'s1')">🏆 必去 TOP 10</div>
+    <div class="stab" onclick="switchSpots(this,'s2')">💑 情侶推薦</div>
+    <div class="stab" onclick="switchSpots(this,'s3')">📸 IG 打卡</div>
+  </div>
+  <div id="s1" class="spanel active">
+    <div class="spot-card"><div class="spot-rank">1</div><div class="spot-icon">🌇</div><div class="spot-name">Shibuya Sky</div><div class="spot-why">229m 露天頂層，夕陽染紅整個東京，每個人上去都說值得。整趟旅程最不能錯過的體驗。</div><div class="spot-tags"><span class="stag">夕陽夜景</span><span class="stag">¥2,000</span><span class="stag">澀谷</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/Shibuya+Sky+澀谷スカイ+Scramble+Square" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-sky" onclick="toggleFav('spot-sky','Shibuya Sky',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">2</div><div class="spot-icon">⛩️</div><div class="spot-name">淺草寺・雷門</div><div class="spot-why">東京最古老寺廟，雷門大燈籠是日本象徵。早上 9 點前到，人少光線美，是東京體驗的必要一課。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">文化</span><span class="stag">淺草</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/浅草寺+雷門" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-sensoji" onclick="toggleFav('spot-sensoji','淺草寺・雷門',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">3</div><div class="spot-icon">🌀</div><div class="spot-name">澀谷十字路口</div><div class="spot-why">全球最大行人穿越路口，站在路口中間的震撼感獨一無二，這個畫面只有東京才有。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">地標</span><span class="stag">澀谷</span></div></div>
+    <div class="spot-card"><div class="spot-rank">4</div><div class="spot-icon">🚉</div><div class="spot-name">東京車站丸之內</div><div class="spot-why">1914 年紅磚站舍，免費拍照，皇居外苑散步感受東京歷史重量，雨後夜間最美。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">建築</span><span class="stag">東京站</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/東京駅+丸の内" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-tokyostation" onclick="toggleFav('spot-tokyostation','東京車站丸之內',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">5</div><div class="spot-icon">🗼</div><div class="spot-name">東京晴空塔</div><div class="spot-why">634m 世界第二高塔，天望甲板夜景震撼，Solamachi 購物美食全包，全天候景點。</div><div class="spot-tags"><span class="stag">¥2,100</span><span class="stag">夜景</span><span class="stag">押上</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/東京スカイツリー" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-skytree" onclick="toggleFav('spot-skytree','東京晴空塔',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">6</div><div class="spot-icon">🌿</div><div class="spot-name">明治神宮</div><div class="spot-why">市中心的神秘森林，早上最靜謐，莊嚴感深刻，和澀谷喧囂的對比非常東京。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">神社</span><span class="stag">原宿</span></div></div>
+    <div class="spot-card"><div class="spot-rank">7</div><div class="spot-icon">🎨</div><div class="spot-name">六本木 森美術館</div><div class="spot-why">世界級當代藝術＋52F 城市觀景台，¥2,000 含兩者，藝術與夜景的完美組合。</div><div class="spot-tags"><span class="stag">¥2,000</span><span class="stag">藝術</span><span class="stag">六本木</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/森美術館+六本木" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-morimuseum" onclick="toggleFav('spot-morimuseum','六本木 森美術館',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">8</div><div class="spot-icon">🌸</div><div class="spot-name">新宿御苑</div><div class="spot-why">6月繡球花＋玫瑰，東京最美大公園，¥500，適合旅程最後一天安靜散步告別東京。</div><div class="spot-tags"><span class="stag">¥500</span><span class="stag">公園</span><span class="stag">新宿</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/新宿御苑" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-shinjukugyoen" onclick="toggleFav('spot-shinjukugyoen','新宿御苑',this)">⭐ 收藏</button>
+      </div>
+    </div>
+    <div class="spot-card"><div class="spot-rank">9</div><div class="spot-icon">👗</div><div class="spot-name">原宿竹下通り</div><div class="spot-why">次文化聖地，可麗餅與復古小物，年輕能量滿溢，10 分鐘就感受東京年輕靈魂。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">購物</span><span class="stag">原宿</span></div></div>
+    <div class="spot-card"><div class="spot-rank">10</div><div class="spot-icon">🛍️</div><div class="spot-name">銀座 Ginza Six + Itoya</div><div class="spot-why">東京最精緻百貨＋10 層文具店，就算不買也值得進去體驗那種精緻感，是東京獨有的。</div><div class="spot-tags"><span class="stag">免費入場</span><span class="stag">精品</span><span class="stag">銀座</span></div>
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/GINZA+SIX" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-ginzasix" onclick="toggleFav('spot-ginzasix','銀座 Ginza Six',this)">⭐ 收藏</button>
+      </div>
+    
+      <div class="place-actions" style="margin-top:10px">
+        <a href="https://www.google.com/maps/search/伊東屋+銀座" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="spot-itoya" onclick="toggleFav('spot-itoya','Itoya 文具',this)">⭐ 收藏</button>
+      </div>
+    </div>
+  </div>
+  <div id="s2" class="spanel">
+    <div class="spot-card"><div class="spot-icon">🌇</div><div class="spot-name">Shibuya Sky 夕陽</div><div class="spot-why">兩個人在 229m 高空看夕陽染紅東京，這個瞬間讓你們覺得來東京的一切都值得了。</div><div class="spot-tags"><span class="stag">最浪漫</span><span class="stag">夕陽</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🌿</div><div class="spot-name">明治神宮・代代木公園</div><div class="spot-why">東京鬧市中最適合兩人安靜走走說說話的地方，空氣清新，不急不趕的氛圍剛剛好。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">散步</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🍣</div><div class="spot-name">銀座 Omakase 午餐</div><div class="spot-why">主廚為你們一道道奉上，是一種被認真對待的感受，整趟最有儀式感的一餐。</div><div class="spot-tags"><span class="stag">美食</span><span class="stag">需訂位</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🌸</div><div class="spot-name">新宿御苑 繡球花</div><div class="spot-why">6 月繡球花盛開，最後一天在花叢中漫步，是東京送給你們最後的禮物。</div><div class="spot-tags"><span class="stag">¥500</span><span class="stag">賞花</span></div></div>
+    <div class="spot-card"><div class="spot-icon">💧</div><div class="spot-name">teamLab Planets（選配）</div><div class="spot-why">沉浸式數位藝術，兩人在光影世界迷路，是最有互動感的情侶體驗，需提前購票。</div><div class="spot-tags"><span class="stag">¥3,200</span><span class="stag">藝術</span><span class="stag">需預約</span></div></div>
+  </div>
+  <div id="s3" class="spanel">
+    <div class="spot-card"><div class="spot-icon">🌇</div><div class="spot-name">Shibuya Sky Edge</div><div class="spot-why">站在懸空網格上，腳下是東京全景，17:30–19:00 光線最美，拍出來讓人以為在飛翔。</div><div class="spot-tags"><span class="stag">¥2,000</span><span class="stag">高空感</span></div></div>
+    <div class="spot-card"><div class="spot-icon">⛩️</div><div class="spot-name">淺草寺 早晨（9點前）</div><div class="spot-why">大紅燈籠配空曠仲見世通，早上人少光線美，拍出來最有日本感，下午人潮是三倍。</div><div class="spot-tags"><span class="stag">早起必去</span><span class="stag">傳統感</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🌀</div><div class="spot-name">澀谷十字路口（高處）</div><div class="spot-why">在 Starbucks 2F 或 Scramble Square 2F 俯瞰人潮流動，是東京最 iconic 的畫面之一。</div><div class="spot-tags"><span class="stag">免費角度</span><span class="stag">地標</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🚉</div><div class="spot-name">東京車站夜晚</div><div class="spot-why">夜晚打燈的紅磚車站，雨後水坑的倒影更美，是東京少為人知的夜拍聖地。</div><div class="spot-tags"><span class="stag">免費</span><span class="stag">夜拍</span></div></div>
+    <div class="spot-card"><div class="spot-icon">🌸</div><div class="spot-name">新宿御苑 繡球花徑</div><div class="spot-why">6 月限定，藍紫色繡球花配日式庭院，拍出來像電影海報，自然光很美。</div><div class="spot-tags"><span class="stag">¥500</span><span class="stag">6月限定</span></div></div>
+  </div>
+</div>
+</section>
+
+<!-- TRANSPORT -->
+<section class="section" id="transport">
+<div class="wrap">
+  <div class="sec-label">Getting Around</div>
+  <h2 class="sec-title">交通完整攻略</h2>
+  <p class="sec-desc">從成田到新宿、IC 卡選擇、每日地鐵路線，所有資訊真實可用，可以直接照著走。</p>
+
+  <div class="accord">
+    <div class="accord-head" onclick="toggleAcc(this)">
+      <div class="accord-num">1</div>
+      <div class="accord-title">✈️ 成田機場 → 新宿：N'EX 完整教學</div>
+      <span class="accord-badge">Day 1 必看</span>
+      <span class="accord-arrow open">▼</span>
+    </div>
+    <div class="accord-body open">
+      <div class="adetail">
+        <div class="adetail-title">📍 出關後動線</div>
+        <ol>
+          <li>入境審查（Immigration）→ 行李提取 → 海關申報，估計 45–60 分鐘</li>
+          <li>出海關後往 1F 「到着ロビー」，跟 JR 標示往前走</li>
+          <li>找「<strong>JR EAST Travel Service Center</strong>」人工窗口（有英文服務）</li>
+        </ol>
+      </div>
+      <div class="adetail">
+        <div class="adetail-title">🎫 購票方式（擇一）</div>
+        <div class="rc-grid">
+          <div class="rcbox rce"><div class="rcl">😊 新手推薦</div><p>JR EAST 人工窗口 → 說「N'EX to Shinjuku, 2 persons, reserved seat」→ 工作人員協助完成</p></div>
+          <div class="rcbox rcf"><div class="rcl">⚡ 自動售票機</div><p>English → Limited Express → N'EX → Shinjuku → Reserved Seat → 選班次 → 刷卡</p></div>
+        </div>
+        <div class="awarn">⚠️ N'EX 必須購買獨立票券，<strong>Suica/PASMO 無法乘坐</strong>。票上印有号車＆座位，需對號入座。票價 ¥3,070/人。</div>
+      </div>
+      <div class="adetail">
+        <div class="adetail-title">🚆 班次與乘車（建議出發前再確認時刻表）</div>
+        <ol>
+          <li>往 B1F，找「Narita Express（N'EX）」月台指標</li>
+          <li>月台有号車停車位置標示，對應票上号車站好</li>
+          <li>車廂門旁有大型行李架，不用另行托運</li>
+          <li>每小時約 1–2 班，全程約 80 分鐘到新宿</li>
+        </ol>
+        <div class="anote">📌 新宿站抵達後：「JR 改札（出口）」→ 往「<strong>西口（West Exit）</strong>」→ 小田急百貨旁步行 3 分鐘到飯店</div>
+      <div class="transit-warn-box">
+        ⚠️ <strong>新手提醒：新宿站出口很複雜！</strong>從 N'EX 月台出來後，跟著「<strong>西口（West Exit）</strong>」標示走，不要跟著「東口」出。JR 改札口出來後小田急百貨就在前方，飯店步行 3 分鐘。迷路的話找站內工作人員，他們會指路。
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accord">
+    <div class="accord-head" onclick="toggleAcc(this)">
+      <div class="accord-num">2</div>
+      <div class="accord-title">🔁 新宿 → 成田機場：返程（Day 5）</div>
+      <span class="accord-badge">Day 5 必看</span>
+      <span class="accord-arrow">▼</span>
+    </div>
+    <div class="accord-body">
+      <div class="adetail">
+        <div class="adetail-title">⏰ 時間規劃（20:00 起飛）</div>
+        <div class="awarn">✅ <strong>建議：15:30 出發</strong> → 17:10 抵達成田（2h50m 餘裕）<br>⚠️ <strong>底線：15:48 出發</strong> → 17:28 抵達（2h32m）<br>❌ <strong>16:00 後不建議</strong>，週日成田國際線人多</div>
+      </div>
+      <div class="adetail">
+        <div class="adetail-title">🎫 返程購票建議</div>
+        <ol>
+          <li>新宿站 JR 售票機 → N'EX → Narita Airport Terminal 1，¥3,070/人</li>
+          <li><strong>建議前一天晚上買好</strong>，不要留到 Day 5 出發前才買</li>
+          <li>或請飯店 Concierge 協助購票（最省心）</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="accord">
+    <div class="accord-head" onclick="toggleAcc(this)">
+      <div class="accord-num">3</div>
+      <div class="accord-title">💳 Suica 怎麼買・Tokyo Subway Ticket 值不值</div>
+      <span class="accord-badge">必讀</span>
+      <span class="accord-arrow">▼</span>
+    </div>
+    <div class="accord-body">
+      <div class="adetail">
+        <div class="adetail-title">🟢 Suica（主卡，強烈推薦）</div>
+        <ol>
+          <li>全東京 JR＋地鐵（Metro）＋都營＋巴士通用，一卡搞定</li>
+          <li>便利商店、部分餐廳、自動販賣機也可刷</li>
+          <li>機場或新宿站 JR 售票機購買，初始 ¥1,000（含 ¥500 押金）</li>
+          <li>建議每人存 ¥3,000–4,000，5 天夠用</li>
+          <li>Apple Pay / Google Pay 可設定虛擬 Suica（更方便）</li>
+          <li>回台前可在 JR 售票機退卡退回 ¥500 押金</li>
+        </ol>
+      </div>
+      <div class="adetail">
+        <div class="adetail-title">🔵 Tokyo Subway Ticket（密集地鐵日才值得）</div>
+        <div class="rc-grid">
+          <div class="rcbox rce"><div class="rcl">適合使用</div><p>Day 2–4 地鐵密集期，涵蓋 Metro 9 線＋都營 4 線，72h ¥1,500 超划算</p></div>
+          <div class="rcbox rcf"><div class="rcl">注意</div><p>不含 JR 山手線等 JR 路線，也不含 N'EX。需與 Suica 搭配使用</p></div>
+        </div>
+        <div class="anote">💡 本次建議：Suica 作主卡＋Day 2–4 加買 72h Tokyo Subway Ticket（每人 ¥1,500）</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- SHIBUYA SKY -->
+<section class="section" id="sky">
+<div class="wrap">
+  <div class="sec-label">The Highlight Experience</div>
+  <h2 class="sec-title">Shibuya Sky 完整攻略</h2>
+  <p class="sec-desc">整趟旅行的情緒高峰，所有你需要知道的都在這裡。</p>
+  <div class="sky-block">
+    <div class="sky-eyebrow">★ 整趟旅程最重要的體驗</div>
+    <div class="sky-title">SHIBUYA <span>SKY</span></div>
+    <div class="sky-tagline">「229 公尺高空的夕陽，是東京送給你們最好的禮物。<br>那個景色，是任何語言都描述不清楚的。」</div>
+    <div class="sky-cells">
+      <div class="sky-cell"><div class="sky-cell-l">建議入場時段</div><div class="sky-cell-v"><em>17:30</em> 進場</div></div>
+      <div class="sky-cell"><div class="sky-cell-l">6/12 日落時間</div><div class="sky-cell-v">約 <em>19:00</em></div></div>
+      <div class="sky-cell"><div class="sky-cell-l">預購票價</div><div class="sky-cell-v"><em>¥2,000</em>/人</div></div>
+      <div class="sky-cell"><div class="sky-cell-l">現場票價</div><div class="sky-cell-v">¥2,500（可能售完）</div></div>
+      <div class="sky-cell"><div class="sky-cell-l">建議提前購票</div><div class="sky-cell-v"><em>14 天以上</em></div></div>
+      <div class="sky-cell"><div class="sky-cell-l">建議停留時間</div><div class="sky-cell-v"><em>60–90</em> 分鐘</div></div>
+    </div>
+    <div class="sky-btns">
+      <a href="https://www.shibuya-scramble-square.com/sky/ticket/" target="_blank" class="sky-btn skb-official">🔗 官方網站</a>
+      <a href="https://www.kkday.com/zh-tw/product/133300-shibuya-sky-observatory-e-ticket-tokyo" target="_blank" class="sky-btn skb-kk">📱 KKday（中文）</a>
+      <a href="https://www.klook.com/zh-TW/activity/70672-shibuya-sky-tokyo/" target="_blank" class="sky-btn skb-kl">🎫 Klook（推薦）</a>
+    </div>
+    <div class="sky-notice">
+      <strong>⚠️ 梅雨季重要提醒：</strong><br>
+      ① 強風大雨時露天頂層（Sky Stage）可能關閉，僅開放室內 Sky Gallery，景觀受限<br>
+      ② 官方網站限制部分海外信用卡，<strong>建議透過 KKday 或 Klook</strong>（中文界面，可退票）<br>
+      ③ 出發前 1–2 天查 <strong>tenki.jp</strong> 天氣，遇強降雨提前考慮換日期<br>
+      ④ <strong>一定要選「可免費取消」方案</strong>，梅雨季最安心
+    </div>
+    <div class="sky-2col">
+      <div class="sky-tip-box">
+        <h4>📅 Day 3 的行程接法</h4>
+        <ul>
+          <li>早上 原宿竹下通・明治神宮</li>
+          <li>午餐 Afuri 柚子拉麵（原宿）</li>
+          <li>下午 澀谷十字路口・Scramble Square</li>
+          <li><strong>17:30 Shibuya Sky 進場</strong></li>
+          <li>19:30 出來 → 步行 5 分 → 燒肉トラジ</li>
+        </ul>
+      </div>
+      <div class="sky-tip-box">
+        <h4>☔ 天氣不好怎麼辦</h4>
+        <ul>
+          <li>小雨 → 仍可去，室內 Gallery 也美</li>
+          <li>大雨強風 → 頂層關閉，換景點</li>
+          <li>備案 A → 東京都廳展望台（<strong>免費</strong>）</li>
+          <li>備案 B → 六本木 City View（¥2,000）</li>
+          <li>有退票方案就不用擔心</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TICKETS -->
+<section class="section" id="tickets">
+<div class="wrap">
+  <div class="sec-label">Booking Guide</div>
+  <h2 class="sec-title">購票與預約完整指南</h2>
+  <p class="sec-desc">這些提前做好，旅途才真的放鬆。</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+        <a href="https://www.google.com/maps/search/渋谷スクランブルスクエア+SHIBUYA+SKY" target="_blank" class="map-btn">📍 Shibuya Sky 地圖</a>
+        <a href="https://www.google.com/maps/dir/新宿駅/渋谷スクランブルスクエア" target="_blank" class="map-btn green">🧭 新宿→Shibuya Sky 導航</a>
+        <button class="fav-btn" data-fav-id="sky-main" onclick="toggleFav('sky-main','Shibuya Sky 17:30',this)">⭐ 收藏 Sky 行程</button>
+      </div>
+  <div class="ticket-grid">
+    <div class="tcard" style="--tcard-color:var(--sky)">
+      <div class="tcard-icon">🌇</div>
+      <div class="tcard-name">Shibuya Sky（6/12）</div>
+      <div class="tcard-desc">最重要。日落時段超搶手，至少 14 天前買，選可退票方案</div>
+      <div class="tcard-price">¥2,000/人（預購）</div>
+      <ul class="tcard-steps">
+        <li>前往 KKday 或 Klook（中文介面）</li>
+        <li>搜尋「Shibuya Sky 門票」</li>
+        <li>選 6/12（週五）17:30 時段</li>
+        <li>選「可免費取消」方案</li>
+        <li>收到 QR Code，當天掃碼入場</li>
+      </ul>
+      <a href="https://www.klook.com/zh-TW/activity/70672-shibuya-sky-tokyo/" target="_blank" class="btn btn-sky btn-sm" style="margin-top:12px;display:inline-flex">立即購票 →</a>
+    </div>
+    <div class="tcard" style="--tcard-color:var(--mint)">
+      <div class="tcard-icon">🍣</div>
+      <div class="tcard-name">銀座 Omakase 壽司（6/13 午）</div>
+      <div class="tcard-desc">提前 1 個月預約，本趟美食高峰，不能省</div>
+      <div class="tcard-price">午間 ¥8,000–18,000/人</div>
+      <ul class="tcard-steps">
+        <li>前往 Tableall（有英文、中文）</li>
+        <li>搜尋「銀座 寿司 ランチ Omakase」</li>
+        <li>選 6/13 午間時段（12:00 前後）</li>
+        <li>填人數、信用卡擔保</li>
+        <li>確認預約成功 email 備存</li>
+      </ul>
+      <a href="https://tableall.com/" target="_blank" class="btn btn-mint btn-sm" style="margin-top:12px;display:inline-flex">Tableall 訂位 →</a>
+    </div>
+    <div class="tcard" style="--tcard-color:var(--amber)">
+      <div class="tcard-icon">🍲</div>
+      <div class="tcard-name">淺草今半 別館（6/11 午）</div>
+      <div class="tcard-desc">百年老舖壽喜燒，提前 2 週預約，週日午間難有位</div>
+      <div class="tcard-price">午間套餐 ¥5,000–8,000/人</div>
+      <ul class="tcard-steps">
+        <li>前往 TableCheck（日本版）</li>
+        <li>搜尋「淺草今半 別館」</li>
+        <li>選 6/11 午間 12:00 時段</li>
+        <li>填聯絡資訊與人數</li>
+        <li>確認郵件截圖備用</li>
+      </ul>
+      <a href="https://www.tablecheck.com/shops/asakusa-imahan-betsukanrooms/reserve" target="_blank" class="btn btn-amber btn-sm" style="margin-top:12px;display:inline-flex">TableCheck 訂位 →</a>
+    </div>
+    <div class="tcard" style="--tcard-color:var(--coral)">
+      <div class="tcard-icon">🥩</div>
+      <div class="tcard-name">叙々苑 六本木（6/13 晚）</div>
+      <div class="tcard-desc">提前 2–3 週預約，週六晚上最搶手</div>
+      <div class="tcard-price">人均 ¥7,000–12,000</div>
+      <ul class="tcard-steps">
+        <li>前往叙々苑官網或 Tabelog</li>
+        <li>選六本木本店，6/13 晚 20:00</li>
+        <li>2 名，填聯絡方式</li>
+        <li>確認預約 email 保存</li>
+        <li>當天出示確認信即可</li>
+      </ul>
+      <a href="https://tabelog.com/tokyo/A1307/A130701/" target="_blank" class="btn btn-glass btn-sm" style="margin-top:12px;display:inline-flex">Tabelog 搜尋 →</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOD -->
+<!-- ══════════ FOOD FULL UPGRADE ══════════ -->
+<section class="section" id="food">
+<div class="wrap">
+  <div class="sec-label">Food Guide by Area</div>
+  <h2 class="sec-title">🍜 分區美食完全手冊</h2>
+  <p class="sec-desc">全部非連鎖在地店，Tabelog 3.5+、Google 4.2+，按區域分類，找備案不慌。</p>
+
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+    <a href="https://tableall.com/" target="_blank" class="map-btn green">📖 Tableall</a>
+    <a href="https://www.tablecheck.com/ja/japan/" target="_blank" class="map-btn">📖 TableCheck</a>
+    <a href="https://tabelog.com/" target="_blank" class="map-btn amber">⭐ Tabelog</a>
+    <a href="https://www.hotpepper.jp/" target="_blank" class="map-btn">🔴 Hot Pepper</a>
+  </div>
+
+  <div class="food-area-tabs">
+    <div class="fat active" onclick="switchFoodArea(this,'fa-shinjuku')">🏙 新宿</div>
+    <div class="fat" onclick="switchFoodArea(this,'fa-asakusa')">🏮 淺草・上野</div>
+    <div class="fat" onclick="switchFoodArea(this,'fa-shibuya')">🌀 澀谷・原宿</div>
+    <div class="fat" onclick="switchFoodArea(this,'fa-ginza')">💎 銀座・六本木</div>
+    <div class="fat" onclick="switchFoodArea(this,'fa-cafe')">☕ 咖啡廳</div>
+  </div>
+
+  <!-- ──── 新宿 ──── -->
+  <div id="fa-shinjuku" class="fat-panel active">
+
+    <div class="area-section-title">🍜 正餐</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--sky)">
+      <div class="rfc-top">
+        <div class="rfc-name">麺屋武蔵 鷹虎（Day 1 晚餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍜 濃厚系拉麵小店・座位少・個性強</div>
+      <div class="rfc-why">麺屋武蔵系列是東京知名非連鎖拉麵品牌，湯頭以雞骨＋豚骨特製，層次深厚。鷹虎為其新宿旗下店，在地上班族常客，不是觀光型，是真正「東京味」的第一餐首選。</div>
+      <div class="rfc-must">⭐ 必點：特製拉麵（濃厚）・味玉・鷹虎ご飯（附餐）</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 排隊 10–25 分</span>
+        <span class="rff rff-nres">📍 現場候位，不可預約</span>
+        <span class="rff rff-vibe">小店・8–10 座</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都新宿区西新宿1丁目付近（建議 Google Maps 確認）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/麺屋武蔵+鷹虎+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区西新宿1丁目 麺屋武蔵鷹虎',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-musha" onclick="toggleFav('r-musha','麺屋武蔵鷹虎',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--mint)">
+      <div class="rfc-top">
+        <div class="rfc-name">鳥こう 新宿（新宿居酒屋・雞肉料理）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🐓 昭和感居酒屋・雞肉水炊き・在地上班族</div>
+      <div class="rfc-why">新宿老牌居酒屋，主打雞肉料理（水炊き / 焼き鳥），環境有日本昭和感，下班族聚集，不是觀光型。若拉麵排太久或不想排，這裡是很好的備案，而且性價比更高。</div>
+      <div class="rfc-must">⭐ 必點：水炊き鶏鍋・焼き鳥盛り合わせ・ビール</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 排隊少</span>
+        <span class="rff rff-res">📖 可電話預約</span>
+        <span class="rff rff-vibe">居酒屋・昭和感</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都新宿区西新宿 鳥こう新宿（建議 Google Maps 確認）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/鳥こう+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区西新宿 鳥こう',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-torikou" onclick="toggleFav('r-torikou','鳥こう新宿',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--amber)">
+      <div class="rfc-top">
+        <div class="rfc-name">まるごと高知（高知縣産地直送居酒屋）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.5</span>
+          <span class="rfc-score rfc-gg">Google 4.2</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🐟 地方食材直送・かつおたたき・獨特感強</div>
+      <div class="rfc-why">高知縣在東京的官方直送店，かつおのたたき（鰹魚拍打）是招牌，加上高知特產和在地酒，是很難在台灣體驗到的日本風味，新宿地段但不觀光。</div>
+      <div class="rfc-must">⭐ 必點：かつおのたたき・高知野菜の天ぷら</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 通常不用等</span>
+        <span class="rff rff-res">📖 電話 / Tabelog 可訂</span>
+        <span class="rff rff-vibe">地方アンテナショップ・寬敞</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都新宿区西新宿1-12-1 まるごと高知</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/まるごと高知+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区西新宿1-12-1 まるごと高知',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-kochi" onclick="toggleFav('r-kochi','まるごと高知',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="area-section-title">☕ 咖啡廳（新宿）</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--lavender)">
+      <div class="rfc-top">
+        <div class="rfc-name">Verve Coffee Roasters（NEWoMan 新宿 2F）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">☕ 加州精品咖啡・寬敞明亮・適合早晨</div>
+      <div class="rfc-why">來自加州 Santa Cruz 的精品咖啡品牌，NEWoMan 新宿南口店，7:00 起供應。烘焙豆品質高，空間明亮，是開啟 Day 3 最好的方式，也適合補充體力。</div>
+      <div class="rfc-must">⭐ 必點：Single Origin Filter Coffee・招牌可頌</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 幾乎不用排</span>
+        <span class="rff rff-nres">📍 不可預約，直接入座</span>
+        <span class="rff rff-vibe">精品咖啡廳・明亮寬敞</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都新宿区新宿4-1-6 NEWoMan 新宿 2F</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/Verve+Coffee+Roasters+NEWoMan+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区新宿4-1-6 NEWoMan 2F Verve Coffee',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-verve" onclick="toggleFav('r-verve','Verve Coffee NEWoMan',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--coral)">
+      <div class="rfc-top">
+        <div class="rfc-name">TORAYA CAFÉ・AN STAND（NEWoMan 新宿 2F）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.7</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍵 虎屋旗下・日式甜點咖啡廳・有儀式感</div>
+      <div class="rfc-why">室町時代創業的和菓子老舖「虎屋」旗下現代咖啡廳，紅豆奶油吐司＋無糖紅豆茶是招牌，Day 5 最後早餐最適合，是日式旅程的完美收尾。</div>
+      <div class="rfc-must">⭐ 必點：あんバタートースト・ほうじ茶</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 通常不需排隊</span>
+        <span class="rff rff-nres">📍 現場，10:00 起</span>
+        <span class="rff rff-vibe">日式甜點・優雅安靜</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都新宿区新宿4-1-6 NEWoMan 新宿 2F</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/TORAYA+CAFE+AN+STAND+NEWoMan+新宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都新宿区新宿4-1-6 NEWoMan 2F TORAYA CAFÉ',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-toraya" onclick="toggleFav('r-toraya','TORAYA CAFÉ NEWoMan',this)">⭐ 收藏</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ──── 淺草・上野 ──── -->
+  <div id="fa-asakusa" class="fat-panel">
+
+    <div class="area-section-title">🍜 正餐</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--mint)">
+      <div class="rfc-top">
+        <div class="rfc-name">淺草今半 別館（Day 2 午餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.8</span>
+          <span class="rfc-score rfc-gg">Google 4.5</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🥩 百年老舖・和牛壽喜燒・正式座位</div>
+      <div class="rfc-why">1895 年創業，東京和牛壽喜燒的代名詞。別館午間套餐比本館親民 30%，品質相同。仲見世通步行 5 分，是淺草最值得認真吃的一頓，這頓後你們對日本牛肉的印象會完全改觀。</div>
+      <div class="rfc-must">⭐ 必點：黒毛和牛すき焼き 午間套餐・追加和牛リブロース</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 未預約等 30–60 分</span>
+        <span class="rff rff-res">📖 TableCheck（建議 2 週前）</span>
+        <span class="rff rff-vibe">老舖・正式座位・服務佳</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都台東区西浅草3-1-12</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/浅草今半+別館" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区西浅草3-1-12 浅草今半別館',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-imahan" onclick="toggleFav('r-imahan','浅草今半別館',this)">⭐ 收藏</button>
+        <a href="https://www.tablecheck.com/shops/asakusa-imahan-betsukanrooms/reserve" target="_blank" class="map-btn green">📖 TableCheck 訂位</a>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--amber)">
+      <div class="rfc-top">
+        <div class="rfc-name">焼鳥大吉 上野御徒町（Day 2 晚餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.5+</span>
+          <span class="rfc-score rfc-gg">Google 4.2+</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍢 在地居酒屋・炭火串燒・上班族聚集</div>
+      <div class="rfc-why">大吉是日本傳統在地居酒屋品牌，御徒町一帶有多家，下班族聚集是正宗東京居酒屋體驗。炭火串燒品質穩定，コスパ極高，是第一次居酒屋體驗的首選環境。</div>
+      <div class="rfc-must">⭐ 必點：炭火焼き鳥盛り合わせ・つくね・生ビール・お通し（附菜 ¥300–500 是正常）</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 18:00 前到幾乎不用等</span>
+        <span class="rff rff-nres">📍 現場候位</span>
+        <span class="rff rff-vibe">居酒屋・昭和感・熱鬧</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都台東区上野6丁目周辺（御徒町駅北口徒步2分）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/焼鳥大吉+上野+御徒町" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区上野6丁目 焼鳥大吉 御徒町',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-taiki" onclick="toggleFav('r-taiki','焼鳥大吉御徒町',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--sky)">
+      <div class="rfc-top">
+        <div class="rfc-name">喜久鮨（合羽橋・老字號壽司）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍣 1910 年創業・散壽司・職人感強</div>
+      <div class="rfc-why">合羽橋旁的老字號壽司，1910 年創業，午間散壽司套餐性價比極高（¥1,500 起），不用排隊，氛圍傳統。若不想花大錢吃今半，這裡是最好的平替選擇。</div>
+      <div class="rfc-must">⭐ 必點：ちらし寿司（散壽司）定食・地魚握り</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 幾乎不用排</span>
+        <span class="rff rff-nres">📍 現場，可電話預約</span>
+        <span class="rff rff-vibe">小店・老舖職人・安靜</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都台東区松が谷3丁目付近（合羽橋道具街附近）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/喜久鮨+合羽橋+台東区" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区松が谷3丁目 喜久鮨',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-kikusushi" onclick="toggleFav('r-kikusushi','喜久鮨合羽橋',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="area-section-title">☕ 咖啡廳（淺草・上野）</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--lavender)">
+      <div class="rfc-top">
+        <div class="rfc-name">MISOJYU 浅草本店（Day 2 早餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍙 日式早餐・味噌専門・淺草在地</div>
+      <div class="rfc-why">以「味噌汁専門店」為概念的日式早餐店，每日手工味噌湯配飯糰，食材嚴選，是真正在地淺草人的早餐。8:00 開始，是在人潮湧入前享用淺草寺最好的開場。</div>
+      <div class="rfc-must">⭐ 必點：季節味噌湯定食・手作りおにぎり</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 8:30 後排 10–20 分</span>
+        <span class="rff rff-nres">📍 現場，8:00 開始</span>
+        <span class="rff rff-vibe">日式早餐・溫馨小店</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都台東区雷門2-2-14</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/MISOJYU+浅草本店" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都台東区雷門2-2-14 MISOJYU',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-misojyu" onclick="toggleFav('r-misojyu','MISOJYU浅草',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--mint)">
+      <div class="rfc-top">
+        <div class="rfc-name">Pelican Coffee（上野・烘焙咖啡廳）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.5</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">☕ 在地烘焙小店・上野下午休息點</div>
+      <div class="rfc-why">上野周邊的精品烘焙咖啡廳，氣氛安靜，適合阿美橫丁逛完後坐下來喝咖啡補充體力，是在地人的午後選擇，非觀光定番。</div>
+      <div class="rfc-must">⭐ 必點：手沖咖啡・自家製蛋糕</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 通常有位</span>
+        <span class="rff rff-nres">📍 現場</span>
+        <span class="rff rff-vibe">精品咖啡・安靜</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都台東区上野周辺（建議 Google Maps 搜尋）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/Pelican+Coffee+上野" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="r-pelican" onclick="toggleFav('r-pelican','Pelican Coffee上野',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ──── 澀谷・原宿 ──── -->
+  <div id="fa-shibuya" class="fat-panel">
+
+    <div class="area-section-title">🍜 正餐</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--sky)">
+      <div class="rfc-top">
+        <div class="rfc-name">Afuri 原宿店（Day 3 午餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍜 柚子鹽拉麵・清爽風格・設計感空間</div>
+      <div class="rfc-why">Afuri 以天然水＋柚子鹽湯頭聞名，是東京拉麵界的設計師品牌，完全不同於豚骨或醬油系，湯頭清爽，適合不愛重口味的旅客。原宿店離竹下通步行 5 分，午間等待時間短。</div>
+      <div class="rfc-must">⭐ 必點：柚子しお拉麺（招牌）・柚子醤油拉麺（濃郁版）・特製トッピング</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 午間約 10–20 分</span>
+        <span class="rff rff-nres">📍 現場候位</span>
+        <span class="rff rff-vibe">設計感空間・明亮</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都渋谷区神宮前6-35-3</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/AFURI+原宿" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都渋谷区神宮前6-35-3 AFURI',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-afuri" onclick="toggleFav('r-afuri','Afuri原宿',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--amber)">
+      <div class="rfc-top">
+        <div class="rfc-name">焼肉トラジ 渋谷道玄坂（Day 3 晚餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.7</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🥩 質感燒肉・黑毛和牛・Shibuya Sky 後步行5分</div>
+      <div class="rfc-why">トラジ是日本少見的「質感燒肉」品牌，黑毛和牛品質遠高於普通燒肉店，服務細膩，澀谷道玄坂店距 Shibuya Sky 步行 5 分鐘，看完夕陽後自然串聯，是今晚最好的收尾。</div>
+      <div class="rfc-must">⭐ 必點：特選黒毛和牛カルビ・上ロース・牛タン・ナムル盛り</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 未預約約等 20–40 分</span>
+        <span class="rff rff-res">📖 Tabelog 訂位（1–2 週前）</span>
+        <span class="rff rff-vibe">質感燒肉・現代空間</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都渋谷区道玄坂2-29-11</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/焼肉トラジ+渋谷道玄坂" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都渋谷区道玄坂2-29-11 焼肉トラジ',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-toraji" onclick="toggleFav('r-toraji','焼肉トラジ澀谷',this)">⭐ 收藏</button>
+        <a href="https://tabelog.com/tokyo/A1303/A130301/" target="_blank" class="map-btn green">📖 Tabelog 訂位</a>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--mint)">
+      <div class="rfc-top">
+        <div class="rfc-name">KINTAN 表参道（和牛燒肉・澀谷備案）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.6</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🥩 和牛燒肉・時尚空間・表參道風格</div>
+      <div class="rfc-why">若トラジ訂不到或太貴，KINTAN 是澀谷・表參道地區同級別的好替代。和牛品質穩定，空間時尚，適合情侶，價格比叙々苑親民。</div>
+      <div class="rfc-must">⭐ 必點：和牛特選焼肉セット・牛タン</div>
+      <div class="rfc-facts">
+        <span class="rff rff-res">📖 Tabelog 可預約</span>
+        <span class="rff rff-vibe">時尚空間・情侶友善</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都渋谷区神宮前5丁目付近（表参道駅徒步3分）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/KINTAN+表参道+焼肉" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="r-kintan" onclick="toggleFav('r-kintan','KINTAN表参道',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="area-section-title">☕ 咖啡廳（澀谷・原宿）</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--lavender)">
+      <div class="rfc-top">
+        <div class="rfc-name">% Arabica 表参道（精品咖啡・打卡熱點）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.7</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">☕ 京都發精品咖啡・極簡設計・IG 感</div>
+      <div class="rfc-why">京都起家的精品咖啡品牌，表參道店設計感極強（全白極簡），咖啡品質一流，是原宿→表參道逛完後很自然的中途補給站。人氣高但等待通常不長。</div>
+      <div class="rfc-must">⭐ 必點：Espresso・Flat White</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 可能排 5–15 分</span>
+        <span class="rff rff-nres">📍 現場，外帶為主</span>
+        <span class="rff rff-vibe">極簡設計・IG 感強</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都港区南青山3-13-14 根津美術館前</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/% Arabica+表参道" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="r-arabica" onclick="toggleFav('r-arabica','% Arabica表参道',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ──── 銀座・六本木 ──── -->
+  <div id="fa-ginza" class="fat-panel">
+
+    <div class="area-section-title">🍜 正餐</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--sky)">
+      <div class="rfc-top">
+        <div class="rfc-name">銀座 壽司 午間 Omakase（Day 4 午餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.7–4.0</span>
+          <span class="rfc-score rfc-gg">Google 4.5+</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🐟 主廚全權開菜・高端・最有儀式感</div>
+      <div class="rfc-why">銀座 Omakase 壽司是本趟旅程的美食高峰。午間同樣品質比晚餐省 40–50%，主廚依當日進貨呈上 12–15 貫，每一貫都是驚喜。推薦：壽司一碧（入門級）或 鮨よしたけ（米其林，預算更高）。</div>
+      <div class="rfc-must">⭐ 必點：全由主廚決定的 Omakase，全部吃就對了。可事先告知不吃的食材。</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 必須提前預約</span>
+        <span class="rff rff-res">📖 Tableall 1 個月前（週六午間最難訂）</span>
+        <span class="rff rff-vibe">高端・職人・儀式感</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都中央区銀座（依訂到的店確認地址）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/銀座+寿司+Omakase+ランチ" target="_blank" class="map-btn">📍 Google Maps</a>
+        <a href="https://tableall.com/" target="_blank" class="map-btn green">📖 Tableall 預約</a>
+        <button class="fav-btn" data-fav-id="r-omakase" onclick="toggleFav('r-omakase','銀座Omakase',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--amber)">
+      <div class="rfc-top">
+        <div class="rfc-name">叙々苑 六本木本店（Day 4 晚餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.8</span>
+          <span class="rfc-score rfc-gg">Google 4.5</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🥩 東京燒肉標竿・黒毛和牛・正式空間</div>
+      <div class="rfc-why">叙々苑是東京和牛燒肉的品牌代名詞，六本木本店環境最優雅，黑毛和牛品質有嚴格保証，服務細膩，是旅程中最正式的一頓晚餐，也是自然的慶祝感收尾。</div>
+      <div class="rfc-must">⭐ 必點：特撰カルビ・特撰ロース・ナムル盛り合わせ・冷麺</div>
+      <div class="rfc-facts">
+        <span class="rff rff-q">🕐 必須預約</span>
+        <span class="rff rff-res">📖 官網 / Tabelog（2–3 週前）</span>
+        <span class="rff rff-vibe">優雅空間・情侶友善</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都港区六本木9-7-4 ハリウッドプラザ</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/叙々苑+六本木本店" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都港区六本木9-7-4 ハリウッドプラザ 叙々苑',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-jojoen" onclick="toggleFav('r-jojoen','叙々苑六本木',this)">⭐ 收藏</button>
+        <a href="https://tabelog.com/tokyo/A1307/A130701/" target="_blank" class="map-btn green">📖 Tabelog 訂位</a>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--mint)">
+      <div class="rfc-top">
+        <div class="rfc-name">銀座 天一（てんいち・天婦羅老舖）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.7</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">🍤 1930 年老舖・正統天婦羅・銀座備案</div>
+      <div class="rfc-why">若 Omakase 訂不到，銀座天一是非常好的備案。1930 年創業，正統江戶前天婦羅，午間套餐 ¥3,500 起，不用預約也通常有位，品質遠超觀光型天婦羅店。</div>
+      <div class="rfc-must">⭐ 必點：えびなどの天ぷら定食・芝海老かきあげ</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 午間等待短</span>
+        <span class="rff rff-nres">📍 基本不需預約</span>
+        <span class="rff rff-vibe">傳統老舖・正式座位</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都中央区銀座6-6-5</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/天ぷら天一+銀座" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都中央区銀座6-6-5 銀座天一',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-tenichi" onclick="toggleFav('r-tenichi','銀座天一',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="area-section-title">☕ 咖啡廳（銀座・六本木）</div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--lavender)">
+      <div class="rfc-top">
+        <div class="rfc-name">Café de l'Ambre（銀座・Day 4 早餐）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.9</span>
+          <span class="rfc-score rfc-gg">Google 4.4</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">☕ 1948 年創業・老咖啡師・時光機感</div>
+      <div class="rfc-why">1948 年創業，日本戰後咖啡文化的象徵，老闆至今仍親手烘焙，用陳年老豆製作的黑咖啡滋味深邃悠長。進去就像走進昭和時代，是東京最有歷史感的咖啡體驗。</div>
+      <div class="rfc-must">⭐ 必點：無糖黑咖啡（點了不要問能不能加糖，就是喝黑的）</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 幾乎不用等</span>
+        <span class="rff rff-nres">📍 現場</span>
+        <span class="rff rff-vibe">老派咖啡館・靜謐優雅</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都中央区銀座8-10-15</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/Café+de+l'Ambre+銀座" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="copy-btn" onclick="copyText('東京都中央区銀座8-10-15 Café de l Ambre',this)">📋 複製地址</button>
+        <button class="fav-btn" data-fav-id="r-lambre" onclick="toggleFav('r-lambre','Cafe de Ambre銀座',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+    <div class="rest-full-card" style="--rfc-color:var(--coral)">
+      <div class="rfc-top">
+        <div class="rfc-name">The Local Coffee Stand（六本木・現代精品）</div>
+        <div class="rfc-scores">
+          <span class="rfc-score rfc-tb">Tabelog 3.5</span>
+          <span class="rfc-score rfc-gg">Google 4.3</span>
+        </div>
+      </div>
+      <div class="rfc-vibe">☕ 精品咖啡・六本木・森美術館途中補給</div>
+      <div class="rfc-why">六本木 Hills 附近的精品咖啡小站，適合下午逛完銀座前往六本木途中補充體力，不用花太多時間。</div>
+      <div class="rfc-must">⭐ 必點：Single Origin Drip・拿鐵</div>
+      <div class="rfc-facts">
+        <span class="rff rff-nq">✅ 快速外帶</span>
+        <span class="rff rff-vibe">精品小站・快速補給</span>
+      </div>
+      <div class="rfc-addr">📮 <span>東京都港区六本木周辺（建議 Google Maps 確認）</span></div>
+      <div class="rfc-actions">
+        <a href="https://www.google.com/maps/search/The+Local+Coffee+Stand+六本木" target="_blank" class="map-btn">📍 Google Maps</a>
+        <button class="fav-btn" data-fav-id="r-local" onclick="toggleFav('r-local','The Local Coffee 六本木',this)">⭐ 收藏</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ──── 咖啡廳精選 ──── -->
+  <div id="fa-cafe" class="fat-panel">
+    <div style="background:var(--sky-xl);border-radius:var(--r-sm);padding:16px 18px;margin-bottom:18px;border:1px solid rgba(77,175,255,0.2);font-size:13px;color:var(--ink2);line-height:1.85">
+      ☕ <strong>東京咖啡廳注意事項：</strong><br>
+      ① 多數精品咖啡廳不開放 Wi-Fi 長時間使用<br>
+      ② 「喫茶店」型態（舊式）通常有最低消費，是長坐型<br>
+      ③ 大部分咖啡廳不收信用卡，建議備現金<br>
+      ④ 找座位要先確認「セルフ」（自助取餐）或有服務員
+    </div>
+
+    <div class="spot-grid-3">
+      <div class="spot-full-card">
+        <div class="sfc-head"><div class="sfc-icon">☕</div><div><div class="sfc-name">Verve Coffee Roasters</div><div class="sfc-time">NEWoMan 新宿 2F · 7:00起</div></div></div>
+        <div class="sfc-desc">加州精品咖啡，Day 3 早晨出發前的首選補給站。空間明亮，烘焙豆品質高。</div>
+        <div class="sfc-tags"><span class="sfc-tag">精品咖啡</span><span class="sfc-tag">早晨開始</span><span class="sfc-tag">新宿</span></div>
+        <div class="rfc-actions"><a href="https://www.google.com/maps/search/Verve+Coffee+NEWoMan+新宿" target="_blank" class="map-btn">📍 Maps</a><button class="fav-btn" data-fav-id="c-verve" onclick="toggleFav('c-verve','Verve Coffee',this)">⭐</button></div>
+      </div>
+      <div class="spot-full-card">
+        <div class="sfc-head"><div class="sfc-icon">🍵</div><div><div class="sfc-name">TORAYA CAFÉ</div><div class="sfc-time">NEWoMan 新宿 2F · 10:00起</div></div></div>
+        <div class="sfc-desc">虎屋旗下，紅豆甜點咖啡廳，Day 5 最後早餐，日式溫柔的旅程收尾。</div>
+        <div class="sfc-tags"><span class="sfc-tag">和菓子</span><span class="sfc-tag">老舖旗下</span><span class="sfc-tag">新宿</span></div>
+        <div class="rfc-actions"><a href="https://www.google.com/maps/search/TORAYA+CAFE+新宿" target="_blank" class="map-btn">📍 Maps</a><button class="fav-btn" data-fav-id="c-toraya" onclick="toggleFav('c-toraya','TORAYA CAFÉ',this)">⭐</button></div>
+      </div>
+      <div class="spot-full-card">
+        <div class="sfc-head"><div class="sfc-icon">☕</div><div><div class="sfc-name">Café de l'Ambre</div><div class="sfc-time">銀座 · 1948年創業</div></div></div>
+        <div class="sfc-desc">日本咖啡文化起點，昭和感強烈，老闆親手烘豆，黑咖啡滋味深邃，必喝體驗。</div>
+        <div class="sfc-tags"><span class="sfc-tag">老字號</span><span class="sfc-tag">文化體驗</span><span class="sfc-tag">銀座</span></div>
+        <div class="rfc-actions"><a href="https://www.google.com/maps/search/Cafe+de+l+Ambre+銀座" target="_blank" class="map-btn">📍 Maps</a><button class="fav-btn" data-fav-id="c-lambre" onclick="toggleFav('c-lambre','Cafe de Ambre',this)">⭐</button></div>
+      </div>
+      <div class="spot-full-card">
+        <div class="sfc-head"><div class="sfc-icon">☕</div><div><div class="sfc-name">% Arabica 表参道</div><div class="sfc-time">表参道 · 極簡設計</div></div></div>
+        <div class="sfc-desc">京都起家精品咖啡，表參道店全白極簡，Flat White 是招牌，原宿逛完後的最佳補給。</div>
+        <div class="sfc-tags"><span class="sfc-tag">精品咖啡</span><span class="sfc-tag">IG感</span><span class="sfc-tag">表參道</span></div>
+        <div class="rfc-actions"><a href="https://www.google.com/maps/search/% Arabica+表参道" target="_blank" class="map-btn">📍 Maps</a><button class="fav-btn" data-fav-id="c-arabica" onclick="toggleFav('c-arabica','Arabica表参道',this)">⭐</button></div>
+      </div>
+      <div class="spot-full-card">
+        <div class="sfc-head"><div class="sfc-icon">🍙</div><div><div class="sfc-name">MISOJYU 浅草</div><div class="sfc-time">浅草 · 8:00起</div></div></div>
+        <div class="sfc-desc">味噌汁専門早餐店，非典型咖啡廳但是早晨最有淺草味的補給，手工飯糰＋味噌湯。</div>
+        <div class="sfc-tags"><span class="sfc-tag">日式早餐</span><span class="sfc-tag">在地感</span><span class="sfc-tag">淺草</span></div>
+        <div class="rfc-actions"><a href="https://www.google.com/maps/search/MISOJYU+浅草" target="_blank" class="map-btn">📍 Maps</a><button class="fav-btn" data-fav-id="c-misojyu" onclick="toggleFav('c-misojyu','MISOJYU浅草',this)">⭐</button></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<section class="section" id="budget">
+<div class="wrap">
+  <div class="sec-label">Budget Overview</div>
+  <h2 class="sec-title">預算概算（兩人）</h2>
+  <p class="sec-desc">不含機票與住宿，5 天 4 夜的參考費用。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+    <a href="https://tableall.com/" target="_blank" class="map-btn green">📖 Tableall（Omakase 預約）</a>
+    <a href="https://www.tablecheck.com/ja/japan/" target="_blank" class="map-btn">📖 TableCheck（餐廳訂位）</a>
+    <a href="https://tabelog.com/" target="_blank" class="map-btn amber">⭐ Tabelog（評分查詢）</a>
+  </div>
+  <div class="budget-grid">
+    <div class="bitem"><div class="bi-icon">🚆</div><div class="bi-label">交通（成田往返＋市區）</div><div class="bi-range">¥15,000–18,000</div></div>
+    <div class="bitem"><div class="bi-icon">🍳</div><div class="bi-label">早餐 × 4 天</div><div class="bi-range">¥4,000–8,000</div></div>
+    <div class="bitem"><div class="bi-icon">🍱</div><div class="bi-label">午餐 × 5 天</div><div class="bi-range">¥10,000–35,000</div></div>
+    <div class="bitem"><div class="bi-icon">🍽️</div><div class="bi-label">晚餐 × 4 天</div><div class="bi-range">¥15,000–40,000</div></div>
+    <div class="bitem"><div class="bi-icon">🎫</div><div class="bi-label">景點門票（含 Sky）</div><div class="bi-range">¥8,000–14,000</div></div>
+    <div class="bitem"><div class="bi-icon">🛍️</div><div class="bi-label">購物・伴手禮</div><div class="bi-range">自行規劃</div></div>
+  </div>
+  <div class="btotal">
+    <div>
+      <div class="bt-lbl">總計（不含購物）</div>
+      <div class="bt-amt">¥52,000–115,000</div>
+      <div class="bt-note">約 NT$ 11,000–24,000（依匯率）</div>
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,.65);line-height:2.1">
+      ✅ Sky 預購比現場省 ¥1,000（2人）<br>
+      ✅ 午間 Omakase 比晚餐省 40–50%<br>
+      ✅ 都廳展望台 0 元夜景備案<br>
+      ✅ 高島屋地下傍晚打折買伴手禮
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TIPS -->
+<section class="section" id="tips">
+<div class="wrap">
+  <div class="sec-label">Avoid Pitfalls</div>
+  <h2 class="sec-title">防踩雷完整清單</h2>
+  <div class="tips-grid">
+    <div class="tip-card" style="--tip-color:var(--sky)"><div class="tip-icon">🎫</div><div class="tip-title">Shibuya Sky 一定要提前 14 天買</div><div class="tip-text">日落時段超搶手，透過 KKday/Klook 選可退票方案，梅雨季最安心。絕對不要到現場才買。</div></div>
+    <div class="tip-card" style="--tip-color:var(--amber)"><div class="tip-icon">🍽️</div><div class="tip-title">高級餐廳務必提前預約</div><div class="tip-text">今半、Omakase、叙々苑臨時去幾乎沒位子。提前 2–4 週使用 Tableall / TableCheck / Tabelog，確認 email 一定要保留。</div></div>
+    <div class="tip-card" style="--tip-color:var(--mint)"><div class="tip-icon">🚆</div><div class="tip-title">N'EX 無法刷 Suica</div><div class="tip-text">成田特快需獨立購票 ¥3,070/人，去回程都一樣。別誤以為刷 Suica 就能上車，那樣的話你真的很慘。</div></div>
+    <div class="tip-card" style="--tip-color:var(--amber)"><div class="tip-icon">🍜</div><div class="tip-title">避開大型連鎖觀光餐廳</div><div class="tip-text">一風堂、一蘭、牛角等雖然安全，但不是東京最好的選擇。找 Tabelog 3.5+、非連鎖的在地店，才是真正的東京味道。</div></div>
+    <div class="tip-card" style="--tip-color:var(--sky)"><div class="tip-icon">☔</div><div class="tip-title">梅雨季不等於整天下雨</div><div class="tip-text">通常是短暫陣雨，帶折疊傘出門，準備好室內備案，整體不影響旅程。別因為「可能下雨」就改行程。</div></div>
+    <div class="tip-card" style="--tip-color:var(--mint)"><div class="tip-icon">💴</div><div class="tip-title">現金必備，不要只帶信用卡</div><div class="tip-text">很多在地小店只收現金。建議兌換 ¥50,000–80,000 日幣，Suica 儲值日常使用，現金備急用。</div></div>
+    <div class="tip-card" style="--tip-color:var(--amber)"><div class="tip-icon">🍺</div><div class="tip-title">居酒屋「お通し」是正常收費</div><div class="tip-text">入座自動附小菜 ¥300–500/人，這是日本習慣收費，不是強迫消費，也不需要拒絕或抗議。</div></div>
+    <div class="tip-card" style="--tip-color:var(--sky)"><div class="tip-icon">📱</div><div class="tip-title">先下載離線地圖再出發</div><div class="tip-text">Google Maps 出發前下載東京離線地圖，建議購買日本 eSIM（IIJmio / KDDI 系列），訊號穩定比省錢重要。</div></div>
+  </div>
+</div>
+</section>
+
+<!-- BACKUP -->
+<!-- ══════════ TOKYO TIPS ══════════ -->
+<section class="section" id="tokyotips">
+<div class="wrap">
+  <div class="sec-label">Survival Guide</div>
+  <h2 class="sec-title">🗓 東京實用知識</h2>
+  <p class="sec-desc">迷路時救命、吃飯時不失禮、搭車不踩雷，出發前花 3 分鐘看完這頁。</p>
+
+  <div class="tips-knowledge-grid">
+
+    <div class="tk-card" style="--tkc:var(--sky)">
+      <div class="tk-icon">💳</div>
+      <div class="tk-title">Suica 使用方式</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li>成田機場或新宿 JR 售票機購買（¥1,000，含 ¥500 押金）</li>
+          <li>搭 JR / 地鐵 / 都營時「刷卡入站、刷卡出站」</li>
+          <li>便利商店、部分餐廳、自動販賣機也能刷</li>
+          <li>餘額不足可在任何 JR 站售票機「チャージ」</li>
+          <li>Apple Pay / Google Pay 可設定虛擬 Suica（更方便）</li>
+          <li>回台前退卡退 ¥500，或留著下次用</li>
+        </ul>
+        <strong>⚠️ N'EX 無法刷 Suica，需獨立購票！</strong>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--mint)">
+      <div class="tk-icon">🚆</div>
+      <div class="tk-title">搭車注意事項</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li>電車內請靜音，不要大聲說話（尤其指定席）</li>
+          <li>手機請設靜音，通話請到月台</li>
+          <li>優先座（博愛座）附近請關閉藍牙</li>
+          <li>排隊要站兩側，中間留路讓人通過</li>
+          <li>行李放置：大型行李放行李架，不要佔座</li>
+          <li>下車請靠右站，左側留給趕路的人</li>
+          <li>新宿站超大超複雜，跟「西口」標示走不會錯</li>
+        </ul>
+        <div class="callout-green">💡 迷路時：找月台工作人員或服務台，用 Google 翻譯也行</div>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--amber)">
+      <div class="tk-icon">🏪</div>
+      <div class="tk-title">便利商店完全指南</div>
+      <div class="tk-body">
+        <div class="cvs-grid">
+          <div class="cvs-item">
+            <div class="ci">🟢</div>
+            <div class="cn">7-ELEVEN</div>
+            <div class="cs">最多分店・ATM 最穩</div>
+          </div>
+          <div class="cvs-item">
+            <div class="ci">🔵</div>
+            <div class="cn">Lawson</div>
+            <div class="cs">甜點最強・Karaage 君</div>
+          </div>
+          <div class="cvs-item">
+            <div class="ci">🟡</div>
+            <div class="cn">FamilyMart</div>
+            <div class="cs">法米吉肉包・咖啡好</div>
+          </div>
+        </div>
+        <ul class="tk-list" style="margin-top:8px">
+          <li>7-ELEVEN 的 ATM 支援台灣金融卡（手續費約 ¥110）</li>
+          <li>飯糰（おにぎり）¥130–180，性價比最高的一餐</li>
+          <li>Lawson Uchi Cafe 系列甜點不輸咖啡廳</li>
+          <li>熱食區：法米炸雞・肉包・關東煮都很好吃</li>
+          <li>可以在這裡大量掃貨各種零食回台灣</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--lavender)">
+      <div class="tk-icon">💰</div>
+      <div class="tk-title">退稅規則</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li>消費滿 ¥5,000（稅前）即可辦退稅</li>
+          <li>需出示護照，填寫申請單</li>
+          <li>退稅商品須整包帶出境，海關可能抽查</li>
+          <li>百貨公司找「Tax Refund」服務台</li>
+          <li>成田機場也可辦，但隊伍較長</li>
+        </ul>
+        <strong>⚠️ 食品、藥妝類為「消耗品」，可退稅但限額 ¥50,000 以下且不可在日本使用</strong>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--coral)">
+      <div class="tk-icon">🍽️</div>
+      <div class="tk-title">餐廳用餐文化</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li><strong>不給小費</strong>：日本完全不需要給小費，給了反而失禮</li>
+          <li><strong>お通し</strong>：居酒屋入座自動附的小菜，¥300–500/人，正常費用</li>
+          <li><strong>水是免費的</strong>：進餐廳通常主動供水/茶，是服務的一部分</li>
+          <li><strong>叫服務員</strong>：說「すみません」（su-mi-ma-sen）</li>
+          <li><strong>結帳</strong>：說「お会計お願いします」或比收銀機手勢</li>
+          <li><strong>吃不完</strong>：日本餐廳通常不提供打包服務</li>
+          <li><strong>分餐</strong>：大部分餐廳不方便分食，各點各的比較禮貌</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--mint)">
+      <div class="tk-icon">🗑️</div>
+      <div class="tk-title">垃圾＆禮儀</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li>日本街頭幾乎沒有垃圾桶，垃圾請拿回飯店丟</li>
+          <li>便利商店購物後，垃圾可丟在店內垃圾桶</li>
+          <li>吸菸需在指定區（喫煙所），街頭吸菸罰款</li>
+          <li>騎腳踏車注意：未鎖的車不代表可以借</li>
+          <li>神社寺廟請安靜，不要大聲拍照</li>
+          <li>拍照前請確認是否允許（博物館多禁止）</li>
+          <li>交通號誌請嚴格遵守，日本人對此很在意</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--amber)">
+      <div class="tk-icon">🆘</div>
+      <div class="tk-title">緊急狀況</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li><strong>110</strong>：警察（報案、遺失）</li>
+          <li><strong>119</strong>：救護車 / 消防</li>
+          <li><strong>03-3501-0110</strong>：警察外語熱線（英文）</li>
+          <li>台灣 AIT 東京辦事處：03-3280-7811</li>
+          <li>遺失護照：台灣辦事處補發，帶 2 張大頭照</li>
+          <li>信用卡遺失：立即掛失，銀行有 24hr 熱線</li>
+          <li>大型失物：JR 遺失物中心（Lost and Found）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tk-card" style="--tkc:var(--sky)">
+      <div class="tk-icon">💬</div>
+      <div class="tk-title">基本日語求生包</div>
+      <div class="tk-body">
+        <ul class="tk-list">
+          <li><strong>すみません</strong>：打擾了 / 叫服務員</li>
+          <li><strong>ありがとう</strong>：謝謝</li>
+          <li><strong>これ ください</strong>：我要這個</li>
+          <li><strong>お会計お願いします</strong>：買單</li>
+          <li><strong>どこですか</strong>：在哪裡？</li>
+          <li><strong>わかりません</strong>：我不懂</li>
+          <li><strong>英語はできますか</strong>：會說英文嗎</li>
+          <li><strong>カード使えますか</strong>：可以刷卡嗎</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<section class="section" id="backup">
+<div class="wrap">
+  <div class="sec-label">Plan B</div>
+  <h2 class="sec-title">備案手冊</h2>
+  <p class="sec-desc">下雨或太累的時候不要慌，東京怎麼玩都好玩。</p>
+  <div class="backup-grid">
+    <div class="bc">
+      <h3>☔ 全天下雨室內路線</h3>
+      <ul>
+        <li>東京都廳南展望台（45F，<strong>完全免費</strong>，新宿步行 10 分）</li>
+        <li>東京國立博物館 上野（¥1,000，室內可待 3 小時）</li>
+        <li>晴空塔 Solamachi（全室內商場，免費入場）</li>
+        <li>六本木 森美術館（室內藝術＋夜景，¥2,000）</li>
+        <li>銀座 Ginza Six + Itoya（全室內精緻購物）</li>
+        <li>新宿 高島屋 / Lumine / OIOI（百貨閒逛）</li>
+        <li>teamLab Planets 豐洲（沉浸式室內，需提前購票）</li>
+      </ul>
+    </div>
+    <div class="bc">
+      <h3>😴 太累的刪減版</h3>
+      <ul>
+        <li>Day 2：只去淺草＋阿美橫丁，晴空塔跳過</li>
+        <li>Day 3：跳過明治神宮，確保精力好上 Sky</li>
+        <li>Day 4：六本木省略，Ginza Six 後直接回新宿</li>
+        <li>Day 5：新宿御苑省略，採購完就出發</li>
+        <li>任何一天：午餐改吉野家（¥500），快速補充能量</li>
+        <li>覺得累了就回飯店休息，旅行沒有非去不可的事</li>
+      </ul>
+    </div>
+    <div class="bc">
+      <h3>⛈️ 雨天黃金路線</h3>
+      <ul>
+        <li>早上 東京車站丸之內室內拱廊＋咖啡</li>
+        <li>銀座 Ginza Six 悠閒逛（全室內）</li>
+        <li>午餐 銀座 Omakase（室內，完全不受雨影響）</li>
+        <li>下午 六本木 森美術館（室內當代藝術）</li>
+        <li>若天晴 → 趕去 Shibuya Sky</li>
+        <li>晚餐 叙々苑（室內）收尾</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+<div class="toast" id="toast"></div>
+
+
+<footer>
+  <p style="font-size:22px;margin-bottom:10px">🗼</p>
+  <p style="font-size:14px;margin-bottom:5px">東京五日旅遊手冊 · June 10–14, 2026</p>
+  <p>新宿 JR 九州酒店出發 · 情侶版完全攻略</p>
+  <p style="margin-top:14px;font-size:10px;opacity:.4">⚠️ 餐廳資訊請出發前再次確認是否正常營業，票價與班次時刻以官方網站為準</p>
+</footer>
+
+<button id="bk" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ══════════════════════════════════════
+// CHECKLIST
+// ══════════════════════════════════════
+function toggleCheck(el){
+  el.classList.toggle('checked');
+  const id = el.getAttribute('data-id');
+  const checked = el.classList.contains('checked');
+  try { localStorage.setItem('cl_'+id, checked ? '1' : '0'); } catch(e){}
+  updateProgress();
+}
+function updateProgress(){
+  const all = document.querySelectorAll('.cl-item');
+  const done = document.querySelectorAll('.cl-item.checked');
+  const pct = all.length ? Math.round(done.length/all.length*100) : 0;
+  const fill = document.getElementById('cl-fill');
+  const pctEl = document.getElementById('cl-pct');
+  if(fill) fill.style.width = pct+'%';
+  if(pctEl) pctEl.textContent = done.length+' / '+all.length+' 完成';
+}
+function resetChecklist(){
+  document.querySelectorAll('.cl-item').forEach(el=>{
+    el.classList.remove('checked');
+    const id = el.getAttribute('data-id');
+    try { localStorage.removeItem('cl_'+id); } catch(e){}
+  });
+  updateProgress();
+  showToast('↺ 已重置清單');
+}
+function loadChecklist(){
+  document.querySelectorAll('.cl-item').forEach(el=>{
+    const id = el.getAttribute('data-id');
+    try { if(localStorage.getItem('cl_'+id)==='1') el.classList.add('checked'); } catch(e){}
+  });
+  updateProgress();
+}
+
+// ══════════════════════════════════════
+// TOAST
+// ══════════════════════════════════════
+function showToast(msg){
+  const t=document.getElementById('toast');
+  if(!t)return;
+  t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+
+// ══════════════════════════════════════
+// COPY & FAVORITES
+// ══════════════════════════════════════
+async function copyText(text,btn){
+  try{
+    await navigator.clipboard.writeText(text);
+    if(btn){
+      const orig=btn.innerHTML;
+      btn.innerHTML='✅ 已複製'; btn.classList.add('copied');
+      setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied');},1800);
+    }
+    showToast('✅ 已複製到剪貼板');
+  }catch(e){ showToast('❌ 複製失敗，請手動選取複製'); }
+}
+function getFavs(){ try{return JSON.parse(localStorage.getItem('tokyoFavs')||'{}');}catch(e){return {};} }
+function saveFavs(f){ try{localStorage.setItem('tokyoFavs',JSON.stringify(f));}catch(e){} }
+function toggleFav(id,label,btn){
+  const f=getFavs();
+  if(f[id]){ delete f[id]; btn.innerHTML='⭐ 收藏'; btn.classList.remove('faved'); showToast('🗑️ 已取消：'+label); }
+  else { f[id]=label; btn.innerHTML='★ 已收藏'; btn.classList.add('faved'); showToast('⭐ 已收藏：'+label); }
+  saveFavs(f);
+}
+
+// ══════════════════════════════════════
+// FLIGHT
+// ══════════════════════════════════════
+function copyFlight(type){
+  const texts={
+    out:'去程：CI100\n台北桃園 T2 → 東京成田 T2\n2026/06/10（週三）\n出發 08:50 → 抵達 13:15\n建議 06:30 前到機場',
+    ret:'回程：CI109\n東京成田 T2 → 台北桃園 T2\n2026/06/14（週日）\n出發 20:00 → 抵達 22:45\n建議 15:30 前從市區出發'
+  };
+  copyText(texts[type]);
+}
+function toggleFlightFav(type){
+  const btn=document.getElementById('fav-'+type);
+  if(!btn)return;
+  toggleFav('flight-'+type,type==='out'?'去程 CI100':'回程 CI109',btn);
+}
+
+// ══════════════════════════════════════
+// NAVIGATION / TAB SWITCHING
+// ══════════════════════════════════════
+function switchDay(i){
+  document.querySelectorAll('.dtab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.dpanel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+function setMode(btn,txt){
+  document.querySelectorAll('.mbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const el=document.getElementById('minfo');
+  if(el) el.textContent=txt;
+}
+function switchRoute(tab,id){
+  const container=tab.parentElement;
+  container.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  container.parentElement.querySelectorAll('.rpanel').forEach(p=>p.classList.toggle('active',p.id===id));
+}
+function switchSpots(tab,id){
+  document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  document.querySelectorAll('.spanel').forEach(p=>p.classList.toggle('active',p.id===id));
+}
+function switchFoodArea(tab,id){
+  document.querySelectorAll('.fat').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  document.querySelectorAll('.fat-panel').forEach(p=>p.classList.toggle('active',p.id===id));
+}
+function toggleAcc(head){
+  const body=head.nextElementSibling;
+  const arrow=head.querySelector('.accord-arrow');
+  if(!body||!arrow)return;
+  const open=body.classList.toggle('open');
+  arrow.classList.toggle('open',open);
+}
+
+// ══════════════════════════════════════
+// SCROLL / NAV ACTIVE
+// ══════════════════════════════════════
+window.addEventListener('scroll',()=>{
+  const bk=document.getElementById('bk');
+  if(bk) bk.classList.toggle('show',scrollY>500);
+});
+const navSecs=document.querySelectorAll('section[id]');
+const navLks=document.querySelectorAll('.nav-link');
+navSecs.forEach(s=>new IntersectionObserver(([e])=>{
+  if(e.isIntersecting) navLks.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+s.id));
+},{threshold:0.12}).observe(s));
+
+// ══════════════════════════════════════
+// INIT
+// ══════════════════════════════════════
+document.addEventListener('DOMContentLoaded',()=>{
+  // Restore checklist
+  loadChecklist();
+  // Restore all fav buttons
+  const favs=getFavs();
+  document.querySelectorAll('[data-fav-id]').forEach(btn=>{
+    const id=btn.getAttribute('data-fav-id');
+    if(favs[id]){ btn.innerHTML='★ 已收藏'; btn.classList.add('faved'); }
+  });
+  // Restore flight favs
+  ['out','ret'].forEach(t=>{
+    const btn=document.getElementById('fav-'+t);
+    if(btn&&favs['flight-'+t]){ btn.innerHTML='★ 已收藏'; btn.classList.add('starred'); }
+  });
+});
+</script>
+
+
+
+</body>
+</html>
